@@ -1,0 +1,16 @@
+@import '~animate.css/animate.min.css';
+
+
+
+
+  .animate__animated.animate__fadeIn {
+    --animate-duration: 3s;
+  }
+
+
+  body {
+    overflow: hidden; /* Hide scrollbars */
+  }
+
+
+  
