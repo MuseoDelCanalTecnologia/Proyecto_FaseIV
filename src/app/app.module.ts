@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MapaComponent } from './pages/mapa/mapa.component';
 import { ProyeccionComponent } from './pages/proyeccion/proyeccion.component';
+import { InteraccionComponent } from './pages/interaccion/interaccion.component';
 
 
 
@@ -18,6 +19,7 @@ import { ProyeccionComponent } from './pages/proyeccion/proyeccion.component';
     HomeComponent,
     MapaComponent,
     ProyeccionComponent,
+    InteraccionComponent,
   
   ],
   imports: [
