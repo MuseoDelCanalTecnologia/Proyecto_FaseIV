@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SocketService } from 'src/app/services/socket.service';
 
 
 
@@ -9,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MapaComponent implements OnInit {
   
-  constructor() {   
+  constructor(public wsSocket: SocketService) {   
     
   }
 

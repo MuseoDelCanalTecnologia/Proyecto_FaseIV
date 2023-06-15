@@ -8,7 +8,10 @@ import { MapaComponent } from './pages/mapa/mapa.component';
 import { ProyeccionComponent } from './pages/proyeccion/proyeccion.component';
 import { InteraccionComponent } from './pages/interaccion/interaccion.component';
 
+// socket Service
+import { SocketIoModule, SocketIoConfig } from 'ngx-socket-io';
 
+const config: SocketIoConfig = { url: 'http://localhost:2000', options: {} };
 
 
 
@@ -24,7 +27,8 @@ import { InteraccionComponent } from './pages/interaccion/interaccion.component'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SocketIoModule.forRoot(config)
   ],
   providers: [],
   bootstrap: [AppComponent]
