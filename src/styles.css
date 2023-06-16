@@ -7,6 +7,18 @@
     --animate-duration: 3s;
   }
 
+  .animate__animated.animate__zoomInUp{
+    --animate-duration: .8s;
+  }
+
+  .animate__animated.animate__fadeIn{
+    --animate-duration: .5s;
+  }
+
+  .animate__animated.animate__zoomIn{
+    --animate-duration: .8s;
+  }
+
 
   body {
     overflow: hidden; /* Hide scrollbars */
@@ -17,4 +29,8 @@
   .modal-backdrop {
     background-color: transparent;
  }
-  
+
+ .modal.fade .modal-dialog {
+  transition: transform 0.3s ease-out;
+  transform: scale(.9);
+}
