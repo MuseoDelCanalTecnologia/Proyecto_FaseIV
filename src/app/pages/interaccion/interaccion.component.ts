@@ -12,4 +12,13 @@ export class InteraccionComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  
+  openNewTab():void{
+    window.open('/proyeccion');
+  }
+
+  openNewTab2():void{
+    window.open('/mapa');
+  }
+
 }
