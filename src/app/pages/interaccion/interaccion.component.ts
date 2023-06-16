@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SocketService } from 'src/app/services/socket.service';
 
 @Component({
   selector: 'app-interaccion',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InteraccionComponent implements OnInit {
 
-  constructor() { }
+  constructor(public wsSocket: SocketService) { }
+   video="2";
+  ngOnInit() {
 
-  ngOnInit(): void {
+    this.enviarVideo();
+
   }
+
+  
+  enviarVideo(){
+    this.wsSocket.enviarVideo(this.video);
+  }
+
+  enviarHome(){
+    this.wsSocket.homeRoute('proyeccion');
+  }
+
 
 }

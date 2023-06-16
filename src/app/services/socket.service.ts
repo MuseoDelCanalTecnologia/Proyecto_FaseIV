@@ -30,5 +30,39 @@ export class SocketService {
 
   }
 
+ 
+  escuharVideo(){
+
+   
+     return this.socket.fromEvent("video-nuevo");
+
+
+  }
+
+  enviarVideo(video:string){
+
+
+    this.socket.emit("video",video);
+
+  }
+
+  homeRoute(home:string){
+
+  this.socket.emit("home",home);
+
+  }
+
+  homeEscuchar(){
+
+  return this.socket.fromEvent("route");
+ 
+  }
+
+
+
+
+  
+
+
 
 }
