@@ -21,9 +21,11 @@ export class InteraccionComponent implements OnInit {
     this.wsSocket.enviarVideo(this.video);
   }
 
+
   enviarHome(){
     this.wsSocket.homeRoute('proyeccion');
   }
+
 
 
 }
