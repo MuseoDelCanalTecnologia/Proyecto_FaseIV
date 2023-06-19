@@ -1,5 +1,5 @@
 <nav class="navbar navbar-dark bg-dark" style="height: 150px;" >
- <h1 style="color:white; margin:30px;">Mapa de Panamá</h1>
+ <h1 style="color:white; margin:30px;">Mapa de Panamá </h1>
 </nav>
 
 <div class="container"> 
@@ -80,7 +80,9 @@
   </div>
 </div> -->
 
-<a routerLink="/" style="text-decoration: none;">
+
+<a (click)="enviarHome()" routerLink="/"  style="text-decoration: none">
+
   <p style="text-align: center;">
     <i class="fa-solid fa-house fa-2xl" style="font-size: 70px;" ></i>
   
@@ -88,7 +90,8 @@
 
 </p>
 
-<p style="text-align: right; ">Estado: Contectado</p>
+<p style="text-align: right; " *ngIf="wsSocket.socketStatus" >Estado: <b class="text-success" >Online</b></p>
+<p style="text-align: right;" *ngIf="!wsSocket.socketStatus"> Estado: <b class="text-danger"  >Offline</b></p>
 
 </a>
 
