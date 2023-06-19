@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { SocketService } from 'src/app/services/socket.service';
 
 
 
@@ -8,13 +10,29 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mapa.component.css']
 })
 export class MapaComponent implements OnInit {
-  
-  constructor() {   
+  video="1";
+  constructor(public wsSocket: SocketService, private route:Router) {   
     
   }
 
   ngOnInit(){
+
  
+    this.enviarVideo();
+    
+ 
+  }
+
+  enviarVideo(){
+
+
+   this.wsSocket.enviarVideo(this.video);
+    
+  }
+
+
+  enviarHome(){
+    this.wsSocket.homeRoute('proyeccion');
   }
 
 }
