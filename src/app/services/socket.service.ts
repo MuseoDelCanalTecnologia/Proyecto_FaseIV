@@ -19,7 +19,8 @@ export class SocketService {
 
     this.socket.on('connect', () =>{
       this.socketStatus=true;
-      console.log("Conexion con Establecida")
+      console.log("Conexion con Establecida");
+      
     });
 
     this.socket.on('disconnect', () =>{

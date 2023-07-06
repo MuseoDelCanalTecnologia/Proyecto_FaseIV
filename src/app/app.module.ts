@@ -13,7 +13,7 @@ import { SocketIoModule, SocketIoConfig } from 'ngx-socket-io';
 import { Pro1Component } from './pages/pro1/pro1.component';
 import { Pro2Component } from './pages/pro2/pro2.component';
 
-const config: SocketIoConfig = { url: 'http://localhost:2000', options: {} };
+const config: SocketIoConfig = { url: 'https://experience-staging.cuentanostuhistoria.org/', options: {} };
 
 
 
