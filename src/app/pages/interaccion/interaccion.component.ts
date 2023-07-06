@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { SocketService } from 'src/app/services/socket.service';
 
 @Component({
@@ -7,7 +7,8 @@ import { SocketService } from 'src/app/services/socket.service';
   styleUrls: ['./interaccion.component.css']
 })
 export class InteraccionComponent implements OnInit {
-
+@ViewChild('titulo') Titulo!:ElementRef |any 
+titulo:any;
   constructor(public wsSocket: SocketService) { }
    video="2";
   ngOnInit() {
@@ -24,6 +25,11 @@ export class InteraccionComponent implements OnInit {
 
   enviarHome(){
     this.wsSocket.homeRoute('proyeccion');
+  }
+
+  changeTest(){
+  this.titulo= document.getElementById('titulo');
+  this.titulo.innerHTML="Ft Sherman";
   }
 
 

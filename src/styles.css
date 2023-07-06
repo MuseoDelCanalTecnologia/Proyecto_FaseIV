@@ -20,6 +20,45 @@
   }
 
 
+  .animate__animated.animate__fadeIn{
+    --animate-duration: 8s;
+  }
+
+  :root {
+    --animate-duration: 2s;
+  }
+
+  .desvanecer{
+    animation: niebla;
+    animation-duration: 4s ;
+
+  }
+
+  @keyframes niebla {
+    0%{
+      opacity:0.65
+    }
+
+    15%{
+      opacity: 0.75;
+    }
+
+    25%{
+      opacity: 0.85;
+    }
+
+    45%{
+      opacity: 0.95;
+    }
+
+    75%{
+      opacity: 1.2;
+    }
+    
+  }
+
+
+
   body {
     overflow: hidden; /* Hide scrollbars */
   }
@@ -33,4 +72,31 @@
  .modal.fade .modal-dialog {
   transition: transform 0.3s ease-out;
   transform: scale(.9);
+}
+
+
+@font-face {
+  font-family: Monserratbold;
+  src: url(./assets/tipografia/Types/Montserrat/Montserrat-Bold.otf);
+}
+
+@font-face {
+  font-family: Museo;
+  src: url(./assets/tipografia/Types/MuseoSans/MuseoSans-100.otf);
+}
+
+.titulo{
+  font-family: Monserratbold;
+  color: white;
+}
+
+.titulo2{
+  font-family: Monserratbold;
+  color: black;
+}
+
+.textos{
+  font-family: Museo;
+  color: black;
+  font-size: 15px;
 }

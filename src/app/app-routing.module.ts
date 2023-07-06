@@ -7,6 +7,9 @@ import { ProyeccionComponent } from './pages/proyeccion/proyeccion.component';
 import { InteraccionComponent } from './pages/interaccion/interaccion.component';
 import { Pro1Component } from './pages/pro1/pro1.component';
 import { Pro2Component } from './pages/pro2/pro2.component';
+import { MapazoomComponent } from './pages/mapazoom/mapazoom.component';
+import { CanalmapaComponent } from './pages/canalmapa/canalmapa.component';
+import { AmpliacionComponent } from './pages/ampliacion/ampliacion.component';
 
 
 const routes: Routes = [
@@ -16,6 +19,9 @@ const routes: Routes = [
   {path:'interaccion', component:InteraccionComponent},
   {path:'pro1',component:Pro1Component},
   {path:'pro2',component:Pro2Component},
+  {path:'mapazoom',component:MapazoomComponent},
+  {path:'canalmapa',component:CanalmapaComponent},
+  {path:'ampliacion',component:AmpliacionComponent}
  
 ];
 

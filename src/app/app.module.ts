@@ -12,8 +12,11 @@ import {HttpClientJsonpModule}from '@angular/common/http';
 import { SocketIoModule, SocketIoConfig } from 'ngx-socket-io';
 import { Pro1Component } from './pages/pro1/pro1.component';
 import { Pro2Component } from './pages/pro2/pro2.component';
+import { MapazoomComponent } from './pages/mapazoom/mapazoom.component';
+import { CanalmapaComponent } from './pages/canalmapa/canalmapa.component';
+import { AmpliacionComponent } from './pages/ampliacion/ampliacion.component';
 
-const config: SocketIoConfig = { url: 'http://localhost:2000', options: {} };
+const config: SocketIoConfig = { url: 'https://experience-staging.cuentanostuhistoria.org/', options: {} };
 
 
 
@@ -27,6 +30,9 @@ const config: SocketIoConfig = { url: 'http://localhost:2000', options: {} };
     InteraccionComponent,
     Pro1Component,
     Pro2Component,
+    MapazoomComponent,
+    CanalmapaComponent,
+    AmpliacionComponent,
   
   ],
   imports: [

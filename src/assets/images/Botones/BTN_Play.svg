@@ -1,0 +1,15 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 720" width="10" height="10">
+	<title>BTN_Play-svg</title>
+	<style>
+		.s0 { mix-blend-mode: color;fill: #ffffff } 
+		.s1 { fill: #e64150 } 
+	</style>
+	<g id="Play">
+		<g id="_x32__6_">
+			<path id="Layer" class="s0" d="m317.5 454c-59.4 0-107.5-48.1-107.5-107.5 0-59.4 48.1-107.5 107.5-107.5 59.4 0 107.5 48.1 107.5 107.5 0 59.4-48.1 107.5-107.5 107.5z"/>
+		</g>
+		<g id="_x31__4_">
+			<path id="Layer" class="s1" d="m296.1 285.9l90.6 54.4c8.4 5.4 8.4 17.9 0 22.8l-90.6 54.9c-8.9 5.3-20.1-0.9-20.1-11.6v-108.9c-0.4-10.3 11.2-17 20.1-11.6z"/>
+		</g>
+	</g>
+</svg>

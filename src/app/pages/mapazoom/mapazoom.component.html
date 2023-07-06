@@ -1,0 +1,200 @@
+<nav class="navbar " style="height: 100px; background-color:rgb(16, 146, 135);" >
+  <h1 style="color:white; margin:30px; margin: 0 auto;" class="titulo">Cuenca Hidrografica del Canal </h1>
+ </nav>
+ 
+ <div class="container" > 
+   
+     <main class="animate__animated animate__fadeInDown" >
+       <h1 class="animated flip" class="titulo2" style="font-size: 30px;">Cuenca Hidrografica del Canal </h1>
+       
+ 
+       <div class="container-fluid" >
+ 
+         
+ 
+         <div class="row">
+           <div class="col-xl-6" >
+ 
+ 
+             <div class="circle"></div>
+             <!-- <h2>Área del Canal/Antigua Zona del Canal. </h2> -->
+             <p class="textos">Panamá es uno de los mayores administradores de agua en el mundo. Al aprovechar su posición geográfica y el uso de sus aguas, Panamá presta un servicio único al comercio mundial por medio de su Canal.
+            
+             
+              <br><br>
+              Debido a su ubicación y orientación, en la Cuenca se registra una abundante precipitación pluvial en gran parte del año (González, 2002). Entre los ríos principales de la CHCP están el Chagres, Gatún, Boquerón, Pequení, Cirí Grande y Trinidad. Además existe una significativa red de quebradas, riachuelos y ríos secundarios, lo mismo que dos lagos: Alhajuela y Gatún.
+
+              <br><br>
+ 
+               <b>Fuente:</b> Canal de Panamá
+ 
+                 
+ 
+                 
+             </p>
+             
+ 
+          
+ 
+ 
+             
+             <br>
+             
+             
+ 
+ 
+           </div>
+           <div class="col-xl-6">
+            
+           <!-- SVG -->
+
+           <div class="container">
+
+            <div class="row">
+
+              <div class="col-xl-6" >
+                <h4 class="titulo2">Parques Naturales</h4>
+           <div class="list-group container_prime titulo2" style="z-index: 300; font-size: 11px;">
+            <br><br><br><br>
+            <a href="#" class="list-group-item list-group-item-action">Monumento Natural Barro Colorado <i class="fa-solid fa-earth-americas"></i> </a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-primary">	Parque Nacional Altos de Campana <i class="fa-solid fa-earth-americas"></i></a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">	Parque Nacional Soberanía <i class="fa-solid fa-tree"></i></a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-success">	Parque Nacional Camino de Cruces <i class="fa-solid fa-tree"></i> </a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-success">Parque Nacional Chagres <i class="fa-solid fa-tree"></i></a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-success">Área Recreativa del Lago Gatún <i class="fa-solid fa-tree"></i></a>
+            
+
+
+         
+          </div></div>
+        
+          <div class="col-xl-6">
+            <h4 class="titulo2">Subcuencas y ríos </h4>
+       <div class="list-group container_prime titulo2" style="z-index: 300;font-size: 11px;">
+        <br><br><br><br>
+        <a href="#" class="list-group-item list-group-item-action ">Subcuenca río Cirí Grande <i class="fa-solid fa-earth-americas"></i> </a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-primary">	Subcuenca río Trinidad <i class="fa-solid fa-earth-americas"></i></a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">	Subcuenca río Caño Quebrado <i class="fa-solid fa-earth-americas"></i></a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-success">Subcuenca río Gatún <i class="fa-solid fa-earth-americas"></i></a>
+       
+        <a href="#" class="list-group-item list-group-item-action list-group-item-success">Subcuenca río Pequení <i class="fa-solid fa-earth-americas"></i></a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-success" style="z-index: 160;">Subcuenca río Chagres  <i class="fa-solid fa-earth-americas"></i></a>
+       
+
+     
+      </div></div>
+        
+        
+        
+        </div></div>
+
+
+ 
+ 
+ 
+           
+           </div>
+         </div>
+       </div>
+ 
+ 
+       
+     </main>
+ 
+     
+    
+ </div>
+ 
+ 
+ 
+ 
+ <br>
+ 
+ 
+ 
+ 
+ <!-- <div class="containerwave">
+  
+   <div class="wave">
+    
+   </div>
+ </div> -->
+ 
+
+ <a   (click)="enviarHome()" routerLink="/" style="text-decoration: none;" >
+
+   <p style="text-align: center;"><br>
+     <i class="fa-solid fa-house fa-2xl" style="font-size: 50px;" ></i>
+
+     
+    
+   
+ 
+ </p>
+ <p style="text-align: right; position: relative; top: -40px; " *ngIf="wsSocket.socketStatus" >Estado: <b class="text-success" >Online</b></p>
+<p style="text-align: right; position: relative; top: -40px;"  *ngIf="!wsSocket.socketStatus"> Estado: <b class="text-danger"  >Offline</b></p>
+
+ 
+ </a>
+
+
+
+
+
+ <img src="../../../assets/images/Botones/BTN-Eng.svg" height="100" width="100" style="position: relative ; top:-205px;right: -30px; z-index: 200; " routerLink="/canalmapa">
+
+ <div class="waves" >
+   <div class="wave circulo a"></div>
+   <div class="wave circulo b"></div>
+   <div class="wave circulo c"></div>
+ </div>
+
+
+
+
+  <!-- Modal1 -->
+<div class="modal fade animate__animated animate__zoomInUp" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-fullscreen-sm-down ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Provincia de Chiriqui</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          Es una provincia de Panamá. Su capital es David. También se da el nombre de Laguna de Chiriquí a un gran golfo que existe en la costa caribeña de Panamá, en la provincia de Bocas del Toro. Chiriquí significa valle de la luna para los indígenas Ngöbe-Buglé.
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+<!-- Modal 1 -->
+ 
+
+ <!-- Modal2 -->
+ <div class="modal fade animate__animated animate__zoomInUp" data-animate-out="modal fade animate__animated animate__zoomInUp" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-fullscreen-sm-down ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Provincia de Coclé</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          Es una provincia de Cocle. Su capital es David. También se da el nombre de Laguna de Chiriquí a un gran golfo que existe en la costa caribeña de Panamá, en la provincia de Bocas del Toro. Chiriquí significa valle de la luna para los indígenas Ngöbe-Buglé.
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+<!-- Modal 2 -->
+ 
+ 
+ 
+
+ 
+ 
