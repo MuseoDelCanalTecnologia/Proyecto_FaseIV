@@ -5,23 +5,20 @@
    <div class="container" > 
      
        <main class="animate__animated animate__fadeInDown" >
-         <h1 class="animated flip" style="margin: 0 auto;" class="titulo2" id="titulo">Antigua Zona del Canal </h1>
+         <h1 class="animated flip" style="margin: 0 auto;" class="titulo2  {{cssAnimate}}" id="titulo">{{Titulo}}</h1>
          <div class="container-fluid" >
            <div class="row">
              <div class="col-xl-6" >
-               <div class="circle"></div>
+               <div class="circle  {{cssAnimate}}"  [ngStyle]="{'background-image': 'url(' + Img + ')'}" ></div>
                <!-- <h2>Área del Canal/Antigua Zona del Canal. </h2> -->
-               <p class="textos" style="letter-spacing: 0.5px;" id="parrafo">Se estima que en el país existen alrededor de 270 especies de mamíferos silvestres, y de estas, unas 160 se encuentran en la cuenca del Canal. De las 33 especies de mamíferos consideradas en peligro de extinción o vulnerables, 30 habitan en esta zona, entre esas: el jaguar, el tapir y el puerco de monte.
-   
-                 En cuanto a las aves, de más de mil especies en el país, poco más de la mitad está en el área de Cuenca, de las cuales más de 150 son consideradas vulnerables o en peligro por las normas nacionales de MiAmbiente.
-                 
-                 Hasta 1999, la Cuenca del Canal cubría un área de 326 mil hectáreas, que corresponde a la cuenca que abastece de agua a los lagos Alhajuela y Gatún.<br><br>
+               <p class="textos" style="letter-spacing: 0.5px;" id="parrafo">
+                {{desc}}
+                <br><br>
    
                  <b>Fuente:</b> Canal de Panamá
 
 
-                 
-   
+
                    
    
                    
@@ -45,7 +42,9 @@
              <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                  (click)="baseMilitar()"
+                  >
                     Bases Militares &nbsp;<i class="fa-solid fa-warehouse fa-2xl" style="font-size: 20px;"></i>
                   </button>
                 </h2>
@@ -54,21 +53,23 @@
 
                    
                     <ul class="numbered-list" >
-                      <li class="textos"(click)="changeTest()">Ft. Sherman-San Lorenzo</li>
-                      <li class="textos">Ft. Davis</li>
-                      <li class="textos">Ft. Gulick</li>
-                      <li class="textos">Ft. Clayton</li>
-                      <li class="textos">Ft. Amador</li>
-                      <li class="textos">Ft. Grant</li>
-                      <li class="textos">Ft. Kobbe</li>
-                      <li class="textos">Quarry Heights – US Southern Command</li>
-                      <li class="textos">Puesto de Corozal</li>
-                      <li class="textos">Naval Base Rodman</li>
-                      <li class="textos">Coco Solo base submarina</li>
-                      <li class="textos">Estación de comunicaciones de la Marina de Summit</li>
-                      <li class="textos">Estación de comunicaciones de la Marina de Farfám</li>
-                      <li class="textos">Base aérea de Albrook</li>
-                      <li class="textos">Base Aérea de Howard</li>
+
+                      <li class="textos " (click)="Ftshemran()">Ft. Sherman-San Lorenzo</li>
+                      <li class="textos " (click)="FtDavis()">Ft. Davis</li>
+                      <li class="textos " (click)="FtGulick()">Ft. Gulick</li>
+                      <li class="textos " (click)="FtClayton()">Ft. Clayton</li>
+                      <li class="textos " (click)="FtAmador()">Ft. Amador</li>
+                      <li class="textos " (click)="FtGrant()">Ft. Grant</li>
+                      <li class="textos " (click)="FtKobbe()">Ft. Kobbe</li>
+                      <li class="textos " (click)="QuarryHeights()">Quarry Heights – US Southern Command</li>
+                      <li class="textos " (click)="PuestoCorozal()">Puesto de Corozal</li>
+                      <li class="textos " (click)="NavalBase()">Naval Base Rodman</li>
+                      <li class="textos " (click)="CocoSolo()">Coco Solo base submarina</li>
+                      <li class="textos " (click)="EstacionSummit()">Estación de comunicaciones de la Marina de Summit</li>
+                      <li class="textos " (click)="EstacionFarfan()">Estación de comunicaciones de la Marina de Farfám</li>
+                      <li class="textos " (click)="BaseAlbrook()">Base aérea de Albrook</li>
+                      <li class="textos " (click)="BaseHoward()">Base Aérea de Howard</li>
+
                     </ul>
                   </div>
                 </div>

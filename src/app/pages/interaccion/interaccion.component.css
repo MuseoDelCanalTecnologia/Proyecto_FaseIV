@@ -3,6 +3,7 @@ main{
   margin: 2em auto;   
  }
 
+
  
  a{
      display: block;
@@ -25,9 +26,6 @@ main{
 }
  
 
-
- 
- 
    .overlay{
      position: absolute;
  
@@ -37,7 +35,7 @@ main{
    .circle{
     width: 200px;
     height: 200px;
-    background: url("../../../assets/images/canal4.jpg");
+    /* background: url("../../../assets/images/canal4.jpg"); */
     background-size: cover;
     background-position: center;
     border-radius: 50%;
@@ -45,8 +43,11 @@ main{
     margin: 60px 30px 30px 0;
     shape-outside: circle();
 
-}
+   }
 
+   .a{
+    background: url("../../../assets/images/canal3.jpg");
+   }
 
 
 

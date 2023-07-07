@@ -15,6 +15,8 @@ import { Pro2Component } from './pages/pro2/pro2.component';
 import { MapazoomComponent } from './pages/mapazoom/mapazoom.component';
 import { CanalmapaComponent } from './pages/canalmapa/canalmapa.component';
 import { AmpliacionComponent } from './pages/ampliacion/ampliacion.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 const config: SocketIoConfig = { url: 'https://experience-staging.cuentanostuhistoria.org/', options: {} };
 
@@ -39,7 +41,8 @@ const config: SocketIoConfig = { url: 'https://experience-staging.cuentanostuhis
     BrowserModule,
     AppRoutingModule,
     SocketIoModule.forRoot(config),
-    HttpClientJsonpModule
+    HttpClientJsonpModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

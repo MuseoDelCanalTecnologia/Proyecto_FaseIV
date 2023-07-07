@@ -1,0 +1,93 @@
+[
+  {
+  "titulo":"Ft. Sherman-San Lorenzo",
+  "img":"../../../assets/images/canal1.jpg",
+   "desc":"descripcion 1",
+   "css":"animate__animated animate__rotateInDownLeft"
+  },
+  {
+    "titulo":"Ft. Davis",
+    "img":"../../../assets/images/canal2.jpg",
+     "desc":"descripcion 2",
+     "css":"animate__animated animate__rotateInDownLeft"
+  },
+  {
+    "titulo":"Ft. Gulick",
+    "img":"../../../assets/images/canal3.jpg",
+    "desc":"descripcion 3",
+    "css":"animate__animated animate__rotateInDownLeft"
+  },
+  {
+    "titulo":"Ft. Clayton",
+    "img":"../../../assets/images/canal4.jpg",
+     "desc":"descripcion 4",
+     "css":"animate__animated animate__rotateInDownLeft"
+     
+  },
+  {
+    "titulo":"Ft. Amador",
+    "img":"../../../assets/images/canal5.png",
+    "desc":"descripcion 5",
+    "css":"animate__animated animate__rotateInDownLeft"
+  },
+  {
+    "titulo":"Ft. Grant",
+    "img":"../../../assets/images/4040271.jpg",
+     "desc":"descripcion 6",
+     "css":"animate__animated animate__rotateInDownLeft"
+  },
+  {
+    "titulo":"Ft. Kobbe",
+    "img":"../../../assets/images/canal2.jpg",
+    "desc":"descripcion 7",
+    "css":"animate__animated animate__rotateInDownLeft"
+  },
+  {
+    "titulo":"Quarry Heights – US Southern Command",
+    "img":"../../../assets/images/canal2.jpg",
+    "desc":"descripcion 8",
+    "css":"animate__animated animate__rotateInDownLeft"
+  },
+  {
+    "titulo":"Puesto de Corozal",
+    "img":"../../../assets/images/canal2.jpg",
+    "desc":"descripcion 9",
+    "css":"animate__animated animate__rotateInDownLeft"
+  },
+  {
+    "titulo":"Naval Base Rodman",
+    "img":"../../../assets/images/canal2.jpg",
+     "desc":"descripcion 10",
+     "css":"animate__animated animate__rotateInDownLeft"
+  },
+  {
+    "titulo":"Coco Solo base submarina",
+    "img":"../../../assets/images/canal2.jpg",
+     "desc":"descripcion 11",
+     "css":"animate__animated animate__rotateInDownLeft"
+  },
+  {
+    "titulo":"Estación de comunicaciones de la Marina de Summit",
+    "img":"../../../assets/images/canal2.jpg",
+    "desc":"descripcion 12",
+    "css":"animate__animated animate__rotateInDownLeft"
+  },
+  {
+    "titulo":"Estación de comunicaciones de la Marina de Farfám",
+    "img":"../../../assets/images/canal2.jpg",
+    "desc":"descripcion 13",
+    "css":"animate__animated animate__rotateInDownLeft"
+  },
+  {
+    "titulo":"Base aérea de Albrook",
+    "img":"../../../assets/images/canal2.jpg",
+    "desc":"descripcion 14",
+    "css":"animate__animated animate__rotateInDownLeft"
+  },
+  {
+    "titulo":"Base Aérea de Howard",
+    "img":"../../../assets/images/canal2.jpg",
+    "desc":"descripcion 15",
+    "css":"animate__animated animate__rotateInDownLeft"
+  }
+]
