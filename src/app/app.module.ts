@@ -19,9 +19,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { PortalSocketComponent } from './pages/portal-socket/portal-socket.component';
 
 //Entorno
-//const config: SocketIoConfig = { url: 'https://experience-staging.cuentanostuhistoria.org/', options: {} };
+const config: SocketIoConfig = { url: 'https://experience-staging.cuentanostuhistoria.org/', options: {} };
 //Local
-const config: SocketIoConfig = { url: 'http://localhost:2000', options: {} };
+// const config: SocketIoConfig = { url: 'http://localhost:2000', options: {} };
 
 
 
