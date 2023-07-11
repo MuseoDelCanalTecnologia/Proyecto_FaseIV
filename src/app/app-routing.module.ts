@@ -10,6 +10,7 @@ import { Pro2Component } from './pages/pro2/pro2.component';
 import { MapazoomComponent } from './pages/mapazoom/mapazoom.component';
 import { CanalmapaComponent } from './pages/canalmapa/canalmapa.component';
 import { AmpliacionComponent } from './pages/ampliacion/ampliacion.component';
+import { PortalSocketComponent } from './pages/portal-socket/portal-socket.component';
 
 
 const routes: Routes = [
@@ -21,7 +22,8 @@ const routes: Routes = [
   {path:'pro2',component:Pro2Component},
   {path:'mapazoom',component:MapazoomComponent},
   {path:'canalmapa',component:CanalmapaComponent},
-  {path:'ampliacion',component:AmpliacionComponent}
+  {path:'ampliacion',component:AmpliacionComponent},
+  {path:'portal',component:PortalSocketComponent}
  
 ];
 

@@ -58,6 +58,18 @@ export class SocketService {
  
   }
 
+  envioPortal(dato:string){
+
+  return this.socket.emit('BaseMilitar',dato);
+
+  }
+
+  escuchandoPortal(){
+
+    return this.socket.fromEvent("dataMilitar");
+
+  }
+
 
 
 
