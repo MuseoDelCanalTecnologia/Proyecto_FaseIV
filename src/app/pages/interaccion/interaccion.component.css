@@ -82,7 +82,7 @@ p{
       height: 527px;
       width: 100%;
       overflow: hidden;
-      z-index: 1;
+      z-index: 99;
       
     }
     .wave {
@@ -94,21 +94,22 @@ p{
       height: 380px;
       background: url(https://static.platzi.com/media/files/waves_c8551f5d-ecf6-4a81-ae1d-f3a0ad55ba10.png) center bottom no-repeat;
       animation: 5s wave ease-in-out infinite alternate;
+      z-index: 100;
       
     }
     .wave.a {
       background-position: 0 -854px;
-      z-index: 1;
+      z-index: 203;
     }
     .wave.b {
       background-position: 0 -427px;
       animation-delay: .6s;
-      z-index: 1;
+      z-index: 204;
     }
     .wave.c {
       background-position: 0 0;
       animation-delay: 1.2s;
-      z-index: 1;
+      z-index: 205;
     }
    
     @keyframes wave {

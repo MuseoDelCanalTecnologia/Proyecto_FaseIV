@@ -2,38 +2,38 @@
   {
   "titulo":"Ft. Sherman-San Lorenzo",
   "img":"../../../assets/images/canal1.jpg",
-   "desc":"descripcion 1",
+   "desc":"También conocido como Fuerte Sherman, está ubicado en San Lorenzo, Panamá. San Lorenzo es una pequeña localidad en la provincia de Colón, en el país centroamericano de Panamá. Ft Sherman es un antiguo fuerte militar que fue utilizado por el ejército de los Estados Unidos hasta 1999, cuando se completó la transferencia del Canal de Panamá a Panamá. En la actualidad, Ft Sherman ha sido convertido en una zona turística y residencial, y cuenta con hermosas playas y una rica historia militar.",
    "css":"animate__animated animate__rotateInDownLeft"
   },
   {
     "titulo":"Ft. Davis",
     "img":"../../../assets/images/canal2.jpg",
-     "desc":"descripcion 2",
+     "desc":"El Fuerte Davis, ubicado en Panamá, fue una antigua fortaleza militar que jugó un papel importante en la defensa de la Zona del Canal de Panamá. Originalmente construido por el Ejército de los Estados Unidos a principios del siglo XX, el fuerte estaba situado en la costa del Pacífico, en la entrada occidental del Canal de Panamá.El Fuerte Davis fue nombrado así en honor al capitán Richard C. Davis, un oficial del Ejército de los Estados Unidos que participó en la construcción del Canal de Panamá. La fortaleza fue diseñada para proteger la entrada del canal y evitar cualquier intento de invasión o sabotaje.",
      "css":"animate__animated animate__rotateInDownLeft"
   },
   {
     "titulo":"Ft. Gulick",
     "img":"../../../assets/images/canal3.jpg",
-    "desc":"descripcion 3",
+    "desc":"Fort Gulick en Panamá es una antigua base militar del Ejército de los Estados Unidos que se encontraba ubicada en la provincia de Colón, en la República de Panamá. Durante décadas, Fort Gulick fue una parte importante de la presencia militar estadounidense en Panamá. La base albergaba a unidades del Ejército de los Estados Unidos, incluyendo la Escuela de las Américas, que proporcionaba entrenamiento militar a soldados de toda la región. Sin embargo, con el Tratado Torrijos-Carter de 1977, que estableció el proceso de transferencia gradual del Canal de Panamá a la República de Panamá, las bases militares estadounidenses en el país fueron cerradas. Fort Gulick fue cerrado en 1999 y las instalaciones fueron transferidas al gobierno de Panamá.",
     "css":"animate__animated animate__rotateInDownLeft"
   },
   {
     "titulo":"Ft. Clayton",
     "img":"../../../assets/images/canal4.jpg",
-     "desc":"descripcion 4",
+     "desc":"El Fuerte de Clayton era una de las bases militares situadas en el interior de la Zona del Canal, y junto con Albrook y Howard, una de las mayores bases militares. La base militar conocida como Fort Clayton fue nombrado después de que el ex intendente general del departamento de la zona del Canal, Coloner Bertram T. Clayton, murió sirviendo a su país durante la Primera Guerra Mundial. Fort Clayton permaneció activo hasta 1999, y en ella funcionó la sede del Ejército de Estados Unidos del Sur, ahora se trasladó a Fort Buchanan en Puerto Rico",
      "css":"animate__animated animate__rotateInDownLeft"
      
   },
   {
     "titulo":"Ft. Amador",
     "img":"../../../assets/images/canal5.png",
-    "desc":"descripcion 5",
+    "desc":"Fort Amador, también conocido como Fuerte Amador, es una antigua instalación militar ubicada en la entrada del Canal de Panamá, en la costa del Pacífico de Panamá. El fuerte está situado en una península que se extiende hacia el océano, cerca de la Ciudad de Panamá. Originalmente construido por los Estados Unidos a principios del siglo XX, el fuerte fue utilizado como una base militar estratégica para la defensa del canal.",
     "css":"animate__animated animate__rotateInDownLeft"
   },
   {
     "titulo":"Ft. Grant",
     "img":"../../../assets/images/4040271.jpg",
-     "desc":"descripcion 6",
+     "desc":"El Fuerte Grant se construyó entre 1914 y 1917 como principal fortificación de la Artillería de Costa para defender la entrada del Pacífico al Canal de Panamá. Fue nombrado en honor del General Ulysses S. Grant, del Ejército de los Estados Unidos y Presidente de los Estados Unidos (1969-1877), quien en 1852, como capitán con su compañía del Cuarto Regimiento transitó el istmo de Panamá en ruta desde Nueva York a su nuevo destino en San Francisco, California.",
      "css":"animate__animated animate__rotateInDownLeft"
   },
   {
