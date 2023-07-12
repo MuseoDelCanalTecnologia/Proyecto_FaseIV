@@ -31,6 +31,10 @@ export class ProyeccionComponent implements OnInit {
 
       this.router.navigateByUrl('pro2');
 
+    }else if(data=="portal"){
+
+      this.router.navigateByUrl('portal');
+
     }else{
 
     }
