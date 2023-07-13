@@ -22,13 +22,13 @@ export class PortalSocketComponent implements OnInit {
      });
 
 
-     this.recibiendoMilitar()
+     this.recibiendoPortal()
 
 
   }
 
 
-  recibiendoMilitar(){
+  recibiendoPortal(){
     this.wsSocket.escuchandoPortal().subscribe((data)=>{
     this.data=data;
     document.getElementById('video')?.setAttribute("src",this.data)

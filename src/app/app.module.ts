@@ -17,6 +17,7 @@ import { CanalmapaComponent } from './pages/canalmapa/canalmapa.component';
 import { AmpliacionComponent } from './pages/ampliacion/ampliacion.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PortalSocketComponent } from './pages/portal-socket/portal-socket.component';
+import { CuencaHidroComponent } from './cuenca-hidro/cuenca-hidro.component';
 
 //Entorno
 const config: SocketIoConfig = { url: 'https://experience-staging.cuentanostuhistoria.org/', options: {} };
@@ -38,6 +39,7 @@ const config: SocketIoConfig = { url: 'https://experience-staging.cuentanostuhis
     CanalmapaComponent,
     AmpliacionComponent,
     PortalSocketComponent,
+    CuencaHidroComponent,
   
   ],
   imports: [

@@ -11,6 +11,7 @@ import { MapazoomComponent } from './pages/mapazoom/mapazoom.component';
 import { CanalmapaComponent } from './pages/canalmapa/canalmapa.component';
 import { AmpliacionComponent } from './pages/ampliacion/ampliacion.component';
 import { PortalSocketComponent } from './pages/portal-socket/portal-socket.component';
+import { CuencaHidroComponent } from './cuenca-hidro/cuenca-hidro.component';
 
 
 const routes: Routes = [
@@ -23,7 +24,8 @@ const routes: Routes = [
   {path:'mapazoom',component:MapazoomComponent},
   {path:'canalmapa',component:CanalmapaComponent},
   {path:'ampliacion',component:AmpliacionComponent},
-  {path:'portal',component:PortalSocketComponent}
+  {path:'portal',component:PortalSocketComponent},
+  {path:'cuenca',component:CuencaHidroComponent}
  
 ];
 

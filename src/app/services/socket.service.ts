@@ -60,13 +60,13 @@ export class SocketService {
 
   envioPortal(dato:string){
 
-  return this.socket.emit('BaseMilitar',dato);
+  return this.socket.emit('portal',dato);
 
   }
 
   escuchandoPortal(){
 
-    return this.socket.fromEvent("dataMilitar");
+    return this.socket.fromEvent("dataPortal");
 
   }
 
