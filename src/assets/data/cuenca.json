@@ -61,14 +61,14 @@
       "img":"../../../assets/images/rio3.jpg",
       "desc":"descripcion 9",
       "css":"animate__animated animate__tada",
-      "video":"/assets/proyeccion/rio1.mp4"
+      "video":"/assets/proyeccion/rio3.mp4"
     },
     {
       "titulo":"Subcuenca río Gatún",
       "img":"../../../assets/images/rio4.jpg",
        "desc":"descripcion 10",
        "css":"animate__animated animate__tada",
-       "video":"/assets/proyeccion/rio2.mp4"
+       "video":"/assets/proyeccion/rio4.mp4"
     },
     {
       "titulo":"Subcuenca río Pequení ",

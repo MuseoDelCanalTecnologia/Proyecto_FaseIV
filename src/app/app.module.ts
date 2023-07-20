@@ -19,13 +19,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { PortalSocketComponent } from './pages/portal-socket/portal-socket.component';
 import { CuencaHidroComponent } from './cuenca-hidro/cuenca-hidro.component';
 
+
 //Entorno
 const config: SocketIoConfig = { url: 'https://experience-staging.cuentanostuhistoria.org/', options: {} };
 //Local
 // const config: SocketIoConfig = { url: 'http://localhost:2000', options: {} };
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,14 +40,17 @@ const config: SocketIoConfig = { url: 'https://experience-staging.cuentanostuhis
     CuencaHidroComponent,
   
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
     SocketIoModule.forRoot(config),
     HttpClientJsonpModule,
-    HttpClientModule
+    HttpClientModule,
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
