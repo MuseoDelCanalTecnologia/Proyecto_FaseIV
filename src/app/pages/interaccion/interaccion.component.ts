@@ -334,7 +334,7 @@ export class InteraccionComponent implements OnInit {
   }
 
   getDataMilitares() {
-    this.http.get<[]>('assets/data/titulos.json').subscribe((data) => {
+    this.http.get<[]>('assets/data/revertida.json').subscribe((data) => {
       this.Elementos = data;
     });
   }
