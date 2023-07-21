@@ -17,7 +17,8 @@ export class MapazoomComponent implements OnInit {
   desc: string =
     'Panamá es uno de los mayores administradores de agua en el mundo. Al aprovechar su posición geográfica y el uso de sus aguas, Panamá presta un servicio único al comercio mundial por medio de su Canal.  Debido a su ubicación y orientación, en la Cuenca se registra una abundante precipitación pluvial en gran parte del año (González, 2002). Entre los ríos principales de la CHCP están el Chagres, Gatún, Boquerón, Pequení, Cirí Grande y Trinidad. Además existe una significativa red de quebradas, riachuelos y ríos secundarios, lo mismo que dos lagos: Alhajuela y Gatún. ';
 
-  cssAnimate: string = '';
+  cssTexto: string = '';
+  cssImg:string = '';
   recurso:string="";
 
   constructor(
@@ -64,10 +65,12 @@ export class MapazoomComponent implements OnInit {
       this.Titulo = element.titulo;
       this.Img = element.img;
       this.desc = element.desc;
-      this.cssAnimate = element.css;
+      this.cssImg=element.cssImg;
+      this.cssTexto = element.cssTexto;
       this.wsSocket.envioPortal(this.recurso=element.video);
       setTimeout(() => {
-        this.cssAnimate = '';
+        this.cssTexto = '';
+        this.cssImg='';
       }, 1000);
       
     });
@@ -82,11 +85,13 @@ export class MapazoomComponent implements OnInit {
       this.Titulo = element.titulo;
       this.Img = element.img;
       this.desc = element.desc;
-      this.cssAnimate = element.css;
+      this.cssImg=element.cssImg;
+      this.cssTexto = element.cssTexto;
       this.wsSocket.envioPortal(this.recurso=element.video);
 
       setTimeout(() => {
-        this.cssAnimate = '';
+        this.cssTexto = '';
+        this.cssImg='';
       }, 1000);
       
     });
@@ -100,10 +105,12 @@ export class MapazoomComponent implements OnInit {
       this.Titulo = element.titulo;
       this.Img = element.img;
       this.desc = element.desc;
-      this.cssAnimate = element.css;
+      this.cssImg=element.cssImg;
+      this.cssTexto = element.cssTexto;
       this.wsSocket.envioPortal(this.recurso=element.video);
       setTimeout(() => {
-        this.cssAnimate = '';
+        this.cssTexto = '';
+        this.cssImg='';
       }, 1000);
       
     });
@@ -117,11 +124,13 @@ export class MapazoomComponent implements OnInit {
       this.Titulo = element.titulo;
       this.Img = element.img;
       this.desc = element.desc;
-      this.cssAnimate = element.css;
+      this.cssImg=element.cssImg;
+      this.cssTexto = element.cssTexto;
       this.wsSocket.envioPortal(this.recurso=element.video);
 
       setTimeout(() => {
-        this.cssAnimate = '';
+        this.cssTexto = '';
+        this.cssImg='';
       }, 1000);
       
     });
@@ -135,10 +144,12 @@ export class MapazoomComponent implements OnInit {
       this.Titulo = element.titulo;
       this.Img = element.img;
       this.desc = element.desc;
-      this.cssAnimate = element.css;
+      this.cssImg=element.cssImg;
+      this.cssTexto = element.cssTexto;
       this.wsSocket.envioPortal(this.recurso=element.video);
       setTimeout(() => {
-        this.cssAnimate = '';
+        this.cssTexto = '';
+        this.cssImg='';
       }, 1000);
       
     });
@@ -155,11 +166,13 @@ export class MapazoomComponent implements OnInit {
       this.Titulo = element.titulo;
       this.Img = element.img;
       this.desc = element.desc;
-      this.cssAnimate = element.css;
+      this.cssImg=element.cssImg;
+      this.cssTexto = element.cssTexto;
       this.wsSocket.envioPortal(this.recurso=element.video);
 
       setTimeout(() => {
-        this.cssAnimate = '';
+        this.cssTexto = '';
+        this.cssImg='';
       }, 1000);
       
     });
@@ -175,10 +188,12 @@ export class MapazoomComponent implements OnInit {
       this.Titulo = element.titulo;
       this.Img = element.img;
       this.desc = element.desc;
-      this.cssAnimate = element.css;
+      this.cssImg=element.cssImg;
+      this.cssTexto = element.cssTexto;
       this.wsSocket.envioPortal(this.recurso=element.video);
       setTimeout(() => {
-        this.cssAnimate = '';
+        this.cssTexto = '';
+        this.cssImg='';
       }, 1000);
       
     });
@@ -193,11 +208,13 @@ export class MapazoomComponent implements OnInit {
       this.Titulo = element.titulo;
       this.Img = element.img;
       this.desc = element.desc;
-      this.cssAnimate = element.css;
+      this.cssImg=element.cssImg;
+      this.cssTexto = element.cssTexto;
       this.wsSocket.envioPortal(this.recurso=element.video);
 
       setTimeout(() => {
-        this.cssAnimate = '';
+        this.cssTexto = '';
+        this.cssImg='';
       }, 1000);
       
     });
@@ -211,11 +228,13 @@ export class MapazoomComponent implements OnInit {
       this.Titulo = element.titulo;
       this.Img = element.img;
       this.desc = element.desc;
-      this.cssAnimate = element.css;
+      this.cssImg=element.cssImg;
+      this.cssTexto = element.cssTexto;
       this.wsSocket.envioPortal(this.recurso=element.video);
 
       setTimeout(() => {
-        this.cssAnimate = '';
+        this.cssTexto = '';
+        this.cssImg='';
       }, 1000);
       
     });
@@ -229,11 +248,13 @@ export class MapazoomComponent implements OnInit {
       this.Titulo = element.titulo;
       this.Img = element.img;
       this.desc = element.desc;
-      this.cssAnimate = element.css;
+      this.cssImg=element.cssImg;
+      this.cssTexto = element.cssTexto;
       this.wsSocket.envioPortal(this.recurso=element.video);
 
       setTimeout(() => {
-        this.cssAnimate = '';
+        this.cssTexto = '';
+        this.cssImg='';
       }, 1000);
       
     });
@@ -247,10 +268,12 @@ export class MapazoomComponent implements OnInit {
       this.Titulo = element.titulo;
       this.Img = element.img;
       this.desc = element.desc;
-      this.cssAnimate = element.css;
+      this.cssImg=element.cssImg;
+      this.cssTexto = element.cssTexto;
       this.wsSocket.envioPortal(this.recurso=element.video);
       setTimeout(() => {
-        this.cssAnimate = '';
+        this.cssTexto = '';
+        this.cssImg='';
       }, 1000);
       
     });
@@ -265,11 +288,13 @@ export class MapazoomComponent implements OnInit {
       this.Titulo = element.titulo;
       this.Img = element.img;
       this.desc = element.desc;
-      this.cssAnimate = element.css;
+      this.cssImg=element.cssImg;
+      this.cssTexto = element.cssTexto;
       this.wsSocket.envioPortal(this.recurso=element.video);
 
       setTimeout(() => {
-        this.cssAnimate = '';
+        this.cssTexto = '';
+        this.cssImg='';
       }, 1000);
       
     });
