@@ -29,10 +29,13 @@ export class PortalSocketComponent implements OnInit {
 
 
   recibiendoPortal(){
+
     this.wsSocket.escuchandoPortal().subscribe((data)=>{
     this.data=data;
-    document.getElementById('video')?.setAttribute("src",this.data)
-    })
+    this.router.navigateByUrl(this.data);
+    // document.getElementById('video')?.setAttribute("src",this.data)
+    });
+
   }
 
 }
