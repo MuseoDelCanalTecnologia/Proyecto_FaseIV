@@ -36,7 +36,7 @@ export class FtDavisComponent implements OnInit {
       
       if(!this.data){
     
-        this.router.navigate(this.data);
+        this.router.navigateByUrl(this.data);
     
         }else{
           //corriendo video
