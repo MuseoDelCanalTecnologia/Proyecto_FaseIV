@@ -33,6 +33,11 @@ import { BalboaOesteComponent } from './areas-revertidas/poligonos/balboa-oeste/
 import { EmperadorComponent } from './areas-revertidas/poligonos/emperador/emperador.component';
 import { RioHatoComponent } from './areas-revertidas/poligonos/rio-hato/rio-hato.component';
 import { SanJoseComponent } from './areas-revertidas/poligonos/san-jose/san-jose.component';
+import { AccesoPacificoComponent } from './ampliacion/acceso-pacifico/acceso-pacifico.component';
+import { CorteCulebraComponent } from './ampliacion/corte-culebra/corte-culebra.component';
+import { NevasEsclusasComponent } from './ampliacion/nevas-esclusas/nevas-esclusas.component';
+import { OperacionLgatunComponent } from './ampliacion/operacion-lgatun/operacion-lgatun.component';
+import { PacificoAtlanticoComponent } from './ampliacion/pacifico-atlantico/pacifico-atlantico.component';
 
 
 const routes: Routes = [
@@ -69,6 +74,12 @@ const routes: Routes = [
   {path:'emperador',component:EmperadorComponent},
   {path:'rio-hato', component:RioHatoComponent},
   {path:'san-jose', component:SanJoseComponent},
+  {path:'acceso-pacifico',component:AccesoPacificoComponent},
+  {path:'corte-culebra',component:CorteCulebraComponent},
+  {path:'nuevas-esclusas',component:NevasEsclusasComponent},
+  {path:'operacion-gatun',component:OperacionLgatunComponent},
+  {path:'pacifico-atlantico',component:PacificoAtlanticoComponent}
+
 
 ];
 

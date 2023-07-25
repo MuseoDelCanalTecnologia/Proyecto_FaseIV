@@ -5,7 +5,7 @@
     "desc": "descripcion 1",
     "cssImg": "animate__animated animate__zoomIn",
     "cssTexto": "animate__animated animate__slideInLeft",
-    "ruta": "/assets/proyeccion/001.mp4"
+    "ruta": "acceso-pacifico"
   },
   {
     "titulo": "Ensanche y profundización de los cauces de navegación del lago Gatún y profundización del Corte Culebra.",
@@ -13,7 +13,7 @@
     "desc": "descripcion 2",
     "cssImg": "animate__animated animate__zoomIn",
     "cssTexto": "animate__animated animate__slideInLeft",
-    "ruta": "/assets/proyeccion/002.mp4"
+    "ruta": "corte-culebra"
   },
   {
     "titulo": "Construcción de las nuevas esclusas y tinas de reutilización de agua en el Atlántico y en el Pacífico. ",
@@ -21,7 +21,7 @@
     "desc": "descripcion 3",
     "cssImg": "animate__animated animate__zoomIn",
     "cssTexto": "animate__animated animate__slideInLeft",
-    "ruta": "/assets/proyeccion/003.mp4"
+    "ruta": "nuevas-esclusas"
   },
   {
     "titulo": "Subir el nivel máximo de operación del lago Gatún ",
@@ -29,7 +29,7 @@
     "desc": "descripcion 4",
     "cssImg": "animate__animated animate__zoomIn",
     "cssTexto": "animate__animated animate__slideInLeft",
-    "ruta": "/assets/proyeccion/003.mp4"
+    "ruta": "operacion-gatun"
   },
   {
     "titulo": "Excavación en cuatro fases del cauce de acceso del Pacífico",
@@ -37,6 +37,6 @@
     "desc": "descripcion 5",
     "cssImg": "animate__animated animate__zoomIn",
     "cssTexto": "animate__animated animate__slideInLeft",
-    "ruta": "/assets/proyeccion/003.mp4"
+    "ruta": "pacifico-atlantico"
   }
 ]
