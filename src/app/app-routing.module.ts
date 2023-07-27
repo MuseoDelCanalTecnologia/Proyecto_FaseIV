@@ -38,6 +38,18 @@ import { CorteCulebraComponent } from './ampliacion/corte-culebra/corte-culebra.
 import { NevasEsclusasComponent } from './ampliacion/nevas-esclusas/nevas-esclusas.component';
 import { OperacionLgatunComponent } from './ampliacion/operacion-lgatun/operacion-lgatun.component';
 import { PacificoAtlanticoComponent } from './ampliacion/pacifico-atlantico/pacifico-atlantico.component';
+import { AltosCampanaComponent } from './cuenca/altos-campana/altos-campana.component';
+import { BarroColoradoComponent } from './cuenca/barro-colorado/barro-colorado.component';
+import { CaminoCrucesComponent } from './cuenca/camino-cruces/camino-cruces.component';
+import { LagoGatunComponent } from './cuenca/lago-gatun/lago-gatun.component';
+import { ParqueChagresComponent } from './cuenca/parque-chagres/parque-chagres.component';
+import { ParqueSoberaniaComponent } from './cuenca/parque-soberania/parque-soberania.component';
+import { RioChagresComponent } from './cuenca/rio-chagres/rio-chagres.component';
+import { RioGatunComponent } from './cuenca/rio-gatun/rio-gatun.component';
+import { RioGrandeComponent } from './cuenca/rio-grande/rio-grande.component';
+import { RioPequeniComponent } from './cuenca/rio-pequeni/rio-pequeni.component';
+import { RioQuebradoComponent } from './cuenca/rio-quebrado/rio-quebrado.component';
+import { RioTrinidadComponent } from './cuenca/rio-trinidad/rio-trinidad.component';
 
 
 const routes: Routes = [
@@ -78,7 +90,21 @@ const routes: Routes = [
   {path:'corte-culebra',component:CorteCulebraComponent},
   {path:'nuevas-esclusas',component:NevasEsclusasComponent},
   {path:'operacion-gatun',component:OperacionLgatunComponent},
-  {path:'pacifico-atlantico',component:PacificoAtlanticoComponent}
+  {path:'pacifico-atlantico',component:PacificoAtlanticoComponent},
+  {path:'altos-campana',component:AltosCampanaComponent},
+  {path:'barro-colorado',component:BarroColoradoComponent},
+  {path:'camino-cruces', component:CaminoCrucesComponent},
+  {path:'lago-gatun',component:LagoGatunComponent},
+  {path:'parque-chagres',component:ParqueChagresComponent},
+  {path:'parque-soberania',component:ParqueSoberaniaComponent},
+  {path:'rio-chagres', component:RioChagresComponent},
+  {path:'rio-gatun',component:RioGatunComponent},
+  {path:'rio-grande',component:RioGrandeComponent},
+  {path:'rio-pequeni',component:RioPequeniComponent},
+  {path:'rio-quebrado',component:RioQuebradoComponent},
+  {path:'rio-trinidad',component:RioTrinidadComponent},
+ 
+
 
 
 ];
