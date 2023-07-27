@@ -1,0 +1,175 @@
+<nav class="navbar " style="height: 100px; background-color:rgb(16, 146, 135);" >
+  <h1 style="color:white; margin:30px; margin: 0 auto;" class="titulo">Ampliación del Canal de Panamá </h1>
+ </nav>
+ 
+ <div class="container" > 
+   
+     <main class="animate__animated animate__fadeInDown" >
+       <h1 class="animated flip" class="titulo2" style="font-size: 30px;">{{Titulo}}</h1>
+       
+ 
+       <div class="container-fluid" >
+ 
+         
+ 
+         <div class="row">
+           <div class="col-xl-6" >
+ 
+ 
+            <div class="circle  {{cssImg}}"  [ngStyle]="{'background-image': 'url(' + Img + ')'}" ></div>
+             <!-- <h2>Área del Canal/Antigua Zona del Canal. </h2> -->
+             <p class="textos {{cssTexto}}"> {{desc}}
+            
+    
+
+              <br><br>
+ 
+               <b>Fuente:</b> Canal de Panamá
+ 
+                 
+ 
+                 
+             </p>
+             
+ 
+          
+ 
+ 
+             
+             <br>
+             
+             
+ 
+ 
+           </div>
+           <div class="col" style="position: relative; top: -60px;">
+            
+           <!-- SVG -->
+
+           <div class="container">
+            <h4 class="titulo2"  (click)="Ampliacion()">Componentes del programa de ampliación</h4><br>
+            <div class="list-group container_prime" style="z-index: 300;">
+             <br><br><br>
+             <a (click)="ampProfndizacion()" class="list-group-item list-group-item-action" style="margin: 0 auto;">	Profundización de las entradas en el Pacífico y el Atlántico. <i class="fa-solid fa-earth-americas"></i> </a><br>
+             <a (click)="ampEnsanche()" class="list-group-item list-group-item-action list-group-item-primary" style="margin: 0 auto;">Ensanche y profundización de los cauces de navegación del lago Gatún y profundización del Corte Culebra. <i class="fa-solid fa-earth-americas"></i></a><br>
+             <a (click)="ampConstruccion()" class="list-group-item list-group-item-action list-group-item-secondary" style="margin: 0 auto;">	Construcción de las nuevas esclusas y tinas de reutilización de agua en el Atlántico y en el Pacífico. <i class="fa-solid fa-tree"></i></a><br>
+             <a (click)="ampLagoGatun()" class="list-group-item list-group-item-action list-group-item-success" style="margin: 0 auto; z-index: 30;">Subir el nivel máximo de operación del lago Gatún <i class="fa-solid fa-tree"></i> </a><br>
+             <a (click)="ampCruceAcceso()" class="list-group-item list-group-item-action list-group-item-success" style="margin: 0 auto; z-index: 30;">Excavación en cuatro fases del cauce de acceso del Pacífico <i class="fa-solid fa-tree"></i></a><br>
+             
+             
+ 
+ 
+          
+           </div>
+            </div>
+
+
+ 
+ 
+ 
+           
+           </div>
+         </div>
+       </div>
+ 
+ 
+       
+     </main>
+ 
+     
+    
+ </div>
+ 
+ 
+ 
+ 
+ <br>
+ 
+ 
+ 
+ 
+ <!-- <div class="containerwave">
+  
+   <div class="wave">
+    
+   </div>
+ </div> -->
+ 
+
+ <a   (click)="enviarHome()" routerLink="/" style="text-decoration: none;" >
+
+   <p style="text-align: center;"><br>
+     <i class="fa-solid fa-house fa-2xl" style="font-size: 50px;" ></i>
+
+     
+    
+   
+ 
+ </p>
+ <p style="text-align: right; position: relative; top: -40px; " *ngIf="wsSocket.socketStatus" >Estado: <b class="text-success" >Online</b></p>
+<p style="text-align: right; position: relative; top: -40px;"  *ngIf="!wsSocket.socketStatus"> Estado: <b class="text-danger"  >Offline</b></p>
+
+ 
+ </a>
+
+
+
+
+
+ <img src="../../../assets/images/Botones/BTN-Eng.svg" height="100" width="100" style="position: relative ; top:-205px;right: -30px; z-index: 200; " routerLink="/canalmapa">
+
+ <div class="waves" >
+   <div class="wave circulo a"></div>
+   <div class="wave circulo b"></div>
+   <div class="wave circulo c"></div>
+ </div>
+
+
+
+
+  <!-- Modal1 -->
+<div class="modal fade animate__animated animate__zoomInUp" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-fullscreen-sm-down ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Provincia de Chiriqui</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          Es una provincia de Panamá. Su capital es David. También se da el nombre de Laguna de Chiriquí a un gran golfo que existe en la costa caribeña de Panamá, en la provincia de Bocas del Toro. Chiriquí significa valle de la luna para los indígenas Ngöbe-Buglé.
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+<!-- Modal 1 -->
+ 
+
+ <!-- Modal2 -->
+ <div class="modal fade animate__animated animate__zoomInUp" data-animate-out="modal fade animate__animated animate__zoomInUp" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-fullscreen-sm-down ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Provincia de Coclé</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          Es una provincia de Cocle. Su capital es David. También se da el nombre de Laguna de Chiriquí a un gran golfo que existe en la costa caribeña de Panamá, en la provincia de Bocas del Toro. Chiriquí significa valle de la luna para los indígenas Ngöbe-Buglé.
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+<!-- Modal 2 -->
+ 
+ 
+ 
+
+ 
+ 

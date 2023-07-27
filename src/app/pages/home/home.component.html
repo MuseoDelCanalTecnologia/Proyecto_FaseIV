@@ -1,24 +1,33 @@
-<main class="main">
-  <section class="section  animate__animated animate__fadeInDown">
-    <div class="close-section">&times;</div>
-    <div class="box padre" routerLink="/mapa"   ><div class="hijo"> La cuenca del Canal </div></div>
-  </section>
-  <section class="section  animate__animated animate__fadeInRight">
-    <div class="close-section">&times;</div>
-    <div class="box padre" routerLink="/interaccion"><div class="hijo"> Bases Militares </div></div>
-  </section>
-  <section class=" section animate__animated animate__fadeInLeft">
-    <div class="close-section">&times;</div>
-    <div class="box padre"><div class="hijo"> Nivel del Agua </div></div>
-  </section>
-  <section class=" section animate__animated animate__fadeInUp">
-    <div class="close-section">&times;</div>
-    <div class="box padre"><div class="hijo"> Fauna en la cuenca </div></div>
-  </section>
-
-  
-</main>
-
-<!-- (click)="openNewTab2()" esto es para abrie new -->
+<div class="grid-layout" >
+  <div class=" imagen1 news-stories animate__animated animate__fadeInDown" style=" background-size: cover; z-index: 30;  
+  " routerLink="/interaccion">
+    <h1 style="margin: 0 auto; font-size: 30px; " class="titulo" >AREAS REVERTIDAS</h1>
+  </div>
 
 
+  <div class=" quick-links animate__animated animate__fadeInUp" style="background-image: url(../../../assets/images/canal6.png); background-size: cover;z-index: 31;  filter: brightness(50%);" >
+ 
+  </div>
+  <div class="imagen2 twitter-feed animate__animated animate__fadeInLeft" style="z-index: 35; " routerLink="/mapazoom">
+    <h1 style="margin: 0 auto;font-size: 30px;" class="titulo">CUENCA HIDROGRAFÍCA</h1>
+  </div>
+  <div class="imagen3 whats-on animate__animated animate__fadeInRight" style=" background-size: cover; z-index: 30; " routerLink="/ampliacion" >
+    <h1 style="margin: 0 auto; font-size: 30px; " class="titulo">AMPLIACIÓN DEL CANAL</h1>
+  </div>
+
+  <footer class="text-center text-lg-start animate__animated animate__fadeInUp"  style="background-color:  rgb(21, 63, 153);">
+    <div class="container d-flex justify-content-center py-5">
+       <div class="text-center text-white p-3" >
+     
+      <img src="../../../assets/images/Botones/BTN-Eng.svg" height="100" width="100" style="position: relative ; top:-55px;left: -600px; z-index: 200; " routerLink="/canalmapa">
+    </div>
+    </div>
+
+    <div class="waves" >
+      <div class="wave circulo a"></div>
+      <div class="wave circulo b"></div>
+      <div class="wave circulo c"></div>
+    </div>
+  </footer>
+
+ 

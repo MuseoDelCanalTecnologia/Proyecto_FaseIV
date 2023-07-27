@@ -1,175 +1,238 @@
-
-
 main{
-    width: 100%;
-    margin: 5em auto;   
-   }
-   
-   a{
-       display: block;
-       background-color: rgb(21, 63, 153);
-       color: white;
-       padding: 6em;
-       margin-top: 5em;
-   
-   }
-   
-  
+  width: 100%;
+  margin: 2em auto;   
+ }
+
+
  
-   
-   
-     .overlay{
-       position: absolute;
-   
-     }
+ a{
+     display: block;
+     background-color: rgb(21, 63, 153);
+     color: white;
+     padding: 1em;
+     margin-top: 2em;
+      position: relative;
+     top: -70px;
+ }
 
+ a.list-group-item{
+  display: block;
+  background-color: rgb(21, 63, 153);
+  color: white;
+  padding: .9em;
+  margin-top: 1em;
+   position: relative;
+  top: -70px;
+}
+ 
 
-     .circle{
-      width: 200px;
-      height: 200px;
-      background: url("../../../assets/images/canal4.jpg");
-      background-size: cover;
-      background-position: center;
-      border-radius: 50%;
-      float: left;
-      margin: 60px 30px 30px 0;
-      shape-outside: circle();
-
-  }
-  h2{
-      margin-bottom: 20px;
-      font-weight: normal;
-      font-size: 30px;
-  }
-  
-  p{
-      line-height: 26px;
-
-  }
-
-  
-   
-   
-
-   /* .wave{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background-image: url('../../../assets/images/wave.png');
-    background-size: 1000px 100px;
-
-    animation: wave  10s linear infinite;
+   .overlay{
+     position: absolute;
+ 
    }
 
-   @keyframes wave{
-    0%{
-        background-position-x: 0;
-    }
-    100%{
-        background-position-x: 1000px;
-    }
+
+   .circle{
+    width: 200px;
+    height: 200px;
+    /* background: url("../../../assets/images/canal4.jpg"); */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    float: left;
+    margin: 60px 30px 30px 0;
+    shape-outside: circle();
+
    }
-     */
 
-     /* .subir{
-        position: relative;
-        top: -280px;
-        
-        
-    } */
+   .a{
+    background: url("../../../assets/images/canal3.jpg");
+   }
 
-    .fa-solid{
-        position: relative;
-        z-index: 1000;
-        font-size:40px;
+
+
+h2{
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+p{
+    line-height: 26px;
+
+}
+
+
+ 
+ 
+
+
+
+  .fa-solid{
+      position: relative;
+      z-index: 1000;
+      font-size:10px;
+  } 
+
+
+
+  .waves {
+      position: absolute;
+      bottom: -135px;
+      height: 527px;
+      width: 100%;
+      overflow: hidden;
+      z-index: 99;
+      
+    }
+    .wave {
+      position: absolute;
+      top: 260px;
+      left: -180px;
+      bottom: 0;
+      width: 2402px;
+      height: 380px;
+      background: url(https://static.platzi.com/media/files/waves_c8551f5d-ecf6-4a81-ae1d-f3a0ad55ba10.png) center bottom no-repeat;
+      animation: 5s wave ease-in-out infinite alternate;
+      z-index: 100;
+      
+    }
+    .wave.a {
+      background-position: 0 -854px;
+      z-index: 203;
+    }
+    .wave.b {
+      background-position: 0 -427px;
+      animation-delay: .6s;
+      z-index: 204;
+    }
+    .wave.c {
+      background-position: 0 0;
+      animation-delay: 1.2s;
+      z-index: 205;
+    }
+   
+    @keyframes wave {
+      0% {
+        transform: translate(0 , 0);
+      }
+      50% {
+        transform: translate(-80px, 30px);
+      }
+      100% {
+        transform: translate(160px, -60px);
+      }
     } 
 
 
 
-    .waves {
-        position: absolute;
-  /*      left: 0;
-        right: 0;
-        height: 200px;
-        bottom: 0;*/
-        bottom: -135px;
-        height: 527px;
-        width: 100%;
-        overflow: hidden;
-        z-index: 100;
-        
-      }
-      .wave {
-        position: absolute;
-        top: 190px;
-        left: -180px;
-        bottom: 0;
-        z-index: 100;
-        width: 2402px;
-        height: 427px;
-        background: url(https://static.platzi.com/media/files/waves_c8551f5d-ecf6-4a81-ae1d-f3a0ad55ba10.png) center bottom no-repeat;
-        animation: 5s wave ease-in-out infinite alternate;
-      }
-      .wave.a {
-        background-position: 0 -854px;
-        z-index: 100;
-      }
-      .wave.b {
-        background-position: 0 -427px;
-        animation-delay: .6s;
-        z-index: 100;
-      }
-      .wave.c {
-        background-position: 0 0;
-        animation-delay: 1.2s;
-        z-index: 100;
-      }
-      /*.container {
-        position: absolute;
-      }*/
-      @keyframes wave {
-        0% {
-          transform: translate(0 , 0);
-        }
-        50% {
-          transform: translate(-80px, 30px);
-        }
-        100% {
-          transform: translate(160px, -60px);
-        }
-      }
+
+    body{
+      background-color: black;
+  }
+  
+  .mapdiv{
+      width:100%;
+      height: 100px;
+      margin: 0;
+      
+  }
+  
+  .mapdiv path {
+      fill: blue;
+      stroke: white;
+      stroke-width:3px;
+      transition: fill 0.3s;
+  }
+  
+  .mapdiv :hover {
+      fill:#000;
+  }
 
 
-      body{
-        background-color: black;
-    }
-    
-    .mapdiv{
-        width:100%;
-        height: 100px;
-        margin: 0;
-        
-    }
-    
-    .mapdiv path {
-        fill: blue;
-        stroke: white;
-        stroke-width:3px;
-        transition: fill 0.3s;
-    }
-    
-    .mapdiv :hover {
-        fill:#000;
-    }
-    
-    svg {
-        margin: 0 auto;
-        transform: scale(.8);
-    } 
-    
+  svg {
+    margin: 0;
+    transform: scale(.6);
+    position: relative;
+    left: -160px;
+    top: -50px;
 
-    
-    
+} 
+
+
+.list-group{
+  font-size: 12px;
+  z-index: 100;
+  width: 100%;
+ 
+}
+
+
+.container_prime{
+  height: 400px;
+  overflow:auto;
+  z-index: 100;
+ 
+}
+
+.list-group-item{
+  width: 100%;
+  z-index: 100;
+}
+
+
+/* 
+.img-hover-zoom--point-zoom img {
+  transform-origin: 65% 75%;
+  transition: transform 1s, filter .5s ease-out;
+  height: 100px;
+}
+
+
+.img-hover-zoom--point-zoom:hover img {
+  transform: scale(5);
+}
+
+.img-hover-zoom {
+  height: 300px; 
+  overflow: hidden; 
+}
+
+
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+
+.img-hover-zoom:hover img {
+  transform: scale(1.5);
+}
+ */
+
+ ul.numbered-list {
+  counter-reset: li;
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 18px;
+  padding-left: 10px;
+}
+ul.numbered-list li {
+  position: relative;
+  padding: 5px 0 5px 30px;
+}
+ul.numbered-list li:before {
+  content: counter(li);
+  counter-increment: li;
+  height: 25px;
+  width: 25px;
+  border: 1px solid blue;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+
 

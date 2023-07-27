@@ -1,36 +1,100 @@
-@import '~animate.css/animate.min.css';
+@import "~animate.css/animate.min.css";
 
+.animate__animated.animate__fadeIn {
+  --animate-duration: 3s;
+}
 
+.animate__animated.animate__zoomInUp {
+  --animate-duration: 0.8s;
+}
 
+.animate__animated.animate__fadeIn {
+  --animate-duration: 0.5s;
+}
 
-  .animate__animated.animate__fadeIn {
-    --animate-duration: 3s;
+.animate__animated.animate__zoomIn {
+  --animate-duration: 2s;
+}
+
+.animate__animated.animate__fadeIn {
+  --animate-duration: 8s;
+}
+
+:root {
+  --animate-duration: 2s;
+}
+
+.desvanecer {
+  animation: niebla;
+  animation-duration: 4s;
+}
+
+@keyframes niebla {
+  0% {
+    opacity: 0.65;
   }
 
-  .animate__animated.animate__zoomInUp{
-    --animate-duration: .8s;
+  15% {
+    opacity: 0.75;
   }
 
-  .animate__animated.animate__fadeIn{
-    --animate-duration: .5s;
+  25% {
+    opacity: 0.85;
   }
 
-  .animate__animated.animate__zoomIn{
-    --animate-duration: .8s;
+  45% {
+    opacity: 0.95;
   }
 
-
-  body {
-    overflow: hidden; /* Hide scrollbars */
+  75% {
+    opacity: 1.2;
   }
+}
 
+body {
+  overflow: hidden; /* Hide scrollbars */
+}
 
-  
-  .modal-backdrop {
-    background-color: transparent;
- }
+.modal-backdrop {
+  background-color: transparent;
+}
 
- .modal.fade .modal-dialog {
+.modal.fade .modal-dialog {
   transition: transform 0.3s ease-out;
-  transform: scale(.9);
+  transform: scale(0.9);
+}
+
+@font-face {
+  font-family: Monserratbold;
+  src: url(./assets/tipografia/Types/Montserrat/Montserrat-Bold.otf);
+}
+
+@font-face {
+  font-family: Museo;
+  src: url(./assets/tipografia/Types/MuseoSans/MuseoSans-100.otf);
+}
+
+.titulo {
+  font-family: Monserratbold;
+  color: white;
+}
+
+.titulo2 {
+  font-family: Monserratbold;
+  color: black;
+}
+
+.textos {
+  font-family: Museo;
+  color: black;
+  font-size: 15px;
+}
+
+body {
+  -youbkit-touch-callout: none; /*iOS Safari*/
+  -youbkit-user-select: none; /* Chrome 6.0+, Safari 3.1+, Edge y Opera 15+ */
+  -moz-user-select: none; /*Firefox*/
+  -ms-user-select: none; /* IE 10+ y Edge */
+  user-select: none; /* Versión sin prefijo,
+  actualmente compatible con Chrome y Opera */
 }

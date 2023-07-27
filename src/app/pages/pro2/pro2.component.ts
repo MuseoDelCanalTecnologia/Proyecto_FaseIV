@@ -19,8 +19,23 @@ export class Pro2Component implements OnInit {
     
    });
 
+
+
+   
+   this.reciboAmpliacion();
   
 
   }
+
+  
+  reciboAmpliacion(){
+    this.wsSocket.escuchandoPortal().subscribe(
+      (data:any)=>{
+        this.router.navigateByUrl(data);
+        console.log(data);
+      }
+    )
+  }
+
 
 }
