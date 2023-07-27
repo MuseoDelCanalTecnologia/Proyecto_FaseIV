@@ -26,12 +26,5 @@ export class HomeComponent implements OnInit {
   }
 
 
-  openNewTab():void{
-    window.open('/proyeccion');
-  }
-
-  openNewTab2():void{
-    window.open('/mapa');
-  }
 
 }

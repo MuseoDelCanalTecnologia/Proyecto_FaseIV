@@ -5,7 +5,7 @@
  <div class="container" > 
    
      <main class="animate__animated animate__fadeInDown" >
-       <h1 class="animated flip" class="titulo2" style="font-size: 30px;">Ampliación del Canal </h1>
+       <h1 class="animated flip" class="titulo2" style="font-size: 30px;">{{Titulo}}</h1>
        
  
        <div class="container-fluid" >
@@ -16,13 +16,11 @@
            <div class="col-xl-6" >
  
  
-             <div class="circle"></div>
+            <div class="circle  {{cssImg}}"  [ngStyle]="{'background-image': 'url(' + Img + ')'}" ></div>
              <!-- <h2>Área del Canal/Antigua Zona del Canal. </h2> -->
-             <p class="textos">Panamá es uno de los mayores administradores de agua en el mundo. Al aprovechar su posición geográfica y el uso de sus aguas, Panamá presta un servicio único al comercio mundial por medio de su Canal.
+             <p class="textos {{cssTexto}}"> {{desc}}
             
-             
-              <br><br>
-              Debido a su ubicación y orientación, en la Cuenca se registra una abundante precipitación pluvial en gran parte del año (González, 2002). Entre los ríos principales de la CHCP están el Chagres, Gatún, Boquerón, Pequení, Cirí Grande y Trinidad. Además existe una significativa red de quebradas, riachuelos y ríos secundarios, lo mismo que dos lagos: Alhajuela y Gatún.
+    
 
               <br><br>
  
@@ -49,14 +47,14 @@
            <!-- SVG -->
 
            <div class="container">
-            <h4 class="titulo2" >Componentes del programa de ampliación</h4><br>
+            <h4 class="titulo2"  (click)="Ampliacion()">Componentes del programa de ampliación</h4><br>
             <div class="list-group container_prime" style="z-index: 300;">
              <br><br><br>
-             <a href="#" class="list-group-item list-group-item-action" style="margin: 0 auto;">	Profundización de las entradas en el Pacífico y el Atlántico. <i class="fa-solid fa-earth-americas"></i> </a><br>
-             <a href="#" class="list-group-item list-group-item-action list-group-item-primary" style="margin: 0 auto;">Ensanche y profundización de los cauces de navegación del lago Gatún y profundización del Corte Culebra. <i class="fa-solid fa-earth-americas"></i></a><br>
-             <a href="#" class="list-group-item list-group-item-action list-group-item-secondary" style="margin: 0 auto;">	Construcción de las nuevas esclusas y tinas de reutilización de agua en el Atlántico y en el Pacífico. <i class="fa-solid fa-tree"></i></a><br>
-             <a href="#" class="list-group-item list-group-item-action list-group-item-success" style="margin: 0 auto; z-index: 30;">Subir el nivel máximo de operación del lago Gatún <i class="fa-solid fa-tree"></i> </a><br>
-             <a href="#" class="list-group-item list-group-item-action list-group-item-success" style="margin: 0 auto; z-index: 30;">Excavación en cuatro fases del cauce de acceso del Pacífico <i class="fa-solid fa-tree"></i></a><br>
+             <a (click)="ampProfndizacion()" class="list-group-item list-group-item-action" style="margin: 0 auto;">	Profundización de las entradas en el Pacífico y el Atlántico. <i class="fa-solid fa-earth-americas"></i> </a><br>
+             <a (click)="ampEnsanche()" class="list-group-item list-group-item-action list-group-item-primary" style="margin: 0 auto;">Ensanche y profundización de los cauces de navegación del lago Gatún y profundización del Corte Culebra. <i class="fa-solid fa-earth-americas"></i></a><br>
+             <a (click)="ampConstruccion()" class="list-group-item list-group-item-action list-group-item-secondary" style="margin: 0 auto;">	Construcción de las nuevas esclusas y tinas de reutilización de agua en el Atlántico y en el Pacífico. <i class="fa-solid fa-tree"></i></a><br>
+             <a (click)="ampLagoGatun()" class="list-group-item list-group-item-action list-group-item-success" style="margin: 0 auto; z-index: 30;">Subir el nivel máximo de operación del lago Gatún <i class="fa-solid fa-tree"></i> </a><br>
+             <a (click)="ampCruceAcceso()" class="list-group-item list-group-item-action list-group-item-success" style="margin: 0 auto; z-index: 30;">Excavación en cuatro fases del cauce de acceso del Pacífico <i class="fa-solid fa-tree"></i></a><br>
              
              
  

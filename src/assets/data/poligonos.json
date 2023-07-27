@@ -1,0 +1,49 @@
+[{
+    "titulo": "Ft. Sherman",
+    "img": "../../../assets/images/canal1.jpg",
+    "desc": "descripcion 1",
+    "cssImg": "animate__animated animate__zoomIn",
+    "cssTexto": "animate__animated animate__slideInLeft",
+    "ruta": "p-sherman"
+  },
+  {
+    "titulo": "Piña",
+    "img": "../../../assets/images/canal2.jpg",
+    "desc": "descripcion 2",
+    "cssImg": "animate__animated animate__zoomIn",
+    "cssTexto": "animate__animated animate__slideInLeft",
+    "ruta": "pina"
+  },
+  {
+    "titulo": "Balboa Oeste",
+    "img": "../../../assets/images/canal3.jpg",
+    "desc": "descripcion 3",
+    "cssImg": "animate__animated animate__zoomIn",
+    "cssTexto": "animate__animated animate__slideInLeft",
+    "ruta": "balboa-oeste"
+  },
+  {
+    "titulo": "Emperador",
+    "img": "../../../assets/images/canal4.jpg",
+    "desc": "descripcion 4",
+    "cssImg": "animate__animated animate__zoomIn",
+    "cssTexto": "animate__animated animate__slideInLeft",
+    "ruta": "emperador"
+  },
+  {
+    "titulo": "Rio Hato",
+    "img": "../../../assets/images/canal5.png",
+    "desc": "descripcion 5",
+    "cssImg": "animate__animated animate__zoomIn",
+    "cssTexto": "animate__animated animate__slideInLeft",
+    "ruta": "rio-hato"
+  },
+  {
+    "titulo": "San José, Archipiélago de las Perlas",
+    "img": "../../../assets/images/canal6.png",
+    "desc": "descripcion 6",
+    "cssImg": "animate__animated animate__zoomIn",
+    "cssTexto": "animate__animated animate__slideInLeft",
+    "ruta": "san-jose"
+  }
+]

@@ -1,88 +1,98 @@
 [
-    {
-    "titulo":"Monumento Natural Barro Colorado",
-    "img":"../../../assets/images/parque1.jpg",
-     "desc":"También conocido como Fuerte Sherman, está ubicado en San Lorenzo, Panamá. San Lorenzo es una pequeña localidad en la provincia de Colón, en el país centroamericano de Panamá. Ft Sherman es un antiguo fuerte militar que fue utilizado por el ejército de los Estados Unidos hasta 1999, cuando se completó la transferencia del Canal de Panamá a Panamá. En la actualidad, Ft Sherman ha sido convertido en una zona turística y residencial, y cuenta con hermosas playas y una rica historia militar.",
-     "css":"animate__animated animate__tada",
-     "video":"/assets/proyeccion/parqueV1.mp4"
-    },
-    {
-      "titulo":"Parque Nacional Altos de Campana",
-      "img":"../../../assets/images/parque2.jpg",
-       "desc":"El Fuerte Davis, ubicado en Panamá, fue una antigua fortaleza militar que jugó un papel importante en la defensa de la Zona del Canal de Panamá. Originalmente construido por el Ejército de los Estados Unidos a principios del siglo XX, el fuerte estaba situado en la costa del Pacífico, en la entrada occidental del Canal de Panamá.El Fuerte Davis fue nombrado así en honor al capitán Richard C. Davis, un oficial del Ejército de los Estados Unidos que participó en la construcción del Canal de Panamá. La fortaleza fue diseñada para proteger la entrada del canal y evitar cualquier intento de invasión o sabotaje.",
-       "css":"animate__animated animate__tada",
-       "video":"/assets/proyeccion/parqueV2.mp4"
-    },
-    {
-      "titulo":"Parque Nacional Soberanía",
-      "img":"../../../assets/images/parque3.jpg",
-      "desc":"Fort Gulick en Panamá es una antigua base militar del Ejército de los Estados Unidos que se encontraba ubicada en la provincia de Colón, en la República de Panamá. Durante décadas, Fort Gulick fue una parte importante de la presencia militar estadounidense en Panamá. La base albergaba a unidades del Ejército de los Estados Unidos, incluyendo la Escuela de las Américas, que proporcionaba entrenamiento militar a soldados de toda la región. Sin embargo, con el Tratado Torrijos-Carter de 1977, que estableció el proceso de transferencia gradual del Canal de Panamá a la República de Panamá, las bases militares estadounidenses en el país fueron cerradas. Fort Gulick fue cerrado en 1999 y las instalaciones fueron transferidas al gobierno de Panamá.",
-      "css":"animate__animated animate__tada",
-      "video":"/assets/proyeccion/parqueV1.mp4"
-    },
-    {
-      "titulo":"Parque Nacional Camino de Cruces",
-      "img":"../../../assets/images/parque4.jpg",
-       "desc":"El Fuerte de Clayton era una de las bases militares situadas en el interior de la Zona del Canal, y junto con Albrook y Howard, una de las mayores bases militares. La base militar conocida como Fort Clayton fue nombrado después de que el ex intendente general del departamento de la zona del Canal, Coloner Bertram T. Clayton, murió sirviendo a su país durante la Primera Guerra Mundial. Fort Clayton permaneció activo hasta 1999, y en ella funcionó la sede del Ejército de Estados Unidos del Sur, ahora se trasladó a Fort Buchanan en Puerto Rico",
-       "css":"animate__animated animate__tada",
-       "video":"/assets/proyeccion/parqueV2.mp4"
-       
-    },
-    {
-      "titulo":"Parque Nacional Chagres",
-      "img":"../../../assets/images/parque5.jpg",
-      "desc":"Fort Amador, también conocido como Fuerte Amador, es una antigua instalación militar ubicada en la entrada del Canal de Panamá, en la costa del Pacífico de Panamá. El fuerte está situado en una península que se extiende hacia el océano, cerca de la Ciudad de Panamá. Originalmente construido por los Estados Unidos a principios del siglo XX, el fuerte fue utilizado como una base militar estratégica para la defensa del canal.",
-      "css":"animate__animated animate__tada",
-      "video":"/assets/proyeccion/parqueV1.mp4"
-    },
-    {
-      "titulo":"Área Recreativa del Lago Gatún",
-      "img":"../../../assets/images/parque6.jpg",
-       "desc":"El Fuerte Grant se construyó entre 1914 y 1917 como principal fortificación de la Artillería de Costa para defender la entrada del Pacífico al Canal de Panamá. Fue nombrado en honor del General Ulysses S. Grant, del Ejército de los Estados Unidos y Presidente de los Estados Unidos (1969-1877), quien en 1852, como capitán con su compañía del Cuarto Regimiento transitó el istmo de Panamá en ruta desde Nueva York a su nuevo destino en San Francisco, California.",
-       "css":"animate__animated animate__tada",
-       "video":"/assets/proyeccion/parqueV2.mp4"
-    },
-    {
-      "titulo":"Subcuenca río Cirí Grande",
-      "img":"../../../assets/images/rio1.jpg",
-      "desc":"descripcion 7",
-      "css":"animate__animated animate__tada",
-      "video":"/assets/proyeccion/rio1.mp4"
-    },
-    {
-      "titulo":"Subcuenca río Trinidad",
-      "img":"../../../assets/images/rio2.jpg",
-      "desc":"descripcion 8",
-      "css":"animate__animated animate__tada",
-      "video":"/assets/proyeccion/rio2.mp4"
-    },
-    {
-      "titulo":"Subcuenca río Caño Quebrado ",
-      "img":"../../../assets/images/rio3.jpg",
-      "desc":"descripcion 9",
-      "css":"animate__animated animate__tada",
-      "video":"/assets/proyeccion/rio1.mp4"
-    },
-    {
-      "titulo":"Subcuenca río Gatún",
-      "img":"../../../assets/images/rio4.jpg",
-       "desc":"descripcion 10",
-       "css":"animate__animated animate__tada",
-       "video":"/assets/proyeccion/rio2.mp4"
-    },
-    {
-      "titulo":"Subcuenca río Pequení ",
-      "img":"../../../assets/images/rio5.jpg",
-       "desc":"descripcion 11",
-       "css":"animate__animated animate__tada",
-       "video":"/assets/proyeccion/rio1.mp4"
-    },
-    {
-      "titulo":"Subcuenca río Chagres ",
-      "img":"../../../assets/images/rio6.jpg",
-      "desc":"descripcion 12",
-      "css":"animate__animated animate__tada",
-      "video":"/assets/proyeccion/rio2.mp4"
-    }
-
-  ]
+  {
+    "titulo": "Monumento Natural Barro Colorado",
+    "img": "../../../assets/images/parque1.jpg",
+    "desc": "También conocido como Fuerte Sherman, está ubicado en San Lorenzo, Panamá. San Lorenzo es una pequeña localidad en la provincia de Colón, en el país centroamericano de Panamá. Ft Sherman es un antiguo fuerte militar que fue utilizado por el ejército de los Estados Unidos hasta 1999, cuando se completó la transferencia del Canal de Panamá a Panamá. En la actualidad, Ft Sherman ha sido convertido en una zona turística y residencial, y cuenta con hermosas playas y una rica historia militar.",
+    "cssImg": "animate__animated animate__zoomIn",
+    "cssTexto": "animate__animated animate__slideInLeft",
+    "ruta": "barro-colorado"
+  },
+  {
+    "titulo": "Parque Nacional Altos de Campana",
+    "img": "../../../assets/images/parque2.jpg",
+    "desc": "El Fuerte Davis, ubicado en Panamá, fue una antigua fortaleza militar que jugó un papel importante en la defensa de la Zona del Canal de Panamá. Originalmente construido por el Ejército de los Estados Unidos a principios del siglo XX, el fuerte estaba situado en la costa del Pacífico, en la entrada occidental del Canal de Panamá.El Fuerte Davis fue nombrado así en honor al capitán Richard C. Davis, un oficial del Ejército de los Estados Unidos que participó en la construcción del Canal de Panamá. La fortaleza fue diseñada para proteger la entrada del canal y evitar cualquier intento de invasión o sabotaje.",
+    "cssImg": "animate__animated animate__zoomIn",
+    "cssTexto": "animate__animated animate__slideInLeft",
+    "ruta": "altos-campana"
+  },
+  {
+    "titulo": "Parque Nacional Soberanía",
+    "img": "../../../assets/images/parque3.jpg",
+    "desc": "Fort Gulick en Panamá es una antigua base militar del Ejército de los Estados Unidos que se encontraba ubicada en la provincia de Colón, en la República de Panamá. Durante décadas, Fort Gulick fue una parte importante de la presencia militar estadounidense en Panamá. La base albergaba a unidades del Ejército de los Estados Unidos, incluyendo la Escuela de las Américas, que proporcionaba entrenamiento militar a soldados de toda la región. Sin embargo, con el Tratado Torrijos-Carter de 1977, que estableció el proceso de transferencia gradual del Canal de Panamá a la República de Panamá, las bases militares estadounidenses en el país fueron cerradas. Fort Gulick fue cerrado en 1999 y las instalaciones fueron transferidas al gobierno de Panamá.",
+    "cssImg": "animate__animated animate__zoomIn",
+    "cssTexto": "animate__animated animate__slideInLeft",
+    "ruta": "parque-soberania"
+  },
+  {
+    "titulo": "Parque Nacional Camino de Cruces",
+    "img": "../../../assets/images/parque4.jpg",
+    "desc": "El Fuerte de Clayton era una de las bases militares situadas en el interior de la Zona del Canal, y junto con Albrook y Howard, una de las mayores bases militares. La base militar conocida como Fort Clayton fue nombrado después de que el ex intendente general del departamento de la zona del Canal, Coloner Bertram T. Clayton, murió sirviendo a su país durante la Primera Guerra Mundial. Fort Clayton permaneció activo hasta 1999, y en ella funcionó la sede del Ejército de Estados Unidos del Sur, ahora se trasladó a Fort Buchanan en Puerto Rico",
+    "cssImg": "animate__animated animate__zoomIn",
+    "cssTexto": "animate__animated animate__slideInLeft",
+    "ruta": "camino-cruces"
+  },
+  {
+    "titulo": "Parque Nacional Chagres",
+    "img": "../../../assets/images/parque5.jpg",
+    "desc": "Fort Amador, también conocido como Fuerte Amador, es una antigua instalación militar ubicada en la entrada del Canal de Panamá, en la costa del Pacífico de Panamá. El fuerte está situado en una península que se extiende hacia el océano, cerca de la Ciudad de Panamá. Originalmente construido por los Estados Unidos a principios del siglo XX, el fuerte fue utilizado como una base militar estratégica para la defensa del canal.",
+    "cssImg": "animate__animated animate__zoomIn",
+    "cssTexto": "animate__animated animate__slideInLeft",
+    "ruta": "parque-chagres"
+  },
+  {
+    "titulo": "Área Recreativa del Lago Gatún",
+    "img": "../../../assets/images/parque6.jpg",
+    "desc": "El Fuerte Grant se construyó entre 1914 y 1917 como principal fortificación de la Artillería de Costa para defender la entrada del Pacífico al Canal de Panamá. Fue nombrado en honor del General Ulysses S. Grant, del Ejército de los Estados Unidos y Presidente de los Estados Unidos (1969-1877), quien en 1852, como capitán con su compañía del Cuarto Regimiento transitó el istmo de Panamá en ruta desde Nueva York a su nuevo destino en San Francisco, California.",
+    "cssImg": "animate__animated animate__zoomIn",
+    "cssTexto": "animate__animated animate__slideInLeft",
+    "ruta": "lago-gatun"
+  },
+  {
+    "titulo": "Subcuenca río Cirí Grande",
+    "img": "../../../assets/images/rio1.jpg",
+    "desc": "descripcion 7",
+    "cssImg": "animate__animated animate__zoomIn",
+    "cssTexto": "animate__animated animate__slideInLeft",
+    "ruta": "rio-grande"
+  },
+  {
+    "titulo": "Subcuenca río Trinidad",
+    "img": "../../../assets/images/rio2.jpg",
+    "desc": "descripcion 8",
+    "cssImg": "animate__animated animate__zoomIn",
+    "cssTexto": "animate__animated animate__slideInLeft",
+    "ruta": "rio-trinidad"
+  },
+  {
+    "titulo": "Subcuenca río Caño Quebrado ",
+    "img": "../../../assets/images/rio3.jpg",
+    "desc": "descripcion 9",
+    "cssImg": "animate__animated animate__zoomIn",
+    "cssTexto": "animate__animated animate__slideInLeft",
+    "ruta": "rio-quebrado"
+  },
+  {
+    "titulo": "Subcuenca río Gatún",
+    "img": "../../../assets/images/rio4.jpg",
+    "desc": "descripcion 10",
+    "cssImg": "animate__animated animate__zoomIn",
+    "cssTexto": "animate__animated animate__slideInLeft",
+    "ruta": "rio-gatun"
+  },
+  {
+    "titulo": "Subcuenca río Pequení ",
+    "img": "../../../assets/images/rio5.jpg",
+    "desc": "descripcion 11",
+    "cssImg": "animate__animated animate__zoomIn",
+    "cssTexto": "animate__animated animate__slideInLeft",
+    "ruta": "rio-pequeni"
+  },
+  {
+    "titulo": "Subcuenca río Chagres ",
+    "img": "../../../assets/images/rio6.jpg",
+    "desc": "descripcion 12",
+    "cssImg": "animate__animated animate__zoomIn",
+    "cssTexto": "animate__animated animate__slideInLeft",
+    "ruta": "rio-chagres"
+  }
+]

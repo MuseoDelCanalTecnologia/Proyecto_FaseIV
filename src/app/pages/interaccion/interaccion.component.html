@@ -5,13 +5,13 @@
    <div class="container" > 
      
        <main class="animate__animated animate__fadeInDown" >
-         <h1 class="animated flip" style="margin: 0 auto;" class="titulo2  {{cssAnimate}}" id="titulo">{{Titulo}}</h1>
+         <h1 class="animated flip" style="margin: 0 auto;" class="titulo2  {{cssTexto}}" id="titulo">{{Titulo}}</h1>
          <div class="container-fluid" >
            <div class="row">
              <div class="col-xl-6" >
-               <div class="circle  {{cssAnimate}}"  [ngStyle]="{'background-image': 'url(' + Img + ')'}" ></div>
+               <div class="circle  {{cssImg}}"  [ngStyle]="{'background-image': 'url(' + Img + ')'}" ></div>
                <!-- <h2>Área del Canal/Antigua Zona del Canal. </h2> -->
-               <p class="textos" style="letter-spacing: 0.5px;" id="parrafo">
+               <p class="textos {{cssTexto}}" style="letter-spacing: 0.5px;" id="parrafo">
                 {{desc}}
                 <br><br>
    
@@ -80,20 +80,21 @@
 
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Poligonos de Tiro &nbsp; <i class="fa-solid fa-bullseye fa-2xl" style="font-size: 30px;"></i>
+                  <button (click)="Poligono()" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Poligonos de Tiro &nbsp; <i class="fa-sharp fa-solid fa-gun fa-2xl" style="font-size: 30px;"></i>
                   </button>
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
 
                     <ul class="numbered-list">
-                      <li class="textos">Ft. Sherman</li>
-                      <li class="textos">Piña</li>
-                      <li class="textos">Balboa Oeste</li>
-                      <li class="textos">Emperador</li>
-                      <li class="textos">Río Hato</li>
-                      <li class="textos">San José, archipiélago de las Perlas</li>
+
+                      <li (click)="pSherman()" class="textos">Ft. Sherman</li>
+                      <li (click)="pina()"class="textos">Piña</li>
+                      <li (click)="balboaOeste()"class="textos">Balboa Oeste</li>
+                      <li (click)="emperador()"class="textos">Emperador</li>
+                      <li (click)="rioHato()"class="textos">Río Hato</li>
+                      <li (click)="sanJose()"class="textos">San José, archipiélago de las Perlas</li>
                       
                     </ul>
                   </div>
