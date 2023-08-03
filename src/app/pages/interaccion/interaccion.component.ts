@@ -46,7 +46,7 @@ export class InteraccionComponent implements OnInit {
   baseMilitar() {
   
 
-    this.Titulo = 'Areas Reverdidas';
+    this.Titulo = 'Areas Revertidas';
     this.Img = '../../../assets/images/canal4.jpg';
     this.desc =
       'Se estima que en el país existen alrededor de 270 especies de mamíferos silvestres, y de estas, unas 160 se encuentran en la cuenca del Canal. De las 33 especies de mamíferos consideradas en peligro de extinción o vulnerables, 30 habitan en esta zona, entre esas: el jaguar, el tapir y el puerco de monte. En cuanto a las aves, de más de mil especies en el país, poco más de la mitad está en el área de Cuenca, de las cuales más de 150 son consideradas vulnerables o en peligro por las normas nacionales de MiAmbiente. Hasta 1999, la Cuenca del Canal cubría un área de 326 mil hectáreas, que corresponde a la cuenca que abastece de agua a los lagos Alhajuela y Gatún.';
