@@ -6,14 +6,13 @@ import { CssSelector } from '@angular/compiler';
 import { NgClass, NgStyle } from '@angular/common';
 import { Router } from '@angular/router';
 
-//import 'img-comparison-slider';
-
 @Component({
-  selector: 'app-interaccion',
-  templateUrl: './interaccion.component.html',
-  styleUrls: ['./interaccion.component.css'],
+  selector: 'app-revertidas',
+  templateUrl: './revertidas.component.html',
+  styleUrls: ['./revertidas.component.css']
 })
-export class InteraccionComponent implements OnInit {
+export class RevertidasComponent implements OnInit {
+
   @Input() public classValue = 'circle';
 
   Elementos: [] = [];
@@ -507,7 +506,5 @@ export class InteraccionComponent implements OnInit {
   
  }
 
-
- 
 
 }

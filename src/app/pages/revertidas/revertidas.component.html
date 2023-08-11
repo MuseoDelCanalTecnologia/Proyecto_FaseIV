@@ -1,5 +1,5 @@
 <nav class="navbar " style="height: 100px; background-color:rgb(21, 63, 153);" >
-    <h1 style="color:white; margin:30px;margin: 0 auto;" class="titulo">AREAS REVERTIDAS </h1>
+    <h1 style="color:white; margin:30px;margin: 0 auto;" class="titulo">ÁREAS REVERTIDAS </h1>
    </nav>
    <br>
    
@@ -32,80 +32,53 @@
                
                <br>
                
-<!--                
-               <div class="img-hover-zoom">
-                <img src="../../../assets/images/canal1.jpg" class="img-fluid" alt="This zooms-in really well and smooth">
-              </div> -->
+
    
              </div>
-             <div class="col-xl-6" style="position: relative; top: -60px;">
+             <div class="col-xl-6" style="position: relative; top: -100px;">
+              
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                     Bases Militares &nbsp; <i class="fa-solid fa-person-military-rifle fa-2xl" style="font-size: 20px;"></i>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <ul class="numbered-list" style="position:relative; z-index:0;" >
 
-              <div class="container">
-
-                <img-comparison-slider class="slider-with-animated-handle rendered">
-                <img slot="first" src="../../../assets/Imagenes/parque1.jpg" />
-                <img slot="second" src="../../../assets/Imagenes/parque2.jpg">
-                <svg slot="handle" class="custom-animated-handle" xmlns="http://www.w3.org/2000/svg" width="400" viewBox="-8 -3 16 6" style="position: absolute; top:-50px; left:-200px;">
-                  <path stroke="#fff" d="M -5 -2 L -7 0 L -5 2 M -5 -2 L -5 2 M 5 -2 L 7 0 L 5 2 M 5 -2 L 5 2" stroke-width="1" fill="#fff" vector-effect="non-scaling-stroke"></path>
-                </svg>
-              </img-comparison-slider>
-
-
-                
-            
-                </div>
-             <!-- SVG -->
-             <!-- <div class="accordion" id="accordionExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"
-                  (click)="baseMilitar()"
-                  >
-                    Bases Militares &nbsp;<i class="fa-solid fa-warehouse fa-2xl" style="font-size: 20px;"></i>
-                  </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-
-                   
-                    <ul class="numbered-list" style="position:relative; z-index:0;" >
-
-                      <li class="textos " (click)="Ftshemran()">Sherman</li>
-                      <li class="textos " (click)="FtDavis()">Ft. Davis</li>
-                      <li class="textos " (click)="FtGulick()">Ft. Gulick</li>
-                      <li class="textos " (click)="FtClayton()">Ft. Clayton</li>
-                      <li class="textos " (click)="FtAmador()">Ft. Amador</li>
-                      <li class="textos " (click)="FtGrant()">Ft. Grant</li>
-                      <li class="textos " (click)="FtKobbe()" style="z-index: 250;"  >Ft. Kobbe</li>
-                      <li class="textos " (click)="QuarryHeights()" >Quarry Heights – US Southern Command</li>
-                      <li class="textos " (click)="PuestoCorozal()" >Puesto de Corozal</li>
-                      <li class="textos " (click)="NavalBase()" >Naval Base Rodman</li>
-                      <li class="textos " (click)="CocoSolo()" >Coco Solo base submarina</li>
-                      <li class="textos " (click)="EstacionSummit()">Estación de comunicaciones de la Marina de Summit</li>
-                      <li class="textos " (click)="EstacionFarfan()" >Estación de comunicaciones de la Marina de Farfám</li>
-                      <li class="textos " (click)="BaseAlbrook()" >Base aérea de Albrook</li>
-                      <li class="textos " (click)="BaseHoward()" >Base Aérea de Howard</li>
-
-                    </ul>
+                        <li class="textos " (click)="Ftshemran()" routerLink="/interaccion">Sherman</li>
+                        <li class="textos " (click)="FtAmador()" >De Lesseps</li>
+                        <li class="textos " >Randolph</li>
+                        <li class="textos "  (click)="CocoSolo()">Coco Solo</li>
+                        <li class="textos "  (click)="FtDavis()">Davies</li>
+                        <li class="textos "  (click)="FtGulick()">Gulick</li>
+                        <li class="textos "  style="z-index: 250;" (click)="FtClayton()" >Clayton</li>
+                        <li class="textos " (click)="BaseAlbrook()" >Albrook</li>
+                        <li class="textos " (click)="FtGrant()" >Amador</li>
+                        <li class="textos " (click)="NavalBase()" >Grant</li>
+                        <li class="textos " (click)="FtKobbe()" >Kobbe</li>
+                        <li class="textos " (click)="EstacionSummit()">Rodman</li>
+                        <li class="textos " (click)="EstacionFarfan()" >Howard</li>
+                        <li class="textos " (click)="QuarryHeights()"  >Río Hato</li>
+                        
+  
+  </ul>
+                    
+                    </div>
                   </div>
                 </div>
-              </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Polígonos de tiro &nbsp; <i class="fa-solid fa-bullseye fa-2xl" style="font-size: 20px;"></i>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"><ul class="numbered-list">
 
-            
-
-
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button (click)="Poligono()" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Poligonos de Tiro &nbsp; <i class="fa-sharp fa-solid fa-gun fa-2xl" style="font-size: 30px;"></i>
-                  </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-
-                    <ul class="numbered-list">
-
-                      <li (click)="pSherman()" class="textos">Ft. Sherman</li>
+                      <li (click)="pSherman()" class="textos">Sherman</li>
                       <li (click)="pina()"class="textos">Piña</li>
                       <li (click)="balboaOeste()"class="textos">Balboa Oeste</li>
                       <li (click)="emperador()"class="textos">Emperador</li>
@@ -114,14 +87,10 @@
                       
                     </ul>
                   </div>
+                  </div>
                 </div>
-              </div>
-
-
               
-
-            
-            </div> -->
+              </div>
    
    
    
@@ -149,49 +118,36 @@
    
    
 
-   <!-- <a   (click)="enviarHome()" routerLink="/" style="text-decoration: none;" >
 
-     <p style="text-align: center;"><br>
-       <i class="fa-solid fa-house fa-2xl" style="font-size: 50px;" ></i>
-   </p>
-   <p style="text-align: right; position: relative; top: -40px; " *ngIf="wsSocket.socketStatus" >Estado: <b class="text-success" >Online</b></p>
-<p style="text-align: right; position: relative; top: -40px;"  *ngIf="!wsSocket.socketStatus"> Estado: <b class="text-danger"  >Offline</b></p>
 
-   
-   </a> -->
-
-   <footer class="text-center text-lg-start animate__animated animate__fadeInUp"  style="background-color:  rgb(21, 63, 153);">
+   <footer class="text-center text-lg-start animate__animated animate__fadeInUp"  style="background-color: #153f99;">
     <div class="container d-flex justify-content-center py-5">
        <div class="text-center text-white p-3" >
      
       <img src="./assets/images/Botones/BTN-Eng.svg" height="100" width="100" style="position: relative ; top:-55px;left: -480px; z-index: 200; " routerLink="/canalmapa">
     </div>
 
-    <p style="text-align: center;" class="d-flex justify-content-center py-2"><br>
-      <i class="fa-solid fa-circle-chevron-left fa-2xl" routerLink="/revertidas" style="font-size: 50px;" ></i>
-  </p>
-  &nbsp;
+
+
+    
 
     <p style="text-align: center;"  class="d-flex justify-content-center py-2"><br>
       <i class="fa-solid fa-house fa-2xl" (click)="enviarHome()" routerLink="/" style="font-size: 50px;" ></i>
   </p>
-&nbsp;
-  <p style="text-align: center;" class="d-flex justify-content-center py-2"><br>
-    <i class="fa-solid fa-circle-chevron-right fa-2xl" style="font-size: 50px;" ></i>
-</p>
 
+<
 <p style="text-align: right; position: relative;  left: 400px;" *ngIf="wsSocket.socketStatus" >Estado: <b class="text-success" >Online</b></p>
 <p style="text-align: right; position: relative; top: -40px;"  *ngIf="!wsSocket.socketStatus"> Estado: <b class="text-danger"  >Offline</b></p>
-
-
-
-    </div>
 
     <!-- <div class="waves" >
       <div class="wave circulo a"></div>
       <div class="wave circulo b"></div>
       <div class="wave circulo c"></div>
     </div> -->
+
+    </div>
+
+
   </footer>
 
  

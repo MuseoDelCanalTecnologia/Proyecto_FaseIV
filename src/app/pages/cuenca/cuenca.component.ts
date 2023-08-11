@@ -3,12 +3,14 @@ import { SocketService } from 'src/app/services/socket.service';
 import { Router } from '@angular/router';
 import { Titulo } from 'src/app/interface/titulo';
 import { HttpClient } from '@angular/common/http';
+
 @Component({
-  selector: 'app-mapazoom',
-  templateUrl: './mapazoom.component.html',
-  styleUrls: ['./mapazoom.component.css'],
+  selector: 'app-cuenca',
+  templateUrl: './cuenca.component.html',
+  styleUrls: ['./cuenca.component.css']
 })
-export class MapazoomComponent implements OnInit {
+export class CuencaComponent implements OnInit {
+
   video = 'cuenca';
   Elementos: [] = [];
   interface: Titulo | any;

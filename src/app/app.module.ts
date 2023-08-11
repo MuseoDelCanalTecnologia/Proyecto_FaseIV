@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -56,6 +56,9 @@ import { CorteCulebraComponent } from './ampliacion/corte-culebra/corte-culebra.
 import { NevasEsclusasComponent } from './ampliacion/nevas-esclusas/nevas-esclusas.component';
 import { OperacionLgatunComponent } from './ampliacion/operacion-lgatun/operacion-lgatun.component';
 import { AccesoPacificoComponent } from './ampliacion/acceso-pacifico/acceso-pacifico.component';
+import { RevertidasComponent } from './pages/revertidas/revertidas.component';
+import { CuencaComponent } from './pages/cuenca/cuenca.component';
+import { AmpliacionacontentComponent } from './pages/ampliacionacontent/ampliacionacontent.component';
 
 
 //Entorno
@@ -64,6 +67,7 @@ const config: SocketIoConfig = { url: 'https://experience-staging.cuentanostuhis
 // const config: SocketIoConfig = { url: 'http://localhost:2000', options: {} };
 @NgModule({
   declarations: [
+    
     AppComponent,
     HomeComponent,
     MapaComponent,
@@ -114,6 +118,9 @@ const config: SocketIoConfig = { url: 'https://experience-staging.cuentanostuhis
     NevasEsclusasComponent,
     OperacionLgatunComponent,
     AccesoPacificoComponent,
+    RevertidasComponent,
+    CuencaComponent,
+    AmpliacionacontentComponent,
   
   ],
 
@@ -126,7 +133,9 @@ const config: SocketIoConfig = { url: 'https://experience-staging.cuentanostuhis
   ],
 
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+
 })
 
 export class AppModule { }

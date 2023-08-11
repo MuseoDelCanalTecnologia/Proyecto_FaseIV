@@ -1,6 +1,6 @@
 [
   {
-    "titulo": "Ft. Sherman-San Lorenzo",
+    "titulo": "Sherman",
     "img": "../../../assets/images/canal1.jpg",
     "desc": "También conocido como Fuerte Sherman, está ubicado en San Lorenzo, Panamá. San Lorenzo es una pequeña localidad en la provincia de Colón, en el país centroamericano de Panamá. Ft Sherman es un antiguo fuerte militar que fue utilizado por el ejército de los Estados Unidos hasta 1999, cuando se completó la transferencia del Canal de Panamá a Panamá. En la actualidad, Ft Sherman ha sido convertido en una zona turística y residencial, y cuenta con hermosas playas y una rica historia militar.",
     "cssImg": "animate__animated animate__zoomIn",
@@ -8,7 +8,7 @@
     "ruta": "ft-sherma"
   },
   {
-    "titulo": "Ft. Davis",
+    "titulo": "Davis",
     "img": "../../../assets/images/canal2.jpg",
     "desc": "El Fuerte Davis, ubicado en Panamá, fue una antigua fortaleza militar que jugó un papel importante en la defensa de la Zona del Canal de Panamá. Originalmente construido por el Ejército de los Estados Unidos a principios del siglo XX, el fuerte estaba situado en la costa del Pacífico, en la entrada occidental del Canal de Panamá.El Fuerte Davis fue nombrado así en honor al capitán Richard C. Davis, un oficial del Ejército de los Estados Unidos que participó en la construcción del Canal de Panamá. La fortaleza fue diseñada para proteger la entrada del canal y evitar cualquier intento de invasión o sabotaje.",
     "cssImg": "animate__animated animate__zoomIn",

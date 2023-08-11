@@ -50,7 +50,9 @@ import { RioGrandeComponent } from './cuenca/rio-grande/rio-grande.component';
 import { RioPequeniComponent } from './cuenca/rio-pequeni/rio-pequeni.component';
 import { RioQuebradoComponent } from './cuenca/rio-quebrado/rio-quebrado.component';
 import { RioTrinidadComponent } from './cuenca/rio-trinidad/rio-trinidad.component';
-
+import { RevertidasComponent } from './pages/revertidas/revertidas.component';
+import { CuencaComponent } from './pages/cuenca/cuenca.component';
+import { AmpliacionacontentComponent } from './pages/ampliacionacontent/ampliacionacontent.component';
 
 const routes: Routes = [
 
@@ -103,6 +105,10 @@ const routes: Routes = [
   {path:'rio-pequeni',component:RioPequeniComponent},
   {path:'rio-quebrado',component:RioQuebradoComponent},
   {path:'rio-trinidad',component:RioTrinidadComponent},
+  {path:'revertidas',component:RevertidasComponent},
+  {path:'cuenca2',component:CuencaComponent},
+  {path:'contenido-amp',component:AmpliacionacontentComponent},
+  
  
 
 

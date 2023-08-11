@@ -1,5 +1,5 @@
-<nav class="navbar " style="height: 100px; background-color:rgb(16, 146, 135);" >
-  <h1 style="color:white; margin:30px; margin: 0 auto;" class="titulo">Cuenca Hidrografica del Canal </h1>
+<nav class="navbar " style="height: 100px; background-color:#195f55;" >
+  <h1 style="color:white; margin:30px; margin: 0 auto;" class="titulo">Cuenca Hidrográfica del Canal </h1>
  </nav>
  
  <div class="container" > 
@@ -47,10 +47,10 @@
             <div class="row">
 
               <div class="col-xl-6" >
-                <h4 class="titulo2" (click)="parqueNaturales()">Parques Naturales</h4>
+                <h4 class="titulo2" (click)="parqueNaturales()" style="font-size: 20px;">PARQUES NATURALES</h4>
            <div class="list-group container_prime titulo2" style="z-index: 300; font-size: 11px;">
             <br><br><br><br>
-            <a (click)="barroColorado()" class="list-group-item list-group-item-action">Monumento Natural Barro Colorado <i class="fa-solid fa-earth-americas"></i> </a>
+            <a (click)="barroColorado()" class="list-group-item list-group-item-action"  >Monumento Natural Barro Colorado <i class="fa-solid fa-earth-americas"></i> </a>
             <a (click)="altosCampana()" class="list-group-item list-group-item-action list-group-item-primary">	Parque Nacional Altos de Campana <i class="fa-solid fa-earth-americas"></i></a>
             <a (click)="parqueSoberania()" class="list-group-item list-group-item-action list-group-item-secondary">	Parque Nacional Soberanía <i class="fa-solid fa-tree"></i></a>
             <a (click)="caminoCruces()" class="list-group-item list-group-item-action list-group-item-success">	Parque Nacional Camino de Cruces <i class="fa-solid fa-tree"></i> </a>
@@ -63,7 +63,7 @@
           </div></div>
         
           <div class="col-xl-6">
-            <h4 class="titulo2" (click)="rios()">Subcuencas y ríos </h4>
+            <h4 class="titulo2" (click)="rios()" style="font-size: 20px;">SUBCUENCAS Y RÍOS </h4>
        <div class="list-group container_prime titulo2" style="z-index: 300;font-size: 11px;">
         <br><br><br><br>
         <a (click)="rioCiriGrande()" class="list-group-item list-group-item-action ">Subcuenca río Cirí Grande <i class="fa-solid fa-earth-americas"></i> </a>
@@ -73,10 +73,16 @@
        
         <a (click)="rioPequeni()" class="list-group-item list-group-item-action list-group-item-success">Subcuenca río Pequení <i class="fa-solid fa-earth-americas"></i></a>
         <a (click)="rioChagres()" class="list-group-item list-group-item-action list-group-item-success" style="z-index: 160;">Subcuenca río Chagres  <i class="fa-solid fa-earth-americas"></i></a>
-       
+      
+  
 
      
-      </div></div>
+      </div></div>  
+       <div class="d-grid gap-2" style="position: relative; top:-90px;">
+        <button class="btn titulo boscosa" type="button" style="background-color: #195f55;" routerLink="/cuenca2" >Cobertura boscosa</button>
+      </div>
+
+   
         
         
         
@@ -115,33 +121,53 @@
  </div> -->
  
 
- <a   (click)="enviarHome()" routerLink="/" style="text-decoration: none;" >
-
-   <p style="text-align: center;"><br>
-     <i class="fa-solid fa-house fa-2xl" style="font-size: 50px;" ></i>
-
-     
-    
+ <footer class="text-center text-lg-start animate__animated animate__fadeInUp"  style="background-color:#195f55;">
+  <div class="container d-flex justify-content-center py-5">
+     <div class="text-center text-white p-3" >
    
- 
- </p>
- <p style="text-align: right; position: relative; top: -40px; " *ngIf="wsSocket.socketStatus" >Estado: <b class="text-success" >Online</b></p>
+    <img src="./assets/images/Botones/BTN-Eng.svg" height="100" width="100" style="position: relative ; top:-55px;left: -480px; z-index: 200; " routerLink="/canalmapa">
+  </div>
+
+
+
+  <!-- <p style="text-align: center;" class="d-flex justify-content-center py-2" ><br>
+    <i class="fa-solid fa-circle-chevron-left fa-2xl"  style="font-size: 50px;"  ></i>
+</p> -->
+&nbsp;
+
+  <p style="text-align: center;"  class="d-flex justify-content-center py-2"><br>
+    <i class="fa-solid fa-house fa-2xl" (click)="enviarHome()" routerLink="/" style="font-size: 50px;" ></i>
+</p>
+&nbsp;
+<!-- <p style="text-align: center;" class="d-flex justify-content-center py-2"><br>
+  <i class="fa-solid fa-circle-chevron-right fa-2xl" style="font-size: 50px;" ></i>
+</p> -->
+
+<p style="text-align: right; position: relative;  left: 400px;" *ngIf="wsSocket.socketStatus" >Estado: <b class="text-success" >Online</b></p>
 <p style="text-align: right; position: relative; top: -40px;"  *ngIf="!wsSocket.socketStatus"> Estado: <b class="text-danger"  >Offline</b></p>
 
- 
- </a>
+
+
+  </div>
+
+  <!-- <div class="waves" >
+    <div class="wave circulo a"></div>
+    <div class="wave circulo b"></div>
+    <div class="wave circulo c"></div>
+  </div> -->
+</footer>
 
 
 
 
 
- <img src="../../../assets/images/Botones/BTN-Eng.svg" height="100" width="100" style="position: relative ; top:-205px;right: -30px; z-index: 200; " routerLink="/canalmapa">
 
- <div class="waves" >
+
+ <!-- <div class="waves" >
    <div class="wave circulo a"></div>
    <div class="wave circulo b"></div>
    <div class="wave circulo c"></div>
- </div>
+ </div> -->
 
 
 

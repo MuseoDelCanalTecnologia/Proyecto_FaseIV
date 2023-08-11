@@ -20,6 +20,7 @@
     "@angular/router": "^14.1.0",
     "@swup/slide-theme": "^1.0.5",
     "animate.css": "^4.1.1",
+    "img-comparison-slider": "^8.0.0",
     "ngx-socket-io": "^4.5.1",
     "rxjs": "~7.5.0",
     "swup": "^3.0.8",

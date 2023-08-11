@@ -1,11 +1,11 @@
-<nav class="navbar " style="height: 100px; background-color:rgb(16, 146, 135);" >
-  <h1 style="color:white; margin:30px; margin: 0 auto;" class="titulo">Ampliación del Canal de Panamá </h1>
+<nav class="navbar " style="height: 100px; background-color:#195f55;" >
+  <h1 style="color:white; margin:30px; margin: 0 auto;" class="titulo">EL CANAL DE PANAMÁ EN EL SIGLO XX </h1>
  </nav>
  
  <div class="container" > 
    
      <main class="animate__animated animate__fadeInDown" >
-       <h1 class="animated flip" class="titulo2" style="font-size: 30px;">{{Titulo}}</h1>
+       <h1 class="animated flip" class="titulo2" style="font-size: 25px;">{{Titulo}}</h1>
        
  
        <div class="container-fluid" >
@@ -47,14 +47,15 @@
            <!-- SVG -->
 
            <div class="container">
-            <h4 class="titulo2"  (click)="Ampliacion()">Componentes del programa de ampliación</h4><br>
-            <div class="list-group container_prime" style="z-index: 300;">
+            <!-- <h4 class="titulo2"  (click)="Ampliacion()">Componentes del programa de ampliación</h4> -->
+            <br><br><br>
+            <div class="list-group container_prime titulo2" style="z-index: 300;">
              <br><br><br>
-             <a (click)="ampProfndizacion()" class="list-group-item list-group-item-action" style="margin: 0 auto;">	Profundización de las entradas en el Pacífico y el Atlántico. <i class="fa-solid fa-earth-americas"></i> </a><br>
-             <a (click)="ampEnsanche()" class="list-group-item list-group-item-action list-group-item-primary" style="margin: 0 auto;">Ensanche y profundización de los cauces de navegación del lago Gatún y profundización del Corte Culebra. <i class="fa-solid fa-earth-americas"></i></a><br>
-             <a (click)="ampConstruccion()" class="list-group-item list-group-item-action list-group-item-secondary" style="margin: 0 auto;">	Construcción de las nuevas esclusas y tinas de reutilización de agua en el Atlántico y en el Pacífico. <i class="fa-solid fa-tree"></i></a><br>
-             <a (click)="ampLagoGatun()" class="list-group-item list-group-item-action list-group-item-success" style="margin: 0 auto; z-index: 30;">Subir el nivel máximo de operación del lago Gatún <i class="fa-solid fa-tree"></i> </a><br>
-             <a (click)="ampCruceAcceso()" class="list-group-item list-group-item-action list-group-item-success" style="margin: 0 auto; z-index: 30;">Excavación en cuatro fases del cauce de acceso del Pacífico <i class="fa-solid fa-tree"></i></a><br>
+             <a (click)="ampProfndizacion()" class="list-group-item list-group-item-action" style="margin: 0 auto;" routerLink="/contenido-amp">	Mejoras al cauce de acceso del Pacífico  <i class="fa-solid fa-earth-americas"></i> </a><br>
+             <a (click)="ampEnsanche()" class="list-group-item list-group-item-action list-group-item-primary" style="margin: 0 auto;">Profundización de las entradas del Canal <i class="fa-solid fa-earth-americas"></i></a><br>
+             <a (click)="ampConstruccion()" class="list-group-item list-group-item-action list-group-item-secondary" style="margin: 0 auto;">	Mejoras a los cauces de navegación  <i class="fa-solid fa-tree"></i></a><br>
+             <a (click)="ampLagoGatun()" class="list-group-item list-group-item-action list-group-item-success" style="margin: 0 auto; z-index: 30;">Diseño y construcción de esclusas <i class="fa-solid fa-tree"></i> </a><br>
+             <a (click)="ampCruceAcceso()" class="list-group-item list-group-item-action list-group-item-success" style="margin: 0 auto; z-index: 30;">Mejoras al suministro de agua <i class="fa-solid fa-tree"></i></a><br>
              
              
  
@@ -96,33 +97,48 @@
  </div> -->
  
 
- <a   (click)="enviarHome()" routerLink="/" style="text-decoration: none;" >
-
-   <p style="text-align: center;"><br>
-     <i class="fa-solid fa-house fa-2xl" style="font-size: 50px;" ></i>
-
-     
-    
+ <footer class="text-center text-lg-start animate__animated animate__fadeInUp"  style="background-color: #195f55;">
+  <div class="container d-flex justify-content-center py-5">
+     <div class="text-center text-white p-3" >
    
- 
- </p>
- <p style="text-align: right; position: relative; top: -40px; " *ngIf="wsSocket.socketStatus" >Estado: <b class="text-success" >Online</b></p>
+    <img src="./assets/images/Botones/BTN-Eng.svg" height="100" width="100" style="position: relative ; top:-55px;left: -480px; z-index: 200; " routerLink="/canalmapa">
+  </div>
+
+
+
+  
+
+  <p style="text-align: center;"  class="d-flex justify-content-center py-2"><br>
+    <i class="fa-solid fa-house fa-2xl" (click)="enviarHome()" routerLink="/" style="font-size: 50px;" ></i>
+</p>
+
+
+<p style="text-align: right; position: relative;  left: 400px;" *ngIf="wsSocket.socketStatus" >Estado: <b class="text-success" >Online</b></p>
 <p style="text-align: right; position: relative; top: -40px;"  *ngIf="!wsSocket.socketStatus"> Estado: <b class="text-danger"  >Offline</b></p>
 
+
+
+  </div>
+
+  <!-- <div class="waves" >
+    <div class="wave circulo a"></div>
+    <div class="wave circulo b"></div>
+    <div class="wave circulo c"></div>
+  </div> -->
+</footer>
+
+
+
+
+
+
  
- </a>
 
-
-
-
-
- <img src="../../../assets/images/Botones/BTN-Eng.svg" height="100" width="100" style="position: relative ; top:-205px;right: -30px; z-index: 200; " routerLink="/canalmapa">
-
- <div class="waves" >
+ <!-- <div class="waves" >
    <div class="wave circulo a"></div>
    <div class="wave circulo b"></div>
    <div class="wave circulo c"></div>
- </div>
+ </div> -->
 
 
 

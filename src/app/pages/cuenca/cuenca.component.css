@@ -9,19 +9,23 @@ main{
        background-color: rgb(16, 146, 135);
        color: white;
        padding: .9em;
-       margin-top: 1em;
+       margin-top: 4em;
         position: relative;
        top: -70px;
    }
   
    a.list-group-item{
     display: block;
-    background-color: rgb(7, 121, 92);
+    background-color: #195f55;
     color: white;
     padding: .9em;
     margin-top: 1em;
      position: relative;
     top: -70px;
+  }
+  
+  .boscosa:hover{
+    color: white;
   }
    
   
@@ -92,21 +96,21 @@ main{
         height: 380px;
         background: url(https://static.platzi.com/media/files/waves_c8551f5d-ecf6-4a81-ae1d-f3a0ad55ba10.png) center bottom no-repeat;
         animation: 5s wave ease-in-out infinite alternate;
-        z-index: 101;
+        z-index: 1;
       }
       .wave.a {
         background-position: 0 -854px;
-        z-index: 102;
+        z-index: 1;
       }
       .wave.b {
         background-position: 0 -427px;
         animation-delay: .6s;
-        z-index: 102;
+        z-index: 505;
       }
       .wave.c {
         background-position: 0 0;
         animation-delay: 1.2s;
-        z-index: 102;
+        z-index: 600;
       }
      
       @keyframes wave {
@@ -172,19 +176,50 @@ main{
   }
   
   .list-group-item{
-    width: 450px;
-    
-  }
-
-  footer {
-
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 97px;
-    color: white;
+    width: 250px;
     
   }
   
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    color: white;
+    height:100px;
+  }
+
+
+  .tamaño{
+    width: 100%;
+    height: 350px;
+  }
+  
+  .before,
+  .after {
+    margin: 0;
+  }
+
+  .before figcaption,
+  .after figcaption {
+    background: #fff;
+    border: 1px solid #c0c0c0;
+    border-radius: 12px;
+    color: #2e3452;
+    opacity: 0.8;
+    padding: 12px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 100%;
+  }
+
+  .before figcaption {
+    left: 12px;
+  }
+
+  .after figcaption {
+    right: 12px;
+  }
   
   

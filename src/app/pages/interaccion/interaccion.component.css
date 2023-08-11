@@ -70,7 +70,7 @@ p{
 
   .fa-solid{
       position: relative;
-      z-index: 1000;
+      z-index: 1;
       font-size:10px;
   } 
 
@@ -85,7 +85,7 @@ p{
       z-index: 99;
       
     }
-    .wave {
+    /* .wave {
       position: absolute;
       top: 260px;
       left: -180px;
@@ -94,17 +94,17 @@ p{
       height: 380px;
       background: url(https://static.platzi.com/media/files/waves_c8551f5d-ecf6-4a81-ae1d-f3a0ad55ba10.png) center bottom no-repeat;
       animation: 5s wave ease-in-out infinite alternate;
-      z-index: 100;
+      z-index: 99 ;
       
-    }
+    } */
     .wave.a {
       background-position: 0 -854px;
-      z-index: 203;
+      z-index: 205;
     }
     .wave.b {
       background-position: 0 -427px;
       animation-delay: .6s;
-      z-index: 204;
+      z-index: 205;
     }
     .wave.c {
       background-position: 0 0;
@@ -234,5 +234,15 @@ ul.numbered-list li:before {
   left: 0;
   top: 4px;
 }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  color: white;
+  height:100px;
+}
+
 
 
