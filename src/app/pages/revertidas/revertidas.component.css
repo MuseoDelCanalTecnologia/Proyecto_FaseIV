@@ -1,4 +1,4 @@
-main{
+/* main{
     width: 100%;
     margin: 2em auto;   
    }
@@ -36,7 +36,7 @@ main{
       width: 200px;
       height: 200px;
       /* background: url("../../../assets/images/canal4.jpg"); */
-      background-size: cover;
+      /* background-size: cover;
       background-position: center;
       border-radius: 50%;
       float: left;
@@ -47,11 +47,11 @@ main{
   
      .a{
       background: url("../../../assets/images/canal3.jpg");
-     }
+     } */
   
   
   
-  h2{
+  /* h2{
       margin-bottom: 20px;
       font-weight: normal;
       font-size: 30px;
@@ -84,7 +84,7 @@ main{
         overflow: hidden;
         z-index: 99;
         
-      }
+      } */
       /* .wave {
         position: absolute;
         top: 260px;
@@ -97,7 +97,7 @@ main{
         z-index: 99 ;
         
       } */
-      .wave.a {
+      /* .wave.a {
         background-position: 0 -854px;
         z-index: 205;
       }
@@ -180,7 +180,7 @@ main{
     z-index: 100;
   }
   
-  
+   */
   /* 
   .img-hover-zoom--point-zoom img {
     transform-origin: 65% 75%;
@@ -209,7 +209,7 @@ main{
   }
    */
   
-   ul.numbered-list {
+   /* ul.numbered-list {
     counter-reset: li;
     list-style-type: none;
     font-size: 14px;
@@ -242,7 +242,36 @@ main{
     height: 80px;
     color: white;
     height:100px;
+  } */
+
+  .fondo{
+    background: url("../../../assets/Imagenes/background/fondo/fond02.png");
+    background-size: cover;
+    width: 100%;
+    height: 1100px;
   }
+  
+  .titulo{
+    background: url("../../../assets/Imagenes/textos_iconos/AssetsFinales/Assets-05.png");
+    background-size: cover;
+    width: 65%;
+    height: 700px;
+    position: absolute;
+    top: -350px;
+    left: 360px;
+  }
+
+  .linea_lateral{
+    background: url("../../../assets/Imagenes/background/fondo/linealateral.png");
+    position: absolute;
+    height: 1080px;
+    top:0px;
+    left: -360px;
+    width: 30%;
+    z-index: 5;
+  }
+
+  
   
   
   

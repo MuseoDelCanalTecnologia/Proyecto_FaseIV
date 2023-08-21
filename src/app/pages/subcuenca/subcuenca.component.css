@@ -1,0 +1,156 @@
+.fondo{
+    background: url("../../../assets/Imagenes/background/fondo/fond03.png");
+    background-size: cover;
+    width: 100%;
+    height: 1100px;
+  }
+  
+  .titulo{
+    background: url("../../../assets/Imagenes/textos_iconos/AssetsFinales/Assets-11.png");
+    background-size: cover;
+    width: 65%;
+    height: 700px;
+    position: absolute;
+    top: -350px;
+    left: 360px;
+  }
+  
+  .cuenca{
+    height: 500px;
+    width: 600px;
+    position: absolute;
+    top: 330px;
+    left: 200px;
+  
+  }
+  
+  .img_cuenca{
+    background: url("../../../assets/Imagenes/textos_iconos/AssetsFinales/Assets-21.png");
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    
+  }
+  
+  
+  
+  .areas_revertidas{
+    height: 500px;
+    width: 600px;
+    position: absolute;
+    top: 380px;
+    left: 750px;
+  
+   
+  
+  }
+  
+  .img_revertidas{
+    background: url("../../../assets/Imagenes/textos_iconos/AssetsFinales/Assets-22.png");
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    
+    
+  }
+  
+  .canal{
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    top: 270px;
+    right: 120px;
+    
+    
+  
+  }
+  
+  .img_canalxxi{
+    background: url("../../../assets/Imagenes/textos_iconos/AssetsProvicionales/AP01.png");
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+  }
+  
+  
+   .rio1{
+    position: absolute;
+    top: 330px;
+    left: 270px;
+    width: 30%px;
+    height: 200px;
+  
+    
+  } 
+  
+  
+  .linea_lateral{
+    background: url("../../../assets/Imagenes/background/fondo/linealateral.png");
+    position: absolute;
+    height: 1080px;
+    top:0px;
+    left: -360px;
+    width: 30%;
+    z-index: 5;
+  }
+  
+  
+  .sub1{
+    position: absolute;
+    top: 400px;
+    left: 730px;
+    width: 30%px;
+    height: 200px;
+
+    
+  } 
+
+  .sub2{
+    position: absolute;
+    top: 330px;
+    right: 240px;
+    width: 30%px;
+    height: 200px;
+
+    
+  } 
+  
+  
+  
+  .rio2{
+    position: absolute;
+    top: 570px;
+    left: 300px;
+    width: 30%px;
+    height: 200px;
+    
+    transform: scaleX(1);
+    
+  } 
+  
+  .sub3{
+    position: absolute;
+    top: 650px;
+    right: 550px;
+    width: 30%px;
+    height: 200px;
+    
+   
+    
+  } 
+
+  .sub4{
+    position: absolute;
+    top: 650px;
+    right: 100px;
+    width: 30%px;
+    height: 200px;
+    
+   
+    
+  } 
+  
+  
+  
+  
+  

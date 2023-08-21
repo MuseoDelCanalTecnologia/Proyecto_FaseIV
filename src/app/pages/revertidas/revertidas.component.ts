@@ -22,7 +22,7 @@ export class RevertidasComponent implements OnInit {
   Titulo: string = 'Areas Revertidas';
   Img: String = '../../../assets/images/canal4.jpg';
   desc: string =
-    'Se estima que en el país existen alrededor de 270 especies de mamíferos silvestres, y de estas, unas 160 se encuentran en la cuenca del Canal. De las 33 especies de mamíferos consideradas en peligro de extinción o vulnerables, 30 habitan en esta zona, entre esas: el jaguar, el tapir y el puerco de monte. En cuanto a las aves, de más de mil especies en el país, poco más de la mitad está en el área de Cuenca, de las cuales más de 150 son consideradas vulnerables o en peligro por las normas nacionales de MiAmbiente. Hasta 1999, la Cuenca del Canal cubría un área de 326 mil hectáreas, que corresponde a la cuenca que abastece de agua a los lagos Alhajuela y Gatún.';
+    'Con la implementación de los Tratados Torrijos-Carter el 1º de octubre de 1979, el territorio conocido como Zona del Canal, gobernado bajo administración estadounidense, dejó de existir y pasó a llamarse Área del Canal, en donde se reconocía la soberanía panameña. A partir de ese momento, los diferentes bienes que se encontraban en este territorio fueron revertidos gradualmente a Panamá, culminando el proceso el 31 de diciembre de 1999 con la transferencia del Canal a manos panameñas. Estas “áreas revertidas”, como se les conoce coloquialmente, han sido destinadas para diferentes usos, como terrenos relacionados a la operación del Canal, parques naturales, viviendas, escuelas, sedes de organizaciones no gubernamentales e instituciones gubernamentales, entre otras. ';
 
   cssTexto: String = '';
   cssImg: string = '';
@@ -50,7 +50,7 @@ export class RevertidasComponent implements OnInit {
     this.Titulo = 'Areas Revertidas';
     this.Img = '../../../assets/images/canal4.jpg';
     this.desc =
-      'Se estima que en el país existen alrededor de 270 especies de mamíferos silvestres, y de estas, unas 160 se encuentran en la cuenca del Canal. De las 33 especies de mamíferos consideradas en peligro de extinción o vulnerables, 30 habitan en esta zona, entre esas: el jaguar, el tapir y el puerco de monte. En cuanto a las aves, de más de mil especies en el país, poco más de la mitad está en el área de Cuenca, de las cuales más de 150 son consideradas vulnerables o en peligro por las normas nacionales de MiAmbiente. Hasta 1999, la Cuenca del Canal cubría un área de 326 mil hectáreas, que corresponde a la cuenca que abastece de agua a los lagos Alhajuela y Gatún.';
+      'Con la implementación de los Tratados Torrijos-Carter el 1º de octubre de 1979, el territorio conocido como Zona del Canal, gobernado bajo administración estadounidense, dejó de existir y pasó a llamarse Área del Canal, en donde se reconocía la soberanía panameña. A partir de ese momento, los diferentes bienes que se encontraban en este territorio fueron revertidos gradualmente a Panamá, culminando el proceso el 31 de diciembre de 1999 con la transferencia del Canal a manos panameñas. Estas “áreas revertidas”, como se les conoce coloquialmente, han sido destinadas para diferentes usos, como terrenos relacionados a la operación del Canal, parques naturales, viviendas, escuelas, sedes de organizaciones no gubernamentales e instituciones gubernamentales, entre otras. ';
       this.wsSocket.envioPortal('portal');
   }
 

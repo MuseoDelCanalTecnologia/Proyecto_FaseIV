@@ -53,6 +53,31 @@ import { RioTrinidadComponent } from './cuenca/rio-trinidad/rio-trinidad.compone
 import { RevertidasComponent } from './pages/revertidas/revertidas.component';
 import { CuencaComponent } from './pages/cuenca/cuenca.component';
 import { AmpliacionacontentComponent } from './pages/ampliacionacontent/ampliacionacontent.component';
+import { BasesComponent } from './pages/bases/bases.component';
+import { PoligonostiroComponent } from './pages/poligonostiro/poligonostiro.component';
+import { PanelShermanComponent } from './panel/revertidas/sherman/sherman.component';
+import { LessepsComponent } from './panel/revertidas/lesseps/lesseps.component';
+import { CocosoloComponent } from './panel/revertidas/cocosolo/cocosolo.component';
+import { RandolphComponent } from './panel/revertidas/randolph/randolph.component';
+import { DaviesComponent } from './panel/revertidas/davies/davies.component';
+import { GulikComponent } from './panel/revertidas/gulik/gulik.component';
+import { ClaytonComponent } from './panel/revertidas/clayton/clayton.component';
+import { AlbrookComponent } from './panel/revertidas/albrook/albrook.component';
+import { AmadorComponent } from './panel/revertidas/amador/amador.component';
+import { GrantComponent } from './panel/revertidas/grant/grant.component';
+import { KobbeComponent } from './panel/revertidas/kobbe/kobbe.component';
+import { RodmanComponent } from './panel/revertidas/rodman/rodman.component';
+import { HowardComponent } from './panel/revertidas/howard/howard.component';
+import { SubcuencaComponent } from './pages/subcuenca/subcuenca.component';
+import { AreasprotegidasComponent } from './pages/areasprotegidas/areasprotegidas.component';
+import { PanelBarrocoloradoComponent } from './panel/cuenca/barrocolorado/barrocolorado.component';
+import { PanelCaminocrucesComponent } from './panel/cuenca/caminocruces/caminocruces.component';
+import { PaltocampanaComponent } from './panel/cuenca/paltocampana/paltocampana.component';
+import { PlagatunComponent } from './panel/cuenca/plagatun/plagatun.component';
+import { PchagresComponent } from './panel/cuenca/pchagres/pchagres.component';
+import { PsoberaniaComponent } from './panel/cuenca/psoberania/psoberania.component';
+
+
 
 const routes: Routes = [
 
@@ -108,6 +133,32 @@ const routes: Routes = [
   {path:'revertidas',component:RevertidasComponent},
   {path:'cuenca2',component:CuencaComponent},
   {path:'contenido-amp',component:AmpliacionacontentComponent},
+  {path:'bases',component:BasesComponent},
+  {path:'poligonostiro',component:PoligonostiroComponent},
+
+  {path:'panel-sherman',component:PanelShermanComponent},
+  {path:'panel-lesseps',component:LessepsComponent},
+  {path:'panel-cocosolo',component:CocosoloComponent},
+  {path:'panel-randolph',component:RandolphComponent},
+  {path:'panel-davies',component:DaviesComponent},
+  {path:'panel-gulik',component:GulikComponent},
+  {path:'panel-clayton',component:ClaytonComponent},
+  {path:'panel-albrook',component:AlbrookComponent},
+  {path:'panel-amador',component:AmadorComponent},
+  {path:'panel-grant',component:GrantComponent},
+  {path:'panel-kobbe',component:KobbeComponent},
+  {path:'panel-rodman',component:RodmanComponent},
+  {path:'panel-howard',component:HowardComponent},
+
+  {path:'subcuenca',component:SubcuencaComponent},
+  {path:'areas-prot',component:AreasprotegidasComponent},
+  {path:'panel-barrocolorado',component:PanelBarrocoloradoComponent},
+  {path:'panel-caminocruces',component:PanelCaminocrucesComponent},
+  {path:'panel-campana',component:PaltocampanaComponent},
+  {path:'panel-gatun',component:PlagatunComponent},
+  {path:'panel-chagres',component:PchagresComponent},
+  {path:'panel-soberania',component:PsoberaniaComponent},
+
   
  
 

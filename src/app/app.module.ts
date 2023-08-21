@@ -59,7 +59,32 @@ import { AccesoPacificoComponent } from './ampliacion/acceso-pacifico/acceso-pac
 import { RevertidasComponent } from './pages/revertidas/revertidas.component';
 import { CuencaComponent } from './pages/cuenca/cuenca.component';
 import { AmpliacionacontentComponent } from './pages/ampliacionacontent/ampliacionacontent.component';
-
+import { FooterComponent } from './pages/footer/footer.component';
+import { BasesComponent } from './pages/bases/bases.component';
+import { PoligonostiroComponent } from './pages/poligonostiro/poligonostiro.component';
+import { LessepsComponent } from './panel/revertidas/lesseps/lesseps.component';
+import { PanelShermanComponent } from './panel/revertidas/sherman/sherman.component';
+import { CocosoloComponent } from './panel/revertidas/cocosolo/cocosolo.component';
+import { RandolphComponent } from './panel/revertidas/randolph/randolph.component';
+import { DaviesComponent } from './panel/revertidas/davies/davies.component';
+import { GulikComponent } from './panel/revertidas/gulik/gulik.component';
+import { ClaytonComponent } from './panel/revertidas/clayton/clayton.component';
+import { AlbrookComponent } from './panel/revertidas/albrook/albrook.component';
+import { AmadorComponent } from './panel/revertidas/amador/amador.component';
+import { GrantComponent } from './panel/revertidas/grant/grant.component';
+import { KobbeComponent } from './panel/revertidas/kobbe/kobbe.component';
+import { RodmanComponent } from './panel/revertidas/rodman/rodman.component';
+import { HowardComponent } from './panel/revertidas/howard/howard.component';
+import { SubcuencaComponent } from './pages/subcuenca/subcuenca.component';
+import { AreasprotegidasComponent } from './pages/areasprotegidas/areasprotegidas.component';
+//import {BarrocoloradoComponent } from './panel/cuenca/barrocolorado/barrocolorado.component';
+//import { CaminocrucesComponent } from './panel/cuenca/caminocruces/caminocruces.component';
+import { PanelBarrocoloradoComponent } from './panel/cuenca/barrocolorado/barrocolorado.component';
+import { PanelCaminocrucesComponent } from './panel/cuenca/caminocruces/caminocruces.component';
+import { PaltocampanaComponent } from './panel/cuenca/paltocampana/paltocampana.component';
+import { PlagatunComponent } from './panel/cuenca/plagatun/plagatun.component';
+import { PchagresComponent } from './panel/cuenca/pchagres/pchagres.component';
+import { PsoberaniaComponent } from './panel/cuenca/psoberania/psoberania.component';
 
 //Entorno
 const config: SocketIoConfig = { url: 'https://experience-staging.cuentanostuhistoria.org/', options: {} };
@@ -121,6 +146,31 @@ const config: SocketIoConfig = { url: 'https://experience-staging.cuentanostuhis
     RevertidasComponent,
     CuencaComponent,
     AmpliacionacontentComponent,
+    FooterComponent,
+    BasesComponent,
+    PoligonostiroComponent,
+    LessepsComponent,
+    PanelShermanComponent,
+    CocosoloComponent,
+    RandolphComponent,
+    DaviesComponent,
+    GulikComponent,
+    ClaytonComponent,
+    AlbrookComponent,
+    AmadorComponent,
+    GrantComponent,
+    KobbeComponent,
+    RodmanComponent,
+    HowardComponent,
+    SubcuencaComponent,
+    AreasprotegidasComponent,
+   
+    PanelBarrocoloradoComponent,
+    PanelCaminocrucesComponent,
+    PaltocampanaComponent,
+    PlagatunComponent,
+    PchagresComponent,
+    PsoberaniaComponent
   
   ],
 

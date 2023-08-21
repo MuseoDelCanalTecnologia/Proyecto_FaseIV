@@ -1,4 +1,4 @@
-@import "~animate.css/animate.min.css";
+
 
 .animate__animated.animate__fadeIn {
   --animate-duration: 3s;
@@ -98,105 +98,6 @@ body {
   user-select: none; /* Versión sin prefijo,
   actualmente compatible con Chrome y Opera */
 }
-.cato {
-  position: relative;
-  display: block;
-  max-width: 100%
-}
-
-.cato img {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  box-shadow: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  -o-box-shadow: none;
-  -ms-box-shadow: none;
-  border: none;
-  max-width: 100%;
-  height: auto
-}
-
-input[type=range].cato--inner {
-  -webkit-appearance: none;
-  background: none;
-  position: absolute;
-  margin: 7px 0 0;
-  cursor: pointer;
-  height: 4px
-}
-
-input[type=range].cato--inner:focus {
-  outline: none
-}
-
-input[type=range].cato--inner::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  background-color: #6891a1;
-  border: none;
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  position: relative;
-  margin-top: -25px;
-  cursor: move
-}
-
-input[type=range].cato--inner::-ms-thumb {
-  -webkit-appearance: none;
-  background-color: #6891a1;
-  border: none;
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  position: relative;
-  margin-top: -25px;
-  cursor: move
-}
-
-input[type=range].cato--inner::-moz-range-thumb {
-  -webkit-appearance: none;
-  background-color: #6891a1;
-  border: none;
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  position: relative;
-  margin-top: -25px;
-  cursor: move
-}
-
-input[type=range].cato--inner::-webkit-slider-runnable-track {
-  background: transparent;
-  height: 6px
-}
-
-input[type=range].cato--inner::-ms-track {
-  background: transparent;
-  height: 6px
-}
-
-input[type=range].cato--inner::-moz-range-track {
-  background: transparent;
-  height: 6px
-}
-
-input[type=range].cato--inner:focus::-webkit-slider-runnable-track {
-  background: transparent
-}
-
-input[type=range].cato--inner:focus::-ms-track {
-  background: transparent
-}
-
-input[type=range].cato--inner:focus::-moz-range-track {
-  background: transparent
-}
-.cato {
-  margin-bottom: 250px;
-}
-
 
 
 .slider-example-relative-size {
@@ -212,3 +113,51 @@ input[type=range].cato--inner:focus::-moz-range-track {
   transform: scale(0.8);
 }
 
+
+
+@font-face {
+  font-family: dk;
+  src: url(./assets/Tipografias/Revertidas/Magical.otf);
+}
+
+.title_revertidas {
+  font-family: dk;
+  color: black;
+  font-size: 165px;
+  color:#1D6B3E;
+}
+
+
+@font-face {
+  font-family: Dosmil;
+  src: url(./assets/Tipografias/Revertidas/Dosmil.ttf);
+}
+
+.text_revertidas {
+  font-family: Dosmil;
+  font-size: 29px;
+  color:black;
+}
+
+@font-face {
+  font-family: SuperFunky;
+  src: url(./assets/Tipografias/Cuenca/SuperFunky.ttf);
+}
+
+.titulo_cuenca {
+  font-family: SuperFunky;
+  font-size: 29px;
+  color:black;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(./assets/Tipografias/Ampliacion/Avenir-Next-Bold-Italic.ttf);
+}
+
+.titulo_ampliacion {
+  font-family:Avenir;
+  font-size: 80px;
+  color:rgb(9, 9, 141);
+  text-align: center;
+}
