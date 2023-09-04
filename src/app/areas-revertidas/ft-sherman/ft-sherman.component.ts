@@ -20,30 +20,14 @@ export class FtShermanComponent implements OnInit {
       console.log(data);
       
      });
-
      this.recibiendoPortal();
 
   }
 
-
-
   recibiendoPortal(){
-
     this.wsSocket.escuchandoPortal().subscribe((data)=>{
-      
-    this.data=data;
-
-    if(!this.data){
-    
+      this.data=data;
       this.router.navigateByUrl(this.data);
-
-    }else{
-      //corriendo video
-    }
-
-
-    });
- 
+      });
   }
-
 }

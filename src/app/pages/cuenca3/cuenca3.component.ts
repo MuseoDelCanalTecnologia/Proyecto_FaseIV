@@ -1,4 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { SocketService } from 'src/app/services/socket.service';
 
 @Component({
   selector: 'app-cuenca3',
@@ -7,9 +10,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Cuenca3Component implements OnInit {
 
-  constructor() { }
+  constructor(public wsSocket: SocketService, private http: HttpClient, private router:Router) { }
 
   ngOnInit(): void {
+  this.enviarVideo();
+   
   }
+
+
+  enviarVideo() {
+    this.wsSocket.enviarVideo('cuenca');
+  }
+
+  enviarHome() {
+    this.wsSocket.homeRoute('proyeccion');
+  }
+ 
+ 
+
+
+
 
 }

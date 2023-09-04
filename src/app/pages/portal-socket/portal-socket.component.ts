@@ -22,7 +22,7 @@ export class PortalSocketComponent implements OnInit {
      });
 
 
-     this.recibiendoPortal()
+     this.recibiendoPortal();
 
 
   }

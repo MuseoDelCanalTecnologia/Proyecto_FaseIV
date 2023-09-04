@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SocketService } from 'src/app/services/socket.service';
 
 @Component({
   selector: 'app-randolph',
@@ -7,9 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RandolphComponent implements OnInit {
 
-  constructor() { }
+  constructor(private wsSocket:SocketService) { }
 
   ngOnInit(): void {
+
+    this.enviarProyeccion();
   }
+
+  enviarProyeccion() {
+    this.wsSocket.envioPortal('quarry-heights');
+  }
+
+  enviarHome() {
+    this.wsSocket.homeRoute('proyeccion');
+  }
+
+  bases(){
+    this.wsSocket.envioPortal('mapazoom');
+  }
+  
 
 }

@@ -31,14 +31,7 @@ export class BaseAlbrookComponent implements OnInit {
       
     this.data=data;
 
-    if(!this.data){
-    
       this.router.navigateByUrl(this.data);
-
-    }else{
-      //corriendo video
-    }
-
 
     });
 

@@ -17,9 +17,7 @@ export class FtAmadorComponent implements OnInit {
       console.log(data);
       
      });
-
      this.recibiendoPortal();
-
   }
 
 
@@ -29,15 +27,8 @@ export class FtAmadorComponent implements OnInit {
     this.wsSocket.escuchandoPortal().subscribe((data)=>{
       
     this.data=data;
-
-    if(!this.data){
     
     this.router.navigateByUrl(this.data);
-
-    }else{
-      //corriendo video
-    }
-
 
     });
   }

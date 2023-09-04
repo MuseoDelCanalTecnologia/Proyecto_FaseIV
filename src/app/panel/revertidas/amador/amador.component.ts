@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SocketService } from 'src/app/services/socket.service';
 
 @Component({
   selector: 'app-amador',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AmadorComponent implements OnInit {
 
-  constructor() { }
+  constructor(private wsSocket:SocketService) { }
 
   ngOnInit(): void {
+    this.enviarProyeccion();
   }
+  enviarProyeccion() {
+    this.wsSocket.envioPortal('ft-amador');
+  }
+
+  enviarHome() {
+    this.wsSocket.homeRoute('proyeccion');
+  }
+
+  bases(){
+    this.wsSocket.envioPortal('mapazoom');
+  }
+  
 
 }
