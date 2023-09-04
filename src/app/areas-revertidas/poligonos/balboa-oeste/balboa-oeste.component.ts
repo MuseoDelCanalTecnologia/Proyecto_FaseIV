@@ -25,21 +25,12 @@ export class BalboaOesteComponent implements OnInit {
 
 
   recibiendoPortal(){
-
     this.wsSocket.escuchandoPortal().subscribe((data)=>{
-      
-    this.data=data;
-
-    if(!this.data){
-    
+      this.data=data;
       this.router.navigateByUrl(this.data);
-
-    }else{
-      //corriendo video
-    }
-
-
-    });
+  
+      });
+  
   }
 
 }

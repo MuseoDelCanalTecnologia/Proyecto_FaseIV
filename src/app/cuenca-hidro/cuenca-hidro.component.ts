@@ -28,7 +28,6 @@ export class CuencaHidroComponent implements OnInit {
     this.wsSocket.escuchandoPortal().subscribe((data) => {
         this.data=data;
         this.router.navigateByUrl(this.data);
-    
     });
 
    

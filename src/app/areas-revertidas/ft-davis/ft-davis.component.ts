@@ -31,21 +31,9 @@ export class FtDavisComponent implements OnInit {
 
     this.wsSocket.escuchandoPortal().subscribe((data)=>{
 
-      this.data=data;
-      // document.getElementById('video')?.setAttribute("src",this.data)
-      
-      if(!this.data){
-    
+        this.data=data;
         this.router.navigateByUrl(this.data);
-    
-        }else{
-          //corriendo video
-        }
-
     });
- 
-    
-   
 
   }
 

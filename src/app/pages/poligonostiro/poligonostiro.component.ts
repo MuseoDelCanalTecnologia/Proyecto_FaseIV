@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SocketService } from 'src/app/services/socket.service';
 
 @Component({
   selector: 'app-poligonostiro',
@@ -7,9 +8,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PoligonostiroComponent implements OnInit {
 
-  constructor() { }
+  constructor(public wsSocket: SocketService) { }
 
   ngOnInit(): void {
+   
+    this.enviarProyeccion();
+    
+
   }
+
+
+  enviarProyeccion() {
+    this.wsSocket.envioPortal('balboa-oeste');
+  }
+
+  enviarHome() {
+    this.wsSocket.homeRoute('proyeccion');
+  }
+
+  areaRevertida(){
+    this.wsSocket.envioPortal('portal');
+  }
+  
 
 }

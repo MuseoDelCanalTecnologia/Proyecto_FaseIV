@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SocketService } from 'src/app/services/socket.service';
 
 @Component({
   selector: 'app-davies',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DaviesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private wsSocket:SocketService) { }
 
   ngOnInit(): void {
+
+    this.enviarProyeccion();
+  }
+
+  enviarProyeccion() {
+    this.wsSocket.envioPortal('ft-davis');
+  }
+
+  enviarHome() {
+    this.wsSocket.homeRoute('proyeccion');
+  }
+
+   bases(){
+    this.wsSocket.envioPortal('mapazoom');
   }
 
 }
