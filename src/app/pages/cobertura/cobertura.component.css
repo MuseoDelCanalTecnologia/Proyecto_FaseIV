@@ -1,0 +1,6 @@
+.fondo{
+    background: url("../../../assets/Imagenes/background/fondo/fondo3.png");
+    background-size: cover;
+    width: 100%;
+    height: 1080px;
+  }
