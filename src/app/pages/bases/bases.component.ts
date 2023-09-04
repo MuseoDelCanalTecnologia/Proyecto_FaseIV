@@ -22,7 +22,7 @@ export class BasesComponent implements OnInit {
   Titulo: string = 'Areas Revertidas';
   Img: String = '../../../assets/images/canal4.jpg';
   desc: string =
-    'Se estima que en el país existen alrededor de 270 especies de mamíferos silvestres, y de estas, unas 160 se encuentran en la cuenca del Canal. De las 33 especies de mamíferos consideradas en peligro de extinción o vulnerables, 30 habitan en esta zona, entre esas: el jaguar, el tapir y el puerco de monte. ';
+    'Para Estados Unidos, el Canal de Panamá era importante no solo por su valor comercial, sino también por su valor militar. Si bien el gobierno estadounidense inicialmente mandó a construir fortificaciones en el sector Atlántico y Pacífico para la defensa de la vía interoceánica; con el estallido de las dos Guerras Mundiales, y posteriormente con la Guerra Fría, la bases militares tuvieron mayor énfasis en lo que se llamó la “protección del hemisferio”, lo que quería decir, la protección del continente de la presencia comunista. Sin embargo, con la entrada en vigor de los Tratados Torrijos-Carter y el fin de la Guerra Fría, las bases militares fueron perdiendo relevancia gradualmente hasta ser revertidas completamente a la República de Panamá.';
 
   cssTexto: String = '';
   cssImg: string = '';
@@ -50,7 +50,7 @@ export class BasesComponent implements OnInit {
     this.Titulo = 'Areas Revertidas';
     this.Img = '../../../assets/images/canal4.jpg';
     this.desc =
-      'Se estima que en el país existen alrededor de 270 especies de mamíferos silvestres, y de estas, unas 160 se encuentran en la cuenca del Canal. De las 33 especies de mamíferos consideradas en peligro de extinción o vulnerables, 30 habitan en esta zona, entre esas: el jaguar, el tapir y el puerco de monte. ';
+      'Para Estados Unidos, el Canal de Panamá era importante no solo por su valor comercial, sino también por su valor militar. Si bien el gobierno estadounidense inicialmente mandó a construir fortificaciones en el sector Atlántico y Pacífico para la defensa de la vía interoceánica; con el estallido de las dos Guerras Mundiales, y posteriormente con la Guerra Fría, la bases militares tuvieron mayor énfasis en lo que se llamó la “protección del hemisferio”, lo que quería decir, la protección del continente de la presencia comunista. Sin embargo, con la entrada en vigor de los Tratados Torrijos-Carter y el fin de la Guerra Fría, las bases militares fueron perdiendo relevancia gradualmente hasta ser revertidas completamente a la República de Panamá.';
       this.wsSocket.envioPortal('portal');
   }
 

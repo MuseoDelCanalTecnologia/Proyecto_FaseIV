@@ -77,6 +77,10 @@ import { PlagatunComponent } from './panel/cuenca/plagatun/plagatun.component';
 import { PchagresComponent } from './panel/cuenca/pchagres/pchagres.component';
 import { PsoberaniaComponent } from './panel/cuenca/psoberania/psoberania.component';
 
+import { Cuenca3Component } from './pages/cuenca3/cuenca3.component';
+import { IntroareasComponent } from './pages/introareas/introareas.component';
+import { CoberturaComponent } from './pages/cobertura/cobertura.component';
+import { CauceComponent } from './pages/cauce/cauce.component';
 
 
 const routes: Routes = [
@@ -88,6 +92,7 @@ const routes: Routes = [
   {path:'pro1',component:Pro1Component},
   {path:'pro2',component:Pro2Component},
   {path:'mapazoom',component:MapazoomComponent},
+  {path:'cobertura',component:CoberturaComponent},
   {path:'canalmapa',component:CanalmapaComponent},
   {path:'ampliacion',component:AmpliacionComponent},
   {path:'portal',component:PortalSocketComponent},
@@ -132,6 +137,8 @@ const routes: Routes = [
   {path:'rio-trinidad',component:RioTrinidadComponent},
   {path:'revertidas',component:RevertidasComponent},
   {path:'cuenca2',component:CuencaComponent},
+  {path:'introcuenca',component:Cuenca3Component},
+  {path:'introareas',component:IntroareasComponent},
   {path:'contenido-amp',component:AmpliacionacontentComponent},
   {path:'bases',component:BasesComponent},
   {path:'poligonostiro',component:PoligonostiroComponent},
@@ -158,6 +165,8 @@ const routes: Routes = [
   {path:'panel-gatun',component:PlagatunComponent},
   {path:'panel-chagres',component:PchagresComponent},
   {path:'panel-soberania',component:PsoberaniaComponent},
+  {path:'contenido-ampliacion',component:AmpliacionacontentComponent},
+  {path:'cauce',component:CauceComponent},
 
   
  

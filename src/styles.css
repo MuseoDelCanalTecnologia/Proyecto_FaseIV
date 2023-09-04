@@ -130,12 +130,12 @@ body {
 
 @font-face {
   font-family: Dosmil;
-  src: url(./assets/Tipografias/Revertidas/Dosmil.ttf);
+  src: url(./assets/Tipografias/Revertidas/American-Typewriter-Font/ufonts.com_american-typewriter-condensed.ttf);
 }
 
 .text_revertidas {
   font-family: Dosmil;
-  font-size: 29px;
+  font-size: 32px;
   color:black;
 }
 
@@ -160,4 +160,56 @@ body {
   font-size: 80px;
   color:rgb(9, 9, 141);
   text-align: center;
+}
+
+
+
+@font-face {
+  font-family: American;
+  src: url(./assets/Tipografias/Revertidas/American-Typewriter-Font/ufonts.com_american-typewriter-bold.ttf);
+}
+
+.Tit_revertidas{
+  font-family: American;
+  font-size: 81px;
+}
+
+
+@font-face {
+  font-family: calistoga;
+  src: url(./assets/Tipografias/Cuenca/Calistoga-Regular.ttf);
+}
+
+.calistoga{
+  font-family: calistoga;
+  font-size: 71px;
+}
+
+@font-face {
+  font-family: rounded;
+  src: url(./assets/Tipografias/Cuenca//MPLUSRounded1c-Medium.ttf);
+}
+
+.runted{
+  font-family: rounded;
+  font-size: 17px;
+}
+
+@font-face {
+  font-family: Acum;
+  src: url(./assets/Tipografias/Ampliacion/AcuminItPro.otf);
+}
+
+.text_ampliacion{
+  font-family: acum;
+  font-size: 55px;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(./assets/Tipografias/Ampliacion/Avenir-Next-Bold-Italic.ttf);
+}
+.avenir{
+  font-family: Avenir;
+  font-size: 25px;
 }

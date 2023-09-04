@@ -85,6 +85,11 @@ import { PaltocampanaComponent } from './panel/cuenca/paltocampana/paltocampana.
 import { PlagatunComponent } from './panel/cuenca/plagatun/plagatun.component';
 import { PchagresComponent } from './panel/cuenca/pchagres/pchagres.component';
 import { PsoberaniaComponent } from './panel/cuenca/psoberania/psoberania.component';
+import { Cuenca3Component } from './pages/cuenca3/cuenca3.component';
+import { IntroareasComponent } from './pages/introareas/introareas.component';
+import { SubcuencasComponent } from './pages/subcuencas/subcuencas.component';
+import { CoberturaComponent } from './pages/cobertura/cobertura.component';
+import { CauceComponent } from './pages/cauce/cauce.component';
 
 //Entorno
 const config: SocketIoConfig = { url: 'https://experience-staging.cuentanostuhistoria.org/', options: {} };
@@ -170,7 +175,12 @@ const config: SocketIoConfig = { url: 'https://experience-staging.cuentanostuhis
     PaltocampanaComponent,
     PlagatunComponent,
     PchagresComponent,
-    PsoberaniaComponent
+    PsoberaniaComponent,
+    Cuenca3Component,
+    IntroareasComponent,
+    SubcuencasComponent,
+    CoberturaComponent,
+    CauceComponent
   
   ],
 

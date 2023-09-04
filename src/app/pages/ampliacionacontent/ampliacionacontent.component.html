@@ -1,187 +1,132 @@
-<nav class="navbar " style="height: 100px; background-color:#195f55;" >
-    <h1 style="color:white; margin:30px; margin: 0 auto;" class="titulo">EL CANAL DE PANAMÁ EN EL SIGLO XX </h1>
-   </nav>
-   
-   <div class="container" > 
-     
-       <main class="animate__animated animate__fadeInRight" >
-         <h1 class="animated flip" class="titulo2" style="font-size: 25px;">{{Titulo}}</h1>
-         
-   
-         <div class="container-fluid" >
-   
-           
-   
-           <div class="row">
-             <div class="col-xl-6" >
-   
-   
-              <div class="circle  {{cssImg}}"  [ngStyle]="{'background-image': 'url(' + Img + ')'}" ></div>
-               <!-- <h2>Área del Canal/Antigua Zona del Canal. </h2> -->
-               <p class="textos {{cssTexto}}"> {{desc}}
-              
-      
-  
-                <br><br>
-   
-                 <b>Fuente:</b> Canal de Panamá
-   
-                   
-   
-                   
-               </p>
-               
-   
-            
-   
-   
-               
-               <br>
-               
-               
-   
-   
-             </div>
-             <div class="col" style="position: relative; top: -60px;">
-              
-             <!-- SVG -->
-              <br><br><br>
-             <video src="../../../assets/proyeccion/000.mp4" autoplay height="300" controls  width="500"></video>
-  
-           
-  
-  
-   
-   
-   
-             
-             </div>
 
 
-           </div>
-         </div>
-   
-   
-         
-       </main>
-   
-       
-      
-   </div>
-   
-   
-   
-   
-   <br>
-   
-   
-   
-   
-   <!-- <div class="containerwave">
+<div class="fondo" >
+
     
-     <div class="wave">
-      
-     </div>
-   </div> -->
-   
-  
-   <footer class="text-center text-lg-start animate__animated animate__fadeInUp"  style="background-color: #195f55;">
-    <div class="container d-flex justify-content-center py-5">
-       <div class="text-center text-white p-3" >
-     
-      <img src="./assets/images/Botones/BTN-Eng.svg" height="100" width="100" style="position: relative ; top:-55px;left: -480px; z-index: 200; " routerLink="/canalmapa">
-    </div>
-  
-  
-  
-    <p style="text-align: center;" class="d-flex justify-content-center py-2"><br>
-      <i class="fa-solid fa-circle-chevron-left fa-2xl" routerLink="/ampliacion" style="font-size: 50px;" ></i>
-  </p>
-  &nbsp;
-  
-    <p style="text-align: center;"  class="d-flex justify-content-center py-2"><br>
-      <i class="fa-solid fa-house fa-2xl" (click)="enviarHome()" routerLink="/" style="font-size: 50px;" ></i>
-  </p>
 
-  &nbsp;
-  <p style="text-align: center;" class="d-flex justify-content-center py-2"><br>
-    <i class="fa-solid fa-circle-chevron-right fa-2xl" style="font-size: 50px;" ></i>
-</p>
-  
-  
-  <p style="text-align: right; position: relative;  left: 400px;" *ngIf="wsSocket.socketStatus" >Estado: <b class="text-success" >Online</b></p>
-  <p style="text-align: right; position: relative; top: -40px;"  *ngIf="!wsSocket.socketStatus"> Estado: <b class="text-danger"  >Offline</b></p>
-  
-  
-  
-    </div>
-  
-    <!-- <div class="waves" >
-      <div class="wave circulo a"></div>
-      <div class="wave circulo b"></div>
-      <div class="wave circulo c"></div>
-    </div> -->
-  </footer>
-  
-  
-  
-  
-  
-  
+  <img src="../../../assets/Imagenes/rotulos/ampliacion.png" style="position:absolute;height: 180px; left: 140px; top: 90px; ">
+
+
+
+
+
+  <div class="container-fluid" style="position: absolute; top: 320px; left: 150px; z-index: 8;" > 
    
+      <main class="animate__animated animate__fadeInDown" >
+   
+        <div class="container-fluid" >
+          <div class="row">
+            <div class="col-xl-6" >
+              <h1 class="avenir" style="font-size: 47px;color: white;">PROYECTO DE AMPLIACIÓN DEL CANAL</h1><br><br><br>
+             
+               <p class="text_ampliacion" style=" position: relative; top: -60px; font-size: 25px; text-align: left;color: white;" id="parrafo">
+                La ampliación consistió en la construcción de dos nuevos complejos de esclusas y un tercer carril de tránsito que permitiría el tránsito de buques más grandes y con mayor cantidad de carga.<br><br>
+Para cumplir con el programa de ampliación, el proyecto se organizó en cinco componentes que involucraban el diseño y construcción de las nuevas esclusas, trabajos de dragado y mejoras al suministro de agua. 
+
+                   
+             
+              
+               <br><br>  
   
-   <!-- <div class="waves" >
-     <div class="wave circulo a"></div>
-     <div class="wave circulo b"></div>
-     <div class="wave circulo c"></div>
-   </div> -->
+                 
+  
+  
+  
+                  
+  
+                  
+               </p>
+              
+  
+           
+  
+  
+              
+              <br> 
+              
+  
+  
+            </div>
+            <div class="col-xl-6" style="position: relative; top: 50px; left: 30px;" >
+             
+              <div class="d-grid gap-3"  >
+                <div class="avenir" style="font-size: 25px;color: white;" routerLink="/cauce"><img src="../../../assets/Imagenes/stickers/Iconos/Stickers-63.png" style="height: 60px;">MEJORAS AL CAUCE DE ACCESO DEL PACÍFICO</div>
+
+                <div class="avenir" style="font-size: 25px;color:  white;" routerLink="/panel-campana"><img src="../../../assets/Imagenes/stickers/Iconos/Stickers-63.png" style="height: 60px;">PROFUNDIZACIÓN DE LAS ENTRADAS DEL CANAL</div>
+
+                <div class="avenir" style="font-size: 25px;color:  white;" routerLink="/panel-soberania"><img src="../../../assets/Imagenes/stickers/Iconos/Stickers-63.png" style="height: 60px;">MEJORAS A LOS CAUCES DE NAVEGACIÓN</div>
+
+                <div class="avenir" style="font-size: 25px;color:  white;" routerLink="/panel-caminocruces"><img src="../../../assets/Imagenes/stickers/Iconos/Stickers-63.png" style="height: 60px;">DISEÑO Y CONSTRUCCIÓN DE ESCLUSAS</div>
+
+                <div class="avenir" style="font-size: 25px;color: white;" routerLink="/panel-chagres"><img src="../../../assets/Imagenes/stickers/Iconos/Stickers-63.png" style="height: 60px;">MEJORAS AL SUMINISTRO DE AGUA</div>
+
+    
+
+               
+ 
+                 
+               </div>
+            
   
   
   
   
-    <!-- Modal1 -->
-  <div class="modal fade animate__animated animate__zoomInUp" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-fullscreen-sm-down ">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Provincia de Chiriqui</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  
+              
+          
+             
+  
+  
+  
+            
+            </div>
+
+            
+            
+
+
+          </div >
         </div>
-        <div class="modal-body">
-            Es una provincia de Panamá. Su capital es David. También se da el nombre de Laguna de Chiriquí a un gran golfo que existe en la costa caribeña de Panamá, en la provincia de Bocas del Toro. Chiriquí significa valle de la luna para los indígenas Ngöbe-Buglé.
-        </div>
-        <!-- <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div> -->
-      </div>
-    </div>
+  
+  
+        
+      </main> 
+  
+      
+     
   </div>
-  <!-- Modal 1 -->
-   
+
+ 
   
-   <!-- Modal2 -->
-   <div class="modal fade animate__animated animate__zoomInUp" data-animate-out="modal fade animate__animated animate__zoomInUp" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-fullscreen-sm-down ">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Provincia de Coclé</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            Es una provincia de Cocle. Su capital es David. También se da el nombre de Laguna de Chiriquí a un gran golfo que existe en la costa caribeña de Panamá, en la provincia de Bocas del Toro. Chiriquí significa valle de la luna para los indígenas Ngöbe-Buglé.
-        </div>
-        <!-- <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div> -->
-      </div>
-    </div>
-  </div>
-  <!-- Modal 2 -->
-   
-   
-   
+
   
-   
-   
+
+
+
+  <img src="../../../assets/Imagenes/textos_iconos/AssetsFinales/mando36.png" style="height: 100px;   position: absolute; top: 880px;
+  left: 100px; z-index: 6;" alt="" routerLink="/ampliacion" >
+
+  <!-- <img src="../../../assets/Imagenes/textos_iconos/AssetsProvicionales/eng.png" style="height: 250px;   position: absolute; top: 750px;
+left: -70px; z-index: 6;" alt="" > -->
+
+  <img src="../../../assets/Imagenes/textos_iconos/AssetsFinales/mando40.png" style="height: 120px;   position: absolute; top: 870px;
+right: 90px; z-index: 6;" alt="" routerLink="/" >
+
+<img src="../../../assets/Imagenes/textos_iconos/AssetsFinales/mando42.png" style="height: 90px;   position: absolute; top: 900px;
+right: 250px; z-index: 6;" alt="">
+<!-- Boton de ingles español -->
+
+
+
+
+
+
+
+
+ 
+</div>
+
+
+
+
+
