@@ -16,7 +16,7 @@
           <!-- <h1 class="animated flip" style="margin: 0 auto;" class="titulo2  {{cssTexto}}" id="titulo">{{Titulo}}</h1> -->
           <div class="container-fluid" >
             <div class="row">
-              <div class="col-xl-6" >
+              <div class="col-xl-6" style="position: absolute; left: -50px;" >
                 <h1 class="calistoga" style="position: absolute; top: -50px;">COBERTURA VEGETAL</h1><br><br><br><br><br>
                
                  <p class="runted" style=" position: relative; top: -50px; font-size: 25px; text-align: justify;" id="parrafo">
@@ -53,19 +53,30 @@ A pesar de su importancia, la cobertura boscosa de la Cuenca del Canal se redujo
     
     
               </div>
-              <div class="col-xl-6" style="position: relative; top: -80px; left: 30px;" >
+              <div class="col-xl-6" style="position: relative; top: -20px; left: 900px;width: 740px; height: 500px;" >
                
-    
-               <!-- Aqui va una imagen de referencia -->
-               <div class="d-grid gap-3"  >
-                <div class="titulo_cuenca" style="font-size: 25px;color: black; position: absolute; top:10px;" routerLink="/panel-barrocolorado"><img src="../../../assets/Imagenes/stickers/Plantas/Stickers-35.png" style="height: 500px;"></div>
+                
+                <div class="container">
 
-               
+                  <img-comparison-slider class="split-line">
+                  <figure slot="first" class="before">
+                    <img width="100%" src="../../../assets/Imagenes/comparar1.jpg">
+                    <figcaption>2012</figcaption>
+                  </figure>
+                  <figure slot="second" class="after">
+                    <img width="100%" src="../../../assets/Imagenes/cobertura2.jpg">
+                    <figcaption>2021</figcaption>
+                  </figure>
 
-               
- 
-                 
-               </div>
+                  <svg slot="handle" class="custom-animated-handle" xmlns="http://www.w3.org/2000/svg" width="200" viewBox="-8 -3 16 6" style="position: absolute; top:-30px; left:-100px;">
+                    <path stroke="#fff" d="M -5 -2 L -7 0 L -5 2 M -5 -2 L -5 2 M 5 -2 L 7 0 L 5 2 M 5 -2 L 5 2" stroke-width="1" fill="#fff" vector-effect="non-scaling-stroke"></path>
+                  </svg>
+                </img-comparison-slider>
+  
+  
+                  
+              
+                  </div>
     
     
     
