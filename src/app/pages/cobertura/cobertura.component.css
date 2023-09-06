@@ -34,7 +34,7 @@
 
 
   .split-line {
-    --divider-width: 4px;
+    --divider-width: 2px;
     --divider-color: black;
     --default-handle-opacity: 0;
   }
