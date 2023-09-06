@@ -6,50 +6,47 @@ import { SocketService } from 'src/app/services/socket.service';
 @Component({
   selector: 'app-proyeccion',
   templateUrl: './proyeccion.component.html',
-  styleUrls: ['./proyeccion.component.css']
+  styleUrls: ['./proyeccion.component.css'],
 })
 export class ProyeccionComponent implements OnInit {
-  
-  
-//assets/proyeccion/PLASTIC - ES.mp4
-//assets/proyeccion/output.mp4
-  constructor(public wsSocket: SocketService,private router:Router) { }
-  
-  ngOnInit(){
+  //assets/proyeccion/PLASTIC - ES.mp4
+  //assets/proyeccion/output.mp4
+  constructor(public wsSocket: SocketService, private router: Router) {}
 
+
+
+  ngOnInit() {
+
+    
    
   
-    this.wsSocket.escuharVideo().subscribe(data=>{
+    this.wsSocket.escuharVideo().subscribe((data) => {
+      console.log(data);
 
-    console.log(data);
-     
-    if(data==="1"){
-     
-      this.router.navigateByUrl('pro1');
-
-    }else if(data==="2"){
-
-      this.router.navigateByUrl('pro2');
-
-    }else if(data=="portal"){
-
-      this.router.navigateByUrl('portal');
-
-    }else if(data=="cuenca"){
-      this.router.navigateByUrl('cuenca');
-    }else{
-
-    }
-
-
-    })
-     
-  
-  
+      if (data === '1') {
+        this.router.navigateByUrl('pro1');
+      } else if (data === '2') {
+        this.router.navigateByUrl('pro2');
+      } else if (data == 'portal') {
+        this.router.navigateByUrl('portal');
+      } else if (data == 'cuenca') {
+        this.router.navigateByUrl('cuenca');
+      } else {
+      }
+    });
   }
 
- 
 
- 
+
+
+   playsound(){
+    let audio= new Audio();
+    audio.src="assets/audio/audio.mp3";
+    audio.load();
+    audio.play();
+    audio.loop=true;
+   }
+
+
 
 }

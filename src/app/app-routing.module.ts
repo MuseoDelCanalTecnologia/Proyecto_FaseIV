@@ -84,7 +84,7 @@ import { CauceComponent } from './pages/cauce/cauce.component';
 
 
 const routes: Routes = [
-
+  
   {path:'', component:HomeComponent,pathMatch:'full'},
   {path:'mapa', component:MapaComponent},
   {path:'proyeccion', component:ProyeccionComponent},
