@@ -88,7 +88,7 @@ import { SuministroComponent } from './pages/suministro/suministro.component';
 
 
 const routes: Routes = [
-
+  
   {path:'', component:HomeComponent,pathMatch:'full'},
   {path:'mapa', component:MapaComponent},
   {path:'proyeccion', component:ProyeccionComponent},
