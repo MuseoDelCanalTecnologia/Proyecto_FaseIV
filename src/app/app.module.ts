@@ -90,6 +90,10 @@ import { IntroareasComponent } from './pages/introareas/introareas.component';
 import { SubcuencasComponent } from './pages/subcuencas/subcuencas.component';
 import { CoberturaComponent } from './pages/cobertura/cobertura.component';
 import { CauceComponent } from './pages/cauce/cauce.component';
+import { ProfundizacionComponent } from './pages/profundizacion/profundizacion.component';
+import { NavegacionComponent } from './pages/navegacion/navegacion.component';
+import { ConstruccionComponent } from './pages/construccion/construccion.component';
+import { SuministroComponent } from './pages/suministro/suministro.component';
 
 //Entorno
 const config: SocketIoConfig = { url: 'https://experience-staging.cuentanostuhistoria.org/', options: {} };
@@ -180,7 +184,11 @@ const config: SocketIoConfig = { url: 'https://experience-staging.cuentanostuhis
     IntroareasComponent,
     SubcuencasComponent,
     CoberturaComponent,
-    CauceComponent
+    CauceComponent,
+    ProfundizacionComponent,
+    NavegacionComponent,
+    ConstruccionComponent,
+    SuministroComponent
   
   ],
 

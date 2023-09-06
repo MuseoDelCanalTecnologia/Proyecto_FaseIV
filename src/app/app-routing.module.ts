@@ -81,6 +81,10 @@ import { Cuenca3Component } from './pages/cuenca3/cuenca3.component';
 import { IntroareasComponent } from './pages/introareas/introareas.component';
 import { CoberturaComponent } from './pages/cobertura/cobertura.component';
 import { CauceComponent } from './pages/cauce/cauce.component';
+import { ProfundizacionComponent } from './pages/profundizacion/profundizacion.component';
+import { NavegacionComponent } from './pages/navegacion/navegacion.component';
+import { ConstruccionComponent } from './pages/construccion/construccion.component';
+import { SuministroComponent } from './pages/suministro/suministro.component';
 
 
 const routes: Routes = [
@@ -167,6 +171,10 @@ const routes: Routes = [
   {path:'panel-soberania',component:PsoberaniaComponent},
   {path:'contenido-ampliacion',component:AmpliacionacontentComponent},
   {path:'cauce',component:CauceComponent},
+  {path:'profundizacion',component:ProfundizacionComponent},
+  {path:'navegacion',component:NavegacionComponent},
+  {path:'construccion',component:ConstruccionComponent},
+  {path:'suministro',component:SuministroComponent},
 
   
  
