@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SocketService } from 'src/app/services/socket.service';
 
 @Component({
   selector: 'app-cauce',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CauceComponent implements OnInit {
 
-  constructor() { }
+  constructor(private wsSocket:SocketService) { }
 
   ngOnInit(): void {
+
+    this.enviarProyeccion();
   }
+
+  enviarProyeccion() {
+    this.wsSocket.envioPortal('acceso-pacifico');
+  }
+
+  enviarHome() {
+    this.wsSocket.homeRoute('proyeccion');
+  }
+
+
+  
+
 
 }

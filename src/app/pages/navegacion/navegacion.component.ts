@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SocketService } from 'src/app/services/socket.service';
 
 @Component({
   selector: 'app-navegacion',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavegacionComponent implements OnInit {
 
-  constructor() { }
+  constructor(private wsSocket: SocketService) { }
 
   ngOnInit(): void {
+    this.enviarProyeccion();
   }
+  enviarProyeccion() {
+    this.wsSocket.envioPortal('operacion-gatun');
+  }
+
+  enviarHome() {
+    this.wsSocket.homeRoute('proyeccion');
+  }
+
 
 }
