@@ -34,7 +34,7 @@ ngOnInit() {
     this.wsSocket.homeRoute('proyeccion');
   }
 
-  <video id="video" [autoplay]="true" [muted]="true" [loop]="true" src="/assets/  proyeccion/ESC01-V2.mp4" width=100%  height=100% ></video>
+  <video id="" [autoplay]="true" [muted]="false" [loop]="true" src="/assets/  proyeccion/" width=100%  height=100% ></video>
 
     enviarProyeccion() {
     this.wsSocket.envioPortal('balboa-oeste');
@@ -45,6 +45,6 @@ ngOnInit() {
   }
 
  cuenca(){
-    this.wsSocket.envioPortal('cuenca');
+    this.wsSocket.envioPortal('rio-chagres');
   }
   

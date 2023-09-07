@@ -29,15 +29,7 @@ export class ParqueSoberaniaComponent implements OnInit {
     this.wsSocket.escuchandoPortal().subscribe((data)=>{
       
     this.data=data;
-
-    if(!this.data){
-    
       this.router.navigateByUrl(this.data);
-
-    }else{
-      //corriendo video
-    }
-
     });
   }
 

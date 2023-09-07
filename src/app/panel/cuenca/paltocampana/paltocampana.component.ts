@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SocketService } from 'src/app/services/socket.service';
 
 @Component({
   selector: 'app-paltocampana',
@@ -7,9 +8,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PaltocampanaComponent implements OnInit {
 
-  constructor() { }
+  constructor(private wsSocket:SocketService) { }
 
   ngOnInit(): void {
+
+    this.enviarProyeccion();
+
   }
+
+
+  
+  enviarProyeccion() {
+    this.wsSocket.envioPortal('altos-campana');
+  }
+
+  enviarHome() {
+    this.wsSocket.homeRoute('proyeccion');
+  }
+
+ cuenca(){
+    this.wsSocket.envioPortal('rio-chagres');
+  }
+  
+
+
+
 
 }
