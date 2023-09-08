@@ -94,6 +94,8 @@ import { ProfundizacionComponent } from './pages/profundizacion/profundizacion.c
 import { NavegacionComponent } from './pages/navegacion/navegacion.component';
 import { ConstruccionComponent } from './pages/construccion/construccion.component';
 import { SuministroComponent } from './pages/suministro/suministro.component';
+import { BalboaComponent } from './areas-revertidas/poligonos/balboa/balboa.component';
+import { SubIntroComponent } from './ampliacion/sub-intro/sub-intro.component';
 
 //Entorno
 const config: SocketIoConfig = { url: 'https://experience-staging.cuentanostuhistoria.org/', options: {} };
@@ -188,7 +190,9 @@ const config: SocketIoConfig = { url: 'https://experience-staging.cuentanostuhis
     ProfundizacionComponent,
     NavegacionComponent,
     ConstruccionComponent,
-    SuministroComponent
+    SuministroComponent,
+    BalboaComponent,
+    SubIntroComponent
   
   ],
 

@@ -85,6 +85,8 @@ import { ProfundizacionComponent } from './pages/profundizacion/profundizacion.c
 import { NavegacionComponent } from './pages/navegacion/navegacion.component';
 import { ConstruccionComponent } from './pages/construccion/construccion.component';
 import { SuministroComponent } from './pages/suministro/suministro.component';
+import { BalboaComponent } from './areas-revertidas/poligonos/balboa/balboa.component';
+import { SubIntroComponent } from './ampliacion/sub-intro/sub-intro.component';
 
 
 const routes: Routes = [
@@ -175,6 +177,8 @@ const routes: Routes = [
   {path:'navegacion',component:NavegacionComponent},
   {path:'construccion',component:ConstruccionComponent},
   {path:'suministro',component:SuministroComponent},
+  {path:'balboa',component:BalboaComponent},
+  {path:'sub-intro',component:SubIntroComponent},
 
   
  
