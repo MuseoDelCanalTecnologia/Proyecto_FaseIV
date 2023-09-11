@@ -10,9 +10,9 @@ export class CoberturaComponent implements OnInit {
 
  event:any
   constructor(private wsSocket:SocketService) { }
-
+ valor:string = '';
   ngOnInit(): void {
-
+    this.valor="glass-plus";
     this.enviarProyeccion();
 
 
@@ -39,6 +39,24 @@ export class CoberturaComponent implements OnInit {
   dato=this.event.value.toString();
   this.wsSocket.slideIn(dato);
   
+
+  }
+
+
+  Mapa(){
+
+   
+    if(this.valor=="glass-plus"){
+      this.valor="glass-minus"
+      this.wsSocket.envioPortal('slider');
+
+    }else{
+      this.valor="glass-plus"
+      this.wsSocket.envioPortal('rio-gatun');
+
+    }
+
+
 
   }
 
