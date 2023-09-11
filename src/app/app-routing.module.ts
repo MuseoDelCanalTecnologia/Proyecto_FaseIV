@@ -87,6 +87,7 @@ import { ConstruccionComponent } from './pages/construccion/construccion.compone
 import { SuministroComponent } from './pages/suministro/suministro.component';
 import { BalboaComponent } from './areas-revertidas/poligonos/balboa/balboa.component';
 import { SubIntroComponent } from './ampliacion/sub-intro/sub-intro.component';
+import { SliderComponent } from './pages/slider/slider.component';
 
 
 const routes: Routes = [
@@ -179,6 +180,7 @@ const routes: Routes = [
   {path:'suministro',component:SuministroComponent},
   {path:'balboa',component:BalboaComponent},
   {path:'sub-intro',component:SubIntroComponent},
+  {path:'slider',component:SliderComponent},
 
   
  
