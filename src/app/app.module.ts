@@ -100,7 +100,7 @@ import { SubIntroComponent } from './ampliacion/sub-intro/sub-intro.component';
 //Entorno
 const config: SocketIoConfig = { url: 'https://experience-staging.cuentanostuhistoria.org/', options: {} };
 //Local
-// const config: SocketIoConfig = { url: 'http://localhost:2000', options: {} };
+//  const config: SocketIoConfig = { url: 'http://localhost:5000', options: {} };
 @NgModule({
   declarations: [
     

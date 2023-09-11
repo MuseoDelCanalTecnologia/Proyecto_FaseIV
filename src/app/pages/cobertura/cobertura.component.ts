@@ -8,11 +8,14 @@ import { SocketService } from 'src/app/services/socket.service';
 })
 export class CoberturaComponent implements OnInit {
 
+ event:any
   constructor(private wsSocket:SocketService) { }
 
   ngOnInit(): void {
 
     this.enviarProyeccion();
+
+
   }
 
 
@@ -26,6 +29,16 @@ export class CoberturaComponent implements OnInit {
 
  cuenca(){
     this.wsSocket.envioPortal('cuenca');
+  }
+
+
+  evento(){
+    
+  let dato
+  this.event=document.getElementById("img-comparacion");
+  dato=this.event.value.toString();
+  this.wsSocket.slideIn(dato);
+  console.log(dato);
   }
 
 

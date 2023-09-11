@@ -59,16 +59,21 @@ export class SocketService {
   }
 
   envioPortal(dato:string){
-
   return this.socket.emit('portal',dato);
-
   }
 
   escuchandoPortal(){
-
     return this.socket.fromEvent("dataPortal");
-
   }
+
+  slideIn(dato:string){
+    return this.socket.emit('slidenIn',dato);
+  }
+
+  slideOut(){
+    return this.socket.fromEvent("slideOut");
+  }
+
 
 
 
