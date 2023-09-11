@@ -26,7 +26,7 @@
 
 .desvanecer {
   animation: niebla;
-  animation-duration: 4s;
+  animation-duration: 10s;
 }
 
 @keyframes niebla {
