@@ -96,6 +96,7 @@ import { ConstruccionComponent } from './pages/construccion/construccion.compone
 import { SuministroComponent } from './pages/suministro/suministro.component';
 import { BalboaComponent } from './areas-revertidas/poligonos/balboa/balboa.component';
 import { SubIntroComponent } from './ampliacion/sub-intro/sub-intro.component';
+import { SliderComponent } from './pages/slider/slider.component';
 
 //Entorno
 const config: SocketIoConfig = { url: 'https://experience-staging.cuentanostuhistoria.org/', options: {} };
@@ -192,7 +193,8 @@ const config: SocketIoConfig = { url: 'https://experience-staging.cuentanostuhis
     ConstruccionComponent,
     SuministroComponent,
     BalboaComponent,
-    SubIntroComponent
+    SubIntroComponent,
+    SliderComponent
   
   ],
 
