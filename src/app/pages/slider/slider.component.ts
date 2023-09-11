@@ -15,20 +15,12 @@ export class SliderComponent implements OnInit {
   ngOnInit(): void {
  
     this.recibe=document.getElementById("img-recibe");
-    this.socket.slideOut().subscribe(
-    
-      (data:any)=>{
-        this.data=data.toString();
-        this.recibe.value=data;
-       
-      }
-
-    )
+ 
 
 
     this.recibiendoPortal();
     this.home();
-
+    this.moveSlide();
 
   }
 
@@ -50,6 +42,15 @@ export class SliderComponent implements OnInit {
       this.router.navigateByUrl(data);
       console.log(data);
      });
+  }
+
+  moveSlide(){
+    this.socket.slideOut().subscribe(
+      (data:any)=>{
+        this.data=data.toString();
+        this.recibe.value=data;
+      }
+    );
   }
 
 }

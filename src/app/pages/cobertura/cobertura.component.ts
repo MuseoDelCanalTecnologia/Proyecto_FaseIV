@@ -14,8 +14,8 @@ export class CoberturaComponent implements OnInit {
   ngOnInit(): void {
     this.valor="glass-plus";
     this.enviarProyeccion();
-
-
+   
+    
   }
 
 
@@ -34,11 +34,13 @@ export class CoberturaComponent implements OnInit {
 
   evento(){
 
-  let dato
-  this.event=document.getElementById("img-comparacion");
-  dato=this.event.value.toString();
-  this.wsSocket.slideIn(dato);
-  
+  setInterval(()=>{
+    let dato
+    this.event=document.getElementById("img-comparacion");
+    dato=this.event.value.toString();
+    this.wsSocket.slideIn(dato);
+    console.log(dato)  
+  },100)
 
   }
 
