@@ -67,7 +67,7 @@ export class SocketService {
   }
 
   slideIn(dato:string){
-    return this.socket.emit('slidenIn',dato);
+   this.socket.emit('slidenIn',dato);
   }
 
   slideOut(){

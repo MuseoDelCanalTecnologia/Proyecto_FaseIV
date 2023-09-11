@@ -1,1 +1,27 @@
-<p>slider works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<br><br>
+        <img-comparison-slider class="split-line" id="img-recibe" style="width:100%;" >
+        <figure slot="first" class="before">
+          <img width="100%" src="assets/Imagenes/Mapa02.png">
+          <figcaption><b>2012</b></figcaption>
+        </figure>
+        <figure slot="second" class="after">
+          <img width="100%" src="assets/Imagenes/Mapa01.png">
+          <figcaption><b>2021</b></figcaption>
+        </figure>
+    
+        <svg slot="handle" class="custom-animated-handle" xmlns="http://www.w3.org/2000/svg" width="200" viewBox="-8 -3 16 6" style="position: absolute; top:-30px; left:-100px;">
+          <path stroke="#fff" d="M -5 -2 L -7 0 L -5 2 M -5 -2 L -5 2 M 5 -2 L 7 0 L 5 2 M 5 -2 L 5 2" stroke-width="1" fill="#fff" vector-effect="non-scaling-stroke"></path>
+        </svg>
+      </img-comparison-slider>
+      
+</body>
+</html>
