@@ -29,7 +29,7 @@ export class PacificoAtlanticoComponent implements OnInit {
     this.wsSocket.escuchandoPortal().subscribe((data)=>{
       
 
-
+    this.data=data;
     
     
     this.router.navigateByUrl(this.data);

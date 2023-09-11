@@ -9,33 +9,38 @@ import { SocketService } from 'src/app/services/socket.service';
 })
 export class Pro2Component implements OnInit {
 
-  constructor(public wsSocket: SocketService,private router:Router) { }
 
-  ngOnInit() {
+  data:any;
 
-   this.wsSocket.homeEscuchar().subscribe((data:any)=>{
-    this.router.navigateByUrl(data);
-    console.log(data);
+  constructor(private wsSocket:SocketService, private router:Router) { }
+  
+  ngOnInit(): void {
+
+    this.wsSocket.homeEscuchar().subscribe((data:any)=>{
+      this.router.navigateByUrl(data);
+      console.log(data);
+      
+     });
+
+     this.recibiendoPortal();
+  }
+
+  recibiendoPortal(){
+
+    this.wsSocket.escuchandoPortal().subscribe((data)=>{
+      
+
+    this.data=data;
     
-   });
+    
+    this.router.navigateByUrl(this.data);
 
+ 
 
+    });
 
-   
-   this.reciboAmpliacion();
-  
+   }
 
-  }
-
-  
-  reciboAmpliacion(){
-    this.wsSocket.escuchandoPortal().subscribe(
-      (data:any)=>{
-        this.router.navigateByUrl(data);
-        console.log(data);
-      }
-    )
-  }
 
 
 }

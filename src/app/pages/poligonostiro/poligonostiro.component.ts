@@ -29,6 +29,35 @@ export class PoligonostiroComponent implements OnInit {
   areaRevertida(){
     this.wsSocket.envioPortal('portal');
   }
+
+
+
+  sherman(){
+    this.wsSocket.envioPortal('p-sherman');
+  }
+
+  pina(){
+    this.wsSocket.envioPortal('pina');
+  }
+
+  balboa(){
+    this.wsSocket.envioPortal('balboa');
+  }
+
+  emperador(){
+    this.wsSocket.envioPortal('emperador');
+  }
+
+  rioHato(){
+    this.wsSocket.envioPortal('rio-hato');
+  }
+  sanJose(){
+    this.wsSocket.envioPortal('san-jose');
+  }
+
+  poligono(){
+    this.wsSocket.envioPortal('balboa-oeste');
+  }
   
 
 }
