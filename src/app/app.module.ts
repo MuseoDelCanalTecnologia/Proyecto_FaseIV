@@ -99,9 +99,9 @@ import { SubIntroComponent } from './ampliacion/sub-intro/sub-intro.component';
 import { SliderComponent } from './pages/slider/slider.component';
 
 //Entorno
-// const config: SocketIoConfig = { url: 'https://experience-staging.cuentanostuhistoria.org/', options: {} };
+const config: SocketIoConfig = { url: 'https://experience-staging.cuentanostuhistoria.org/', options: {} };
 //Local
-const config: SocketIoConfig = { url: 'http://localhost:7000', options: {} };
+// const config: SocketIoConfig = { url: 'http://localhost:7000', options: {} };
 @NgModule({
   declarations: [
     
