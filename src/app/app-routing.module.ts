@@ -88,6 +88,16 @@ import { SuministroComponent } from './pages/suministro/suministro.component';
 import { BalboaComponent } from './areas-revertidas/poligonos/balboa/balboa.component';
 import { SubIntroComponent } from './ampliacion/sub-intro/sub-intro.component';
 import { SliderComponent } from './pages/slider/slider.component';
+import { AlbrookVisorComponent } from './visor/albrook-visor/albrook-visor.component';
+import { AmadorVisorComponent } from './visor/amador-visor/amador-visor.component';
+import { CocosoloVisorComponent } from './visor/cocosolo-visor/cocosolo-visor.component';
+import { DaviesVisorComponent } from './visor/davies-visor/davies-visor.component';
+import { GrantVisorComponent } from './visor/grant-visor/grant-visor.component';
+import { GulickVisorComponent } from './visor/gulick-visor/gulick-visor.component';
+import { KobbeVisorComponent } from './visor/kobbe-visor/kobbe-visor.component';
+import { RodmanVisorComponent } from './visor/rodman-visor/rodman-visor.component';
+import { ShermanVisorComponent } from './visor/sherman-visor/sherman-visor.component';
+import { ClaytonVisorComponent } from './visor/clayton-visor/clayton-visor.component';
 
 
 const routes: Routes = [
@@ -181,6 +191,17 @@ const routes: Routes = [
   {path:'balboa',component:BalboaComponent},
   {path:'sub-intro',component:SubIntroComponent},
   {path:'slider',component:SliderComponent},
+  {path:'albrook-visor',component:AlbrookVisorComponent},
+  {path:'amador-visor',component:AmadorVisorComponent},
+  {path:'cocosolo-visor',component:CocosoloVisorComponent},
+  {path:'davies-visor',component:DaviesVisorComponent},
+  {path:'grant-visor',component:GrantVisorComponent},
+  {path:'gulick-visor',component:GulickVisorComponent},
+  {path:'kobbe-visor',component:KobbeVisorComponent},
+  {path:'rodman-visor',component:RodmanVisorComponent},
+  {path:'sherman-visor',component:ShermanVisorComponent},
+  {path:'clayton-visor',component:ClaytonVisorComponent},
+
 
   
  
