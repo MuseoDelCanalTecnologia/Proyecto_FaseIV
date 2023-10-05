@@ -97,6 +97,16 @@ import { SuministroComponent } from './pages/suministro/suministro.component';
 import { BalboaComponent } from './areas-revertidas/poligonos/balboa/balboa.component';
 import { SubIntroComponent } from './ampliacion/sub-intro/sub-intro.component';
 import { SliderComponent } from './pages/slider/slider.component';
+import { ShermanVisorComponent } from './visor/sherman-visor/sherman-visor.component';
+import { CocosoloVisorComponent } from './visor/cocosolo-visor/cocosolo-visor.component';
+import { DaviesVisorComponent } from './visor/davies-visor/davies-visor.component';
+import { GulickVisorComponent } from './visor/gulick-visor/gulick-visor.component';
+import { ClaytonVisorComponent } from './visor/clayton-visor/clayton-visor.component';
+import { AlbrookVisorComponent } from './visor/albrook-visor/albrook-visor.component';
+import { AmadorVisorComponent } from './visor/amador-visor/amador-visor.component';
+import { GrantVisorComponent } from './visor/grant-visor/grant-visor.component';
+import { KobbeVisorComponent } from './visor/kobbe-visor/kobbe-visor.component';
+import { RodmanVisorComponent } from './visor/rodman-visor/rodman-visor.component';
 
 //Entorno
 const config: SocketIoConfig = { url: 'https://experience-staging.cuentanostuhistoria.org/', options: {} };
@@ -194,7 +204,17 @@ const config: SocketIoConfig = { url: 'https://experience-staging.cuentanostuhis
     SuministroComponent,
     BalboaComponent,
     SubIntroComponent,
-    SliderComponent
+    SliderComponent,
+    ShermanVisorComponent,
+    CocosoloVisorComponent,
+    DaviesVisorComponent,
+    GulickVisorComponent,
+    ClaytonVisorComponent,
+    AlbrookVisorComponent,
+    AmadorVisorComponent,
+    GrantVisorComponent,
+    KobbeVisorComponent,
+    RodmanVisorComponent
   
   ],
 
