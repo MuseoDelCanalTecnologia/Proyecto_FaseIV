@@ -74,6 +74,14 @@ export class SocketService {
     return this.socket.fromEvent("slideOut");
   }
 
+  imgIn(dato:string){
+    this.socket.emit('img-In',dato);
+  }
+
+  imgOut(){
+    return this.socket.fromEvent("img-Out");
+  }
+
 
 
 
