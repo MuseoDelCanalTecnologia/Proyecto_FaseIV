@@ -28,4 +28,12 @@ export class ClaytonComponent implements OnInit {
   }
   
 
+  nextImg(){
+    this.wsSocket.imgIn('next');
+  }
+  
+  prevImg(){
+    this.wsSocket.imgIn('prev');
+  }
+
 }

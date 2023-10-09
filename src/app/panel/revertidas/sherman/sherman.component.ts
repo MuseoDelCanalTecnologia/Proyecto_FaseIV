@@ -35,4 +35,13 @@ export class PanelShermanComponent implements OnInit {
     this.wsSocket.envioPortal('mapazoom');
   }
 
+
+  nextImg(){
+    this.wsSocket.imgIn('next');
+  }
+  
+  prevImg(){
+    this.wsSocket.imgIn('prev');
+  }
+
 }

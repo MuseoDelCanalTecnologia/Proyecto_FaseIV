@@ -26,4 +26,13 @@ export class AmadorComponent implements OnInit {
   }
   
 
+  nextImg(){
+    this.wsSocket.imgIn('next');
+  }
+  
+  prevImg(){
+    this.wsSocket.imgIn('prev');
+  }
+
+
 }
