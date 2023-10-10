@@ -57,7 +57,7 @@ export class KobbeComponent implements OnInit {
      
       if(this.valor=="glass-plus"){
         this.valor="glass-minus"
-        this.wsSocket.envioPortal('sherman-visor');
+        this.wsSocket.envioPortal('kobbe-visor');
   
       }else{
         this.valor="glass-plus"
