@@ -12,6 +12,8 @@ export class LessepsComponent implements OnInit {
 
   ngOnInit(): void {
     this.enviarProyeccion();
+    this.idioma();
+
   }
 
   enviarProyeccion() {
@@ -26,5 +28,10 @@ export class LessepsComponent implements OnInit {
     this.wsSocket.envioPortal('mapazoom');
   }
   
+  idioma(){
+    this.wsSocket.idiomaPost('es');
+  }
+
+
 
 }

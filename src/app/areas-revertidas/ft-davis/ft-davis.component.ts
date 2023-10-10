@@ -10,7 +10,10 @@ import { SocketService } from 'src/app/services/socket.service';
 export class FtDavisComponent implements OnInit {
   data:any;
   constructor(private wsSocket: SocketService, private router:Router,private id_router:ActivatedRoute) { }
-
+  videoES:boolean=false;
+  videoEN:boolean=false;
+  
+  
   ngOnInit(): void {
 
     this.wsSocket.homeEscuchar().subscribe((data:any)=>{
@@ -22,6 +25,7 @@ export class FtDavisComponent implements OnInit {
   
 
      this.recibiendoPortal();
+     this.idioma();
 
   }
 
@@ -36,5 +40,26 @@ export class FtDavisComponent implements OnInit {
     });
 
   }
+
+  idioma(){
+
+    this.wsSocket.idiomaGet().subscribe((data)=>{
+      console.log("panel-davies: ",data);
+      if(data==='es'){
+      
+        this.videoES=true;
+        this.videoEN=false;
+
+      }else{
+
+        this.videoEN=true;
+        this.videoES=false;
+
+      }
+
+    });
+
+  }
+
 
 }

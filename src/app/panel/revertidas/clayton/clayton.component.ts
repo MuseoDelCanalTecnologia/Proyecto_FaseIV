@@ -12,6 +12,7 @@ export class ClaytonComponent implements OnInit {
 
   ngOnInit(): void {
     this.enviarProyeccion();
+    this.idioma();
   }
 
 
@@ -35,5 +36,10 @@ export class ClaytonComponent implements OnInit {
   prevImg(){
     this.wsSocket.imgIn('prev');
   }
+
+  idioma(){
+    this.wsSocket.idiomaPost('es');
+  }
+
 
 }

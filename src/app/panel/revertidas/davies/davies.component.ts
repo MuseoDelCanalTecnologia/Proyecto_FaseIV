@@ -13,6 +13,8 @@ export class DaviesComponent implements OnInit {
   ngOnInit(): void {
 
     this.enviarProyeccion();
+    this.idioma();
+
   }
 
   enviarProyeccion() {
@@ -34,5 +36,11 @@ export class DaviesComponent implements OnInit {
   prevImg(){
     this.wsSocket.imgIn('prev');
   }
+ 
+  idioma(){
+    this.wsSocket.idiomaPost('es');
+  }
+
+
 
 }

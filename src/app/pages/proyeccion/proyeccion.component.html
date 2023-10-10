@@ -6,6 +6,9 @@
     <title></title>
 </head>
 <body class="fondo">   
-<video id="p-central" class="animate__animated animate__fadeInUp" [autoplay]="true" [muted]="false"  [loop]="true" src="assets/proyeccion/ESC00.mp4" width="100%" height="100%" ></video> 
+
+<video id="p-central" class="animate__animated animate__fadeInUp" [autoplay]="true" [muted]="false"  [loop]="true" src="assets/proyeccion/ESC00.mp4" width="100%" height="100%" *ngIf="videoES"></video>
+<video id="p-central" class="animate__animated animate__fadeInUp" [autoplay]="true" [muted]="false"  [loop]="true" src="assets/proyeccion/ESC00_ING.mp4" width="100%" height="100%" *ngIf="videoEN" ></video>
+  
 </body>
 </html>

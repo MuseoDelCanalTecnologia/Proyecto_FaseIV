@@ -13,6 +13,7 @@ export class GulikComponent implements OnInit {
   ngOnInit(): void {
 
     this.enviarProyeccion();
+    this.idioma();
   }
 
 
@@ -38,5 +39,9 @@ export class GulikComponent implements OnInit {
     this.wsSocket.imgIn('prev');
   }
 
+
+  idioma(){
+    this.wsSocket.idiomaPost('es');
+  }
 
 }

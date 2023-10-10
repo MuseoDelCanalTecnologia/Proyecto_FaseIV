@@ -12,6 +12,7 @@ export class AmadorComponent implements OnInit {
 
   ngOnInit(): void {
     this.enviarProyeccion();
+    this.idioma();
   }
   enviarProyeccion() {
     this.wsSocket.envioPortal('ft-amador');
@@ -32,6 +33,10 @@ export class AmadorComponent implements OnInit {
   
   prevImg(){
     this.wsSocket.imgIn('prev');
+  }
+
+  idioma(){
+    this.wsSocket.idiomaPost('es');
   }
 
 

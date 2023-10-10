@@ -12,6 +12,7 @@ export class HowardComponent implements OnInit {
 
   ngOnInit(): void {
     this.enviarProyeccion();
+    this.idioma();
   }
 
   enviarProyeccion() {
@@ -25,5 +26,10 @@ export class HowardComponent implements OnInit {
  bases(){
     this.wsSocket.envioPortal('mapazoom');
   }
+
+  idioma(){
+    this.wsSocket.idiomaPost('es');
+  }
+
 
 }

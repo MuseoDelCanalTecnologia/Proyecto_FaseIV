@@ -6,12 +6,22 @@
     <title>Document</title>
   </head>
   <body class="fondo">
-    <video
+    <video *ngIf="videoES"
       id="video" class="animate__animated animate__heartBeat "
       [autoplay]="true"
       [muted]="false"
       [loop]="true"
       src="assets/proyeccion/ESC02.mp4
+"
+      width="100%"
+      height="100%"
+    ></video>
+    <video *ngIf="videoEN"
+      id="video" class="animate__animated animate__heartBeat "
+      [autoplay]="true"
+      [muted]="false"
+      [loop]="true"
+      src="assets/proyeccion/ESC02_ING.mp4
 "
       width="100%"
       height="100%"

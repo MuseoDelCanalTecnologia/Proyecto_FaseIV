@@ -14,6 +14,7 @@ export class PoligonostiroComponent implements OnInit {
    
     this.enviarProyeccion();
     
+    this.idioma();
 
   }
 
@@ -34,30 +35,39 @@ export class PoligonostiroComponent implements OnInit {
 
   sherman(){
     this.wsSocket.envioPortal('p-sherman');
+    this.idioma();
   }
 
   pina(){
     this.wsSocket.envioPortal('pina');
+    this.idioma();
   }
 
   balboa(){
     this.wsSocket.envioPortal('balboa');
+    this.idioma();
   }
 
   emperador(){
     this.wsSocket.envioPortal('emperador');
+    this.idioma();
   }
 
   rioHato(){
     this.wsSocket.envioPortal('rio-hato');
+    this.idioma();
   }
   sanJose(){
     this.wsSocket.envioPortal('san-jose');
+    this.idioma();
   }
 
   poligono(){
     this.wsSocket.envioPortal('balboa-oeste');
   }
   
+  idioma(){
+    this.wsSocket.idiomaPost('es');
+  }
 
 }

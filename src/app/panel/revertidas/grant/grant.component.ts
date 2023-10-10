@@ -12,6 +12,7 @@ export class GrantComponent implements OnInit {
 
   ngOnInit(): void {
     this.enviarProyeccion();
+    this.idioma();
   }
 
 
@@ -34,5 +35,10 @@ export class GrantComponent implements OnInit {
   prevImg(){
     this.wsSocket.imgIn('prev');
   }
+
+  idioma(){
+    this.wsSocket.idiomaPost('es');
+  }
+
 
 }

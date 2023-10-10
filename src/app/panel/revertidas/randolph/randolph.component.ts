@@ -13,6 +13,8 @@ export class RandolphComponent implements OnInit {
   ngOnInit(): void {
 
     this.enviarProyeccion();
+    this.idioma();
+
   }
 
   enviarProyeccion() {
@@ -27,5 +29,12 @@ export class RandolphComponent implements OnInit {
     this.wsSocket.envioPortal('mapazoom');
   }
   
+  idioma(){
+    this.wsSocket.idiomaPost('es');
+  }
+
+
+
+
 
 }

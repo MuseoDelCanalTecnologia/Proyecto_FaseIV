@@ -12,7 +12,8 @@ export class KobbeComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.enviarProyeccion()
+    this.enviarProyeccion();
+    this.idioma();
 
   }
 
@@ -37,5 +38,10 @@ export class KobbeComponent implements OnInit {
   prevImg(){
     this.wsSocket.imgIn('prev');
   }
+
+  idioma(){
+    this.wsSocket.idiomaPost('es');
+  }
+
 
 }

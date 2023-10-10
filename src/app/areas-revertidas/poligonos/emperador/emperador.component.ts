@@ -10,6 +10,8 @@ import { SocketService } from 'src/app/services/socket.service';
 export class EmperadorComponent implements OnInit {
   data:any;
   constructor(private wsSocket:SocketService, private router:Router) { }
+  videoES:boolean=false;
+  videoEN:boolean=false;
 
   ngOnInit(): void {
     this.wsSocket.homeEscuchar().subscribe((data:any)=>{
@@ -19,7 +21,7 @@ export class EmperadorComponent implements OnInit {
      });
 
      this.recibiendoPortal();
-
+     this.idioma();
   }
 
 
@@ -37,5 +39,26 @@ export class EmperadorComponent implements OnInit {
 
     });
   }
+
+  idioma(){
+
+    this.wsSocket.idiomaGet().subscribe((data)=>{
+      console.log('poligono-Emperardor:', data);
+      if(data==='es'){
+      
+        this.videoES=true;
+        this.videoEN=false;
+
+      }else{
+
+        this.videoEN=true;
+        this.videoES=false;
+
+      }
+
+    });
+
+  }
+
 
 }

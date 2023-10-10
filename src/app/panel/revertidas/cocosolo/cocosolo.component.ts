@@ -14,6 +14,7 @@ export class CocosoloComponent implements OnInit {
   ngOnInit(): void {
  
     this.enviarProyeccion();
+    this.idioma();
 
   }
 
@@ -38,6 +39,9 @@ export class CocosoloComponent implements OnInit {
     this.wsSocket.imgIn('prev');
   }
 
+  idioma(){
+    this.wsSocket.idiomaPost('es');
+  }
 
 
 }

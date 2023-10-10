@@ -9,6 +9,9 @@ import { SocketService } from 'src/app/services/socket.service';
 })
 export class PortalSocketComponent implements OnInit {
 
+  videoES:boolean=false;
+  videoEN:boolean=false;
+  
   constructor(public wsSocket: SocketService, private router:Router) { }
   data:any;
   video:any;
@@ -24,6 +27,7 @@ export class PortalSocketComponent implements OnInit {
 
      this.recibiendoPortal();
 
+     this.idioma();
 
   }
 
@@ -34,6 +38,26 @@ export class PortalSocketComponent implements OnInit {
     this.data=data;
     this.router.navigateByUrl(this.data);
     // document.getElementById('video')?.setAttribute("src",this.data)
+    });
+
+  }
+
+  idioma(){
+
+    this.wsSocket.idiomaGet().subscribe((data)=>{
+      
+      if(data==='es'){
+        console.log("evertidas-panel:" ,data);
+        this.videoES=true;
+        this.videoEN=false;
+
+      }else{
+
+        this.videoEN=true;
+        this.videoES=false;
+
+      }
+
     });
 
   }

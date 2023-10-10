@@ -10,6 +10,8 @@ import { SocketService } from 'src/app/services/socket.service';
 export class BaseHowardComponent implements OnInit {
   data:any;
   constructor(private wsSocket:SocketService, private router: Router) { }
+  videoES:boolean=false;
+  videoEN:boolean=false;
 
   ngOnInit(): void {
 
@@ -20,7 +22,7 @@ export class BaseHowardComponent implements OnInit {
      });
 
      this.recibiendoPortal();
-
+     this.idioma();
   }
 
 
@@ -33,5 +35,27 @@ export class BaseHowardComponent implements OnInit {
       this.router.navigateByUrl(this.data);
     });
   }
+
+  idioma(){
+
+    this.wsSocket.idiomaGet().subscribe((data)=>{
+      console.log('panel-howard:',data);
+      if(data==='es'){
+      
+        this.videoES=true;
+        this.videoEN=false;
+
+      }else{
+
+        this.videoEN=true;
+        this.videoES=false;
+
+      }
+
+    });
+
+  }
+
+
 
 }

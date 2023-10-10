@@ -10,7 +10,10 @@ import { SocketService } from 'src/app/services/socket.service';
 export class FtShermanComponent implements OnInit {
  
   data:any;
-
+  videoES:boolean=false;
+  videoEN:boolean=false;
+  
+  
   constructor(private wsSocket: SocketService, private router:Router) { }
 
   ngOnInit(): void {
@@ -21,6 +24,7 @@ export class FtShermanComponent implements OnInit {
       
      });
      this.recibiendoPortal();
+     this.idioma();
 
   }
 
@@ -30,4 +34,27 @@ export class FtShermanComponent implements OnInit {
       this.router.navigateByUrl(this.data);
       });
   }
+
+  idioma(){
+
+    this.wsSocket.idiomaGet().subscribe((data)=>{
+      console.log('panel-sherman-bases:',data);
+      if(data==='es'){
+      
+        this.videoES=true;
+        this.videoEN=false;
+
+      }else{
+
+        this.videoEN=true;
+        this.videoES=false;
+
+      }
+
+    });
+
+  }
+
+  
+
 }

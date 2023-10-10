@@ -13,16 +13,15 @@ export class ProyeccionComponent implements OnInit {
   //assets/proyeccion/output.mp4
   constructor(public wsSocket: SocketService, private router: Router) {}
 
-
-
+  videoES:boolean=false;
+  videoEN:boolean=false;
+  
   ngOnInit() {
 
+   this.idioma();
     
-   
-  
     this.wsSocket.escuharVideo().subscribe((data) => {
       console.log(data);
-
       if (data === '1') {
         this.router.navigateByUrl('pro1');
       } else if (data === '2') {
@@ -31,12 +30,13 @@ export class ProyeccionComponent implements OnInit {
         this.router.navigateByUrl('portal');
       } else if (data == 'cuenca') {
         this.router.navigateByUrl('cuenca');
-      } else {
+      }else{
+        
       }
+
     });
+
   }
-
-
 
 
    playsound(){
@@ -45,6 +45,22 @@ export class ProyeccionComponent implements OnInit {
     audio.load();
     audio.play();
     audio.loop=true;
+   }
+
+
+   idioma(){
+    this.wsSocket.idiomaGet().subscribe((data)=>{
+     
+     if(data==='es'){
+      console.log("idioma - home",data)
+      this.videoES=true;
+      this.videoEN=false;
+     }else{
+      this.videoEN=true;
+      this.videoES=false;
+     }
+
+    })
    }
 
 
