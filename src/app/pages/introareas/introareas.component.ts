@@ -13,6 +13,7 @@ export class IntroareasComponent implements OnInit {
   ngOnInit(): void {
 
     this.enviarProyeccion();
+    this.idioma();
   }
 
 
@@ -29,6 +30,10 @@ export class IntroareasComponent implements OnInit {
     this.wsSocket.envioPortal('cuenca');
   }
   
+
+  idioma(){
+    this.wsSocket.idiomaPost('es');
+  }
 
 
 

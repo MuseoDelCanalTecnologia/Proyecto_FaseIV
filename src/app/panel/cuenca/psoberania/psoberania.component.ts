@@ -13,6 +13,7 @@ export class PsoberaniaComponent implements OnInit {
   ngOnInit(): void {
 
     this.enviarProyeccion();
+    this.idioma();
   }
 
 
@@ -29,5 +30,9 @@ export class PsoberaniaComponent implements OnInit {
     this.wsSocket.envioPortal('rio-chagres');
   }
   
+  idioma(){
+    this.wsSocket.idiomaPost('es');
+  }
+
 
 }

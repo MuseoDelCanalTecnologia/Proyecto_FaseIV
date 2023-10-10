@@ -12,6 +12,7 @@ export class PanelCaminocrucesComponent implements OnInit {
 
   ngOnInit(): void {
     this.enviarProyeccion();
+    this.idioma();
   }
 
   enviarProyeccion() {
@@ -24,6 +25,10 @@ export class PanelCaminocrucesComponent implements OnInit {
 
  cuenca(){
     this.wsSocket.envioPortal('rio-chagres');
+  }
+
+  idioma(){
+    this.wsSocket.idiomaPost('es');
   }
 
 }

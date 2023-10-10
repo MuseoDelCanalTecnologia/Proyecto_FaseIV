@@ -13,6 +13,7 @@ export class PaltocampanaComponent implements OnInit {
   ngOnInit(): void {
 
     this.enviarProyeccion();
+    this.idioma();
 
   }
 
@@ -30,6 +31,9 @@ export class PaltocampanaComponent implements OnInit {
     this.wsSocket.envioPortal('rio-chagres');
   }
   
+  idioma(){
+    this.wsSocket.idiomaPost('es');
+  }
 
 
 

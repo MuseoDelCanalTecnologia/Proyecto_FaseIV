@@ -10,9 +10,13 @@ import { Attribute } from '@angular/compiler';
 })
 export class CuencaHidroComponent implements OnInit {
   constructor(public wsSocket: SocketService, private router: Router) {}
+
   data: any
   video: any;
   cssAnimate= 'desvanecer';
+
+  videoES:boolean=false;
+  videoEN:boolean=false;
 
   ngOnInit() {
     this.wsSocket.homeEscuchar().subscribe((data: any) => {
@@ -21,6 +25,8 @@ export class CuencaHidroComponent implements OnInit {
     });
 
     this.recibiendoPortal();
+    this.idioma();
+
   }
 
   recibiendoPortal() {
@@ -32,6 +38,27 @@ export class CuencaHidroComponent implements OnInit {
 
    
   }
+
+  idioma(){
+
+    this.wsSocket.idiomaGet().subscribe((data)=>{
+      console.log('introcuenca:',data);
+      if(data==='es'){
+      
+        this.videoES=true;
+        this.videoEN=false;
+
+      }else{
+
+        this.videoEN=true;
+        this.videoES=false;
+
+      }
+
+    });
+
+  }
+
 
  
 

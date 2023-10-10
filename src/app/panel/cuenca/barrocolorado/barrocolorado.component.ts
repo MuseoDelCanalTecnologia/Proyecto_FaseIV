@@ -13,6 +13,7 @@ export class PanelBarrocoloradoComponent implements OnInit {
   ngOnInit(): void {
 
     this.enviarProyeccion();
+    this.idioma();
   }
 
 
@@ -28,6 +29,10 @@ export class PanelBarrocoloradoComponent implements OnInit {
     this.wsSocket.envioPortal('rio-chagres');
   }
   
+  idioma(){
+    this.wsSocket.idiomaPost('es');
+  }
+
 
 
 

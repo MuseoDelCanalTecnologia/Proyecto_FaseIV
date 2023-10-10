@@ -11,6 +11,9 @@ export class ParqueChagresComponent implements OnInit {
   data:any;
   constructor(private wsSocket:SocketService, private router:Router) { }
 
+  videoES:boolean=false;
+  videoEN:boolean=false;
+
   ngOnInit(): void {
 
     this.wsSocket.homeEscuchar().subscribe((data:any)=>{
@@ -20,7 +23,7 @@ export class ParqueChagresComponent implements OnInit {
      });
 
      this.recibiendoPortal();
-
+     this.idioma();
   }
 
 
@@ -38,5 +41,27 @@ export class ParqueChagresComponent implements OnInit {
 
     });
   }
+
+  idioma(){
+
+    this.wsSocket.idiomaGet().subscribe((data)=>{
+      console.log('panel parque chagres: ',data);
+      if(data==='es'){
+      
+        this.videoES=true;
+        this.videoEN=false;
+
+      }else{
+
+        this.videoEN=true;
+        this.videoES=false;
+
+      }
+
+    });
+
+  }
+
+
 
 }

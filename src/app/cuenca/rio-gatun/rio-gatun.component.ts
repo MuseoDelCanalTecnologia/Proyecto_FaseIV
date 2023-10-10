@@ -10,6 +10,9 @@ import { SocketService } from 'src/app/services/socket.service';
 export class RioGatunComponent implements OnInit {
   data:any;
   constructor(private wsSocket: SocketService, private router: Router) { }
+  
+  videoES:boolean=false;
+  videoEN:boolean=false;
 
   ngOnInit(): void {
 
@@ -20,6 +23,7 @@ export class RioGatunComponent implements OnInit {
      });
 
      this.recibiendoPortal();
+     this.idioma();
   }
 
 
@@ -34,5 +38,26 @@ export class RioGatunComponent implements OnInit {
 
     });
   }
+
+  idioma(){
+
+    this.wsSocket.idiomaGet().subscribe((data)=>{
+      console.log('panel-cobertura:',data);
+      if(data==='es'){
+      
+        this.videoES=true;
+        this.videoEN=false;
+
+      }else{
+
+        this.videoEN=true;
+        this.videoES=false;
+
+      }
+
+    });
+
+  }
+
 
 }
