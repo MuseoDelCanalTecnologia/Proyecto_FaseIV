@@ -14,7 +14,7 @@ export class Cuenca3Component implements OnInit {
 
   ngOnInit(): void {
   this.enviarVideo();
-   
+  this.idioma();
   }
 
 
@@ -26,9 +26,12 @@ export class Cuenca3Component implements OnInit {
     this.wsSocket.homeRoute('proyeccion');
   }
  
- 
+  idioma(){
+    this.wsSocket.idiomaPost('es');
+  }
 
 
+  
 
 
 }

@@ -11,6 +11,8 @@ import { SocketService } from 'src/app/services/socket.service';
 export class AltosCampanaComponent implements OnInit {
   data:any
   constructor(private wsSocket:SocketService, private router:Router) { }
+  videoES:boolean=false;
+  videoEN:boolean=false;
 
   ngOnInit(): void {
 
@@ -21,6 +23,7 @@ export class AltosCampanaComponent implements OnInit {
      });
 
      this.recibiendoPortal();
+     this.idioma();
 
   }
 
@@ -36,5 +39,26 @@ export class AltosCampanaComponent implements OnInit {
 
     });
   }
+
+  idioma(){
+
+    this.wsSocket.idiomaGet().subscribe((data)=>{
+      console.log('panel altos de campana:',data);
+      if(data==='es'){
+      
+        this.videoES=true;
+        this.videoEN=false;
+
+      }else{
+
+        this.videoEN=true;
+        this.videoES=false;
+
+      }
+
+    });
+
+  }
+
 
 }

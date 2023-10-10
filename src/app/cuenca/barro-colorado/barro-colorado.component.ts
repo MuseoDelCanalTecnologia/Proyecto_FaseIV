@@ -11,6 +11,9 @@ export class BarroColoradoComponent implements OnInit {
   data:any;
   constructor(private wsSocket:SocketService, private router :Router) { }
 
+  videoES:boolean=false;
+  videoEN:boolean=false;
+  
 
   ngOnInit(): void {
 
@@ -20,8 +23,8 @@ export class BarroColoradoComponent implements OnInit {
       
      });
 
-     this.recibiendoPortal();
-
+    this.recibiendoPortal();
+    this.idioma();
   }
 
 
@@ -37,5 +40,26 @@ export class BarroColoradoComponent implements OnInit {
 
     });
   }
+
+  idioma(){
+
+    this.wsSocket.idiomaGet().subscribe((data)=>{
+      console.log('panel barro colorado:',data);
+      if(data==='es'){
+      
+        this.videoES=true;
+        this.videoEN=false;
+
+      }else{
+
+        this.videoEN=true;
+        this.videoES=false;
+
+      }
+
+    });
+
+  }
+
 
 }

@@ -11,6 +11,10 @@ export class RioPequeniComponent implements OnInit {
 
   constructor(private wsSocket:SocketService , private router: Router) { }
   data:any
+  
+videoES:boolean=false;
+videoEN:boolean=false;
+
   ngOnInit(): void {
 
     this.wsSocket.homeEscuchar().subscribe((data:any)=>{
@@ -20,7 +24,7 @@ export class RioPequeniComponent implements OnInit {
      });
 
      this.recibiendoPortal();
-
+     this.idioma();
   }
 
 
@@ -34,5 +38,26 @@ export class RioPequeniComponent implements OnInit {
  
     });
   }
+
+  idioma(){
+
+    this.wsSocket.idiomaGet().subscribe((data)=>{
+      console.log('panel subcuenca-rios:',data);
+      if(data==='es'){
+      
+        this.videoES=true;
+        this.videoEN=false;
+
+      }else{
+
+        this.videoEN=true;
+        this.videoES=false;
+
+      }
+
+    });
+
+  }
+
 
 }

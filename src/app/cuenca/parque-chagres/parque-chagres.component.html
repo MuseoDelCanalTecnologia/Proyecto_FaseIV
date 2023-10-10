@@ -6,6 +6,7 @@
     <title></title>
 </head>
 <body class="fondo">
-    <video id="cuenca-chagres" class="animate__animated animate__slideInUp" [autoplay]="true" [muted]="false" [loop]="true" src="assets/proyeccion/ESC24.mp4" width=100%  height=100% ></video>
+    <video id="cuenca-chagres" class="animate__animated animate__slideInUp" [autoplay]="true" [muted]="false" [loop]="true" src="assets/proyeccion/ESC24.mp4" width=100%  height=100% *ngIf="videoES"></video>
+    <video id="cuenca-chagres" class="animate__animated animate__slideInUp" [autoplay]="true" [muted]="false" [loop]="true" src="assets/proyeccion/ESC24_ING.mp4" width=100%  height=100% *ngIf="videoEN"></video>
 </body>
 </html>
