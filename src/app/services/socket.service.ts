@@ -8,7 +8,7 @@ import { Socket } from 'ngx-socket-io';
 export class SocketService {
 
   public socketStatus=false;
-
+  public idioma:string='';
   constructor(private socket: Socket) 
   {
     this.checkStatus();
@@ -81,6 +81,15 @@ export class SocketService {
   imgOut(){
     return this.socket.fromEvent("img-Out");
   }
+
+  idiomaPost(data:string){
+    this.socket.emit('langPost',data);
+  }
+
+  idiomaGet(){
+    return this.socket.fromEvent("langGet");
+  }
+
 
 
 

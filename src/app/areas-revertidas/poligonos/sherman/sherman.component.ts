@@ -10,7 +10,9 @@ import { SocketService } from 'src/app/services/socket.service';
 export class ShermanComponent implements OnInit {
   data:any;
   constructor(private wsSocket: SocketService, private router:Router) { }
-
+  videoES:boolean=false;
+  videoEN:boolean=false;
+  
   ngOnInit(): void {
     this.wsSocket.homeEscuchar().subscribe((data:any)=>{
       this.router.navigateByUrl(data);
@@ -19,7 +21,7 @@ export class ShermanComponent implements OnInit {
      });
 
      this.recibiendoPortal();
-
+     this.idioma();
   }
 
 
@@ -37,5 +39,26 @@ export class ShermanComponent implements OnInit {
 
     });
   }
+
+  idioma(){
+
+    this.wsSocket.idiomaGet().subscribe((data)=>{
+      
+      if(data==='es'){
+        console.log('poligono-sherman:',data);
+        this.videoES=true;
+        this.videoEN=false;
+
+      }else{
+
+        this.videoEN=true;
+        this.videoES=false;
+
+      }
+
+    });
+
+  }
+
 
 }

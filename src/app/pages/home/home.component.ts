@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
-
-
-
+import { SocketService } from 'src/app/services/socket.service';
 
 
 @Component({
@@ -14,15 +11,15 @@ import { Router } from '@angular/router';
 export class HomeComponent implements OnInit {
  
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private socket:SocketService) {
     
    }
 
   ngOnInit() {
 
    
-
-   
+    
+   this.idioma();
     
   }
 
@@ -37,6 +34,14 @@ export class HomeComponent implements OnInit {
   ampliacion(){
     this.router.navigateByUrl('/ampliacion');
   }
+
+  idioma(){
+    this.socket.idiomaPost('es');
+  }
+
+  // idiomaIng(){
+  //   this.socket.idiomaPost('en');
+  // }
 
 
 }

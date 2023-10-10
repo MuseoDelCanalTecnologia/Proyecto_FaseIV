@@ -14,8 +14,8 @@ export class RandolphComponent implements OnInit {
   ngOnInit(): void {
     this.valor="glass-plus";
     this.enviarProyeccion();
-   
-    
+    this.idioma();
+
   }
 
 
@@ -66,5 +66,12 @@ export class RandolphComponent implements OnInit {
 
   }
   
+  idioma(){
+    this.wsSocket.idiomaPost('es');
+  }
+
+
+
+
 
 }

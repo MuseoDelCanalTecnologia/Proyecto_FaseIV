@@ -14,8 +14,7 @@ export class HowardComponent implements OnInit {
   ngOnInit(): void {
     this.valor="glass-plus";
     this.enviarProyeccion();
-   
-    
+    this.idioma();
   }
 
 
@@ -68,5 +67,9 @@ export class HowardComponent implements OnInit {
   
   
     }
+  idioma(){
+    this.wsSocket.idiomaPost('es');
+  }
+
 
 }

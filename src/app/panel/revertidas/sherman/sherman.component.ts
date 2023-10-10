@@ -19,8 +19,8 @@ export class PanelShermanComponent implements OnInit {
   ngOnInit(): void {
     this.valor="glass-plus";
     this.enviarProyeccion();
-   
-    
+    this.idioma();
+
   }
 
 
@@ -77,5 +77,14 @@ export class PanelShermanComponent implements OnInit {
     }
 
   
+ 
+  idioma(){
+    this.wsSocket.idiomaPost('es');
+  }
+
+
+ 
+
+
 
 }

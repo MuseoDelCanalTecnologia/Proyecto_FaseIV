@@ -12,10 +12,10 @@ export class KobbeComponent implements OnInit {
   constructor(private wsSocket:SocketService) { }
  valor:string = '';
   ngOnInit(): void {
-    this.valor="glass-plus";
+
     this.enviarProyeccion();
-   
-    
+    this.idioma();
+
   }
 
 
@@ -68,4 +68,9 @@ export class KobbeComponent implements OnInit {
   
   
     }
+  idioma(){
+    this.wsSocket.idiomaPost('es');
+  }
+
+
 }

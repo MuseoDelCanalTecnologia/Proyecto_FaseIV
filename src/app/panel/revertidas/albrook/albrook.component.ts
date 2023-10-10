@@ -14,8 +14,14 @@ export class AlbrookComponent implements OnInit {
   ngOnInit(): void {
     this.valor="glass-plus";
     this.enviarProyeccion();
+
    
     
+
+    this.idioma();
+
+
+
   }
 
 
@@ -38,6 +44,7 @@ export class AlbrookComponent implements OnInit {
   prevImg(){
     this.wsSocket.imgIn('prev');
   }
+
 
   evento(){
 
@@ -68,6 +75,11 @@ export class AlbrookComponent implements OnInit {
   
   
     }
+
+  idioma(){
+    this.wsSocket.idiomaPost('es');
+  }
+
 
 
 

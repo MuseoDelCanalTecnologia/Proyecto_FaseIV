@@ -6,6 +6,7 @@
     <title></title>
 </head>
 <body class="fondo">
-    <video id="video" [autoplay]="true" [muted]="false" [loop]="true" class="animate__animated animate__heartBeat " src="assets/proyeccion/ESC07.mp4" width=100%  height=100% ></video>
+    <video id="video" [autoplay]="true" [muted]="false" [loop]="true" class="animate__animated animate__heartBeat " src="assets/proyeccion/ESC07.mp4" width=100%  height=100% *ngIf="videoES"></video>
+    <video id="video" [autoplay]="true" [muted]="false" [loop]="true" class="animate__animated animate__heartBeat " src="assets/proyeccion/ESC07_ING.mp4" width=100%  height=100% *ngIf="videoEN"></video>
 </body>
 </html>

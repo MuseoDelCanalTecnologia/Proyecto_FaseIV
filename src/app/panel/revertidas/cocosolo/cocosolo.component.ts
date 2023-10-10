@@ -15,8 +15,8 @@ export class CocosoloComponent implements OnInit {
   ngOnInit(): void {
     this.valor="glass-plus";
     this.enviarProyeccion();
-   
-    
+    this.idioma();
+
   }
 
 
@@ -72,6 +72,9 @@ export class CocosoloComponent implements OnInit {
   
     }
 
+  idioma(){
+    this.wsSocket.idiomaPost('es');
+  }
 
 
 }

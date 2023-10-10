@@ -23,6 +23,7 @@ export class RevertidasComponent implements OnInit {
   video = 'portal';
   ngOnInit() {
     this.enviarVideo();
+    this.idioma();
   }
 
   enviarVideo() {
@@ -33,8 +34,9 @@ export class RevertidasComponent implements OnInit {
     this.wsSocket.homeRoute('proyeccion');
   }
 
- 
- 
+  idioma(){
+    this.wsSocket.idiomaPost('es');
+  }
 
 
 }

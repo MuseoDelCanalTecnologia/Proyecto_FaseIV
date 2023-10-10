@@ -14,8 +14,7 @@ export class AmadorComponent implements OnInit {
   ngOnInit(): void {
     this.valor="glass-plus";
     this.enviarProyeccion();
-   
-    
+    this.idioma();
   }
 
 
@@ -68,6 +67,9 @@ export class AmadorComponent implements OnInit {
   
   
     }
+  idioma(){
+    this.wsSocket.idiomaPost('es');
+  }
 
 
 }
