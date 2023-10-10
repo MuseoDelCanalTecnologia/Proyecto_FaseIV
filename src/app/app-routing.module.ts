@@ -98,6 +98,33 @@ import { KobbeVisorComponent } from './visor/kobbe-visor/kobbe-visor.component';
 import { RodmanVisorComponent } from './visor/rodman-visor/rodman-visor.component';
 import { ShermanVisorComponent } from './visor/sherman-visor/sherman-visor.component';
 import { ClaytonVisorComponent } from './visor/clayton-visor/clayton-visor.component';
+import { HomeEngComponent } from './pages/panel_ingles/home-eng/home-eng.component';
+import { RevertidasEngComponent } from './pages/panel_ingles/revertidas-eng/revertidas-eng.component';
+import { BasesEngComponent } from './pages/panel_ingles/bases-eng/bases-eng.component';
+import { PoligonosEngComponent } from './pages/panel_ingles/poligonos-eng/poligonos-eng.component';
+import { ShermanEngComponent } from './pages/panel_ingles/basesmilitares_eng/sherman-eng/sherman-eng.component';
+import { LessepsEngComponent } from './pages/panel_ingles/basesmilitares_eng/lesseps-eng/lesseps-eng.component';
+import { RandolphEngComponent } from './pages/panel_ingles/basesmilitares_eng/randolph-eng/randolph-eng.component';
+import { CocosoloEngComponent } from './pages/panel_ingles/basesmilitares_eng/cocosolo-eng/cocosolo-eng.component';
+import { DavisEngComponent } from './pages/panel_ingles/basesmilitares_eng/davis-eng/davis-eng.component';
+import { GulickEngComponent } from './pages/panel_ingles/basesmilitares_eng/gulick-eng/gulick-eng.component';
+import { ClaytonEngComponent } from './pages/panel_ingles/basesmilitares_eng/clayton-eng/clayton-eng.component';
+import { AlbrookEngComponent } from './pages/panel_ingles/basesmilitares_eng/albrook-eng/albrook-eng.component';
+import { AmadorEngComponent } from './pages/panel_ingles/basesmilitares_eng/amador-eng/amador-eng.component';
+import { GrantEngComponent } from './pages/panel_ingles/basesmilitares_eng/grant-eng/grant-eng.component';
+import { KobbeEngComponent } from './pages/panel_ingles/basesmilitares_eng/kobbe-eng/kobbe-eng.component';
+import { HowardEngComponent } from './pages/panel_ingles/basesmilitares_eng/howard-eng/howard-eng.component';
+import { RodmanEngComponent } from './pages/panel_ingles/basesmilitares_eng/rodman-eng/rodman-eng.component';
+import { IntrocuencaEngComponent } from './pages/panel_ingles/introcuenca-eng/introcuenca-eng.component';
+import { IntroareasEngComponent } from './pages/panel_ingles/introareas-eng/introareas-eng.component';
+import { BarrocoloradoEngComponent } from './pages/panel_ingles/protegidas/barrocolorado-eng/barrocolorado-eng.component';
+import { AltocampanaEngComponent } from './pages/panel_ingles/protegidas/altocampana-eng/altocampana-eng.component';
+import { SoberaniaEngComponent } from './pages/panel_ingles/protegidas/soberania-eng/soberania-eng.component';
+import { CaminocrucesEngComponent } from './pages/panel_ingles/protegidas/caminocruces-eng/caminocruces-eng.component';
+import { ChagresEngComponent } from './pages/panel_ingles/protegidas/chagres-eng/chagres-eng.component';
+import { GatunEngComponent } from './pages/panel_ingles/protegidas/gatun-eng/gatun-eng.component';
+import { SubcuencaEngComponent } from './pages/panel_ingles/subcuenca-eng/subcuenca-eng.component';
+import { CoberturaEngComponent } from './pages/panel_ingles/cobertura-eng/cobertura-eng.component';
 
 
 const routes: Routes = [
@@ -201,6 +228,47 @@ const routes: Routes = [
   {path:'rodman-visor',component:RodmanVisorComponent},
   {path:'sherman-visor',component:ShermanVisorComponent},
   {path:'clayton-visor',component:ClaytonVisorComponent},
+
+  //Paneles Ingles
+
+  {path:'home_eng',component:HomeEngComponent},
+  {path:'revertidas_eng',component:RevertidasEngComponent},
+  {path:'bases_eng',component:BasesEngComponent},
+  {path:'poligonos_eng',component:PoligonosEngComponent},
+
+  //revertidas en ingles
+  {path:'sherman_eng',component:ShermanEngComponent},
+  {path:'lesseps_eng',component:LessepsEngComponent},
+  {path:'randolph_eng',component:RandolphEngComponent},
+  {path:'cocosolo_eng',component:CocosoloEngComponent},
+  {path:'davis_eng',component:DavisEngComponent},
+  {path:'gulick_eng',component:GulickEngComponent},
+  {path:'clayton_eng',component:ClaytonEngComponent},
+  {path:'albrook_eng',component:AlbrookEngComponent},
+  {path:'amador_eng',component:AmadorEngComponent},
+  {path:'grant_eng',component:GrantEngComponent},
+  {path:'kobbe_eng',component:KobbeEngComponent},
+  {path:'howard_eng',component:HowardEngComponent},
+  {path:'rodman_eng',component:RodmanEngComponent},
+
+
+  //cuenca del canal
+  {path:'introcuenca_eng',component:IntrocuencaEngComponent},
+  {path:'introareas_eng',component:IntroareasEngComponent},
+
+  //Areas Protegidas Ingles
+
+  {path:'barrocolorado_eng',component:BarrocoloradoEngComponent},
+  {path:'altoscampana_eng',component:AltocampanaEngComponent},
+  {path:'soberania_eng',component:SoberaniaEngComponent},
+  {path:'caminocruces_eng',component:CaminocrucesEngComponent},
+  {path:'chagres_eng',component:ChagresEngComponent},
+  {path:'gatun_eng',component:GatunEngComponent},
+
+
+  {path:'subcuenca_eng',component:SubcuencaEngComponent},
+  {path:'cobertura_eng',component:CoberturaEngComponent},
+
 
 
   
