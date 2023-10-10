@@ -134,6 +134,13 @@ import { ChagresEngComponent } from './pages/panel_ingles/protegidas/chagres-eng
 import { GatunEngComponent } from './pages/panel_ingles/protegidas/gatun-eng/gatun-eng.component';
 import { SubcuencaEngComponent } from './pages/panel_ingles/subcuenca-eng/subcuenca-eng.component';
 import { CoberturaEngComponent } from './pages/panel_ingles/cobertura-eng/cobertura-eng.component';
+import { AmpliacionEngComponent } from './pages/panel_ingles/ampliacion-eng/ampliacion-eng.component';
+import { ContenidoampliacionEngComponent } from './pages/panel_ingles/contenidoampliacion-eng/contenidoampliacion-eng.component';
+import { CauceEngComponent } from './pages/panel_ingles/cauce-eng/cauce-eng.component';
+import { ProfundizacionEngComponent } from './pages/panel_ingles/profundizacion-eng/profundizacion-eng.component';
+import { NavegacionEngComponent } from './pages/panel_ingles/navegacion-eng/navegacion-eng.component';
+import { ConstruccionEngComponent } from './pages/panel_ingles/construccion-eng/construccion-eng.component';
+import { SuministroEngComponent } from './pages/panel_ingles/suministro-eng/suministro-eng.component';
 
 //Entorno
 // const config: SocketIoConfig = { url: 'https://experience-staging.cuentanostuhistoria.org/', options: {} };
@@ -268,7 +275,14 @@ import { CoberturaEngComponent } from './pages/panel_ingles/cobertura-eng/cobert
     ChagresEngComponent,
     GatunEngComponent,
     SubcuencaEngComponent,
-    CoberturaEngComponent
+    CoberturaEngComponent,
+    AmpliacionEngComponent,
+    ContenidoampliacionEngComponent,
+    CauceEngComponent,
+    ProfundizacionEngComponent,
+    NavegacionEngComponent,
+    ConstruccionEngComponent,
+    SuministroEngComponent
   
   ],
 

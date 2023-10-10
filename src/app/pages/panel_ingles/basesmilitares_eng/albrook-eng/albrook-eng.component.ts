@@ -10,21 +10,26 @@ import { SocketService } from 'src/app/services/socket.service';
 export class AlbrookEngComponent implements OnInit {
 
 
+  event:any
   constructor(private wsSocket:SocketService) { }
-
+ valor:string = '';
   ngOnInit(): void {
+    this.valor="glass-plus";
     this.enviarProyeccion();
+   
+    
   }
 
+
   enviarProyeccion() {
-    this.wsSocket.envioPortal('base-albrook');
+    this.wsSocket.envioPortal('ft-sherma');
   }
 
   enviarHome() {
     this.wsSocket.homeRoute('proyeccion');
   }
 
- bases(){
+  bases(){
     this.wsSocket.envioPortal('mapazoom');
   }
 
@@ -35,5 +40,36 @@ export class AlbrookEngComponent implements OnInit {
   prevImg(){
     this.wsSocket.imgIn('prev');
   }
+
+  evento(){
+
+    setInterval(()=>{
+      let dato
+      this.event=document.getElementById("img-comparacion");
+      dato=this.event.value.toString();
+      this.wsSocket.slideIn(dato);
+     // console.log(dato)  
+    },100)
+  
+    }
+  
+  
+    Mapa(){
+  
+     
+      if(this.valor=="glass-plus"){
+        this.valor="glass-minus"
+        this.wsSocket.envioPortal('sherman-visor');
+  
+      }else{
+        this.valor="glass-plus"
+        this.wsSocket.envioPortal('rio-gatun');
+  
+      }
+  
+  
+  
+    }
+
 
 }
