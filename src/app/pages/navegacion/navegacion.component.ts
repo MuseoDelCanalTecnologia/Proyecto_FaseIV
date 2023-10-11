@@ -12,6 +12,7 @@ export class NavegacionComponent implements OnInit {
 
   ngOnInit(): void {
     this.enviarProyeccion();
+    this.idioma();
   }
   enviarProyeccion() {
     this.wsSocket.envioPortal('operacion-gatun');
@@ -20,6 +21,11 @@ export class NavegacionComponent implements OnInit {
   enviarHome() {
     this.wsSocket.homeRoute('proyeccion');
   }
+
+  idioma(){
+    this.wsSocket.idiomaPost('es');
+  }
+
 
 
 }

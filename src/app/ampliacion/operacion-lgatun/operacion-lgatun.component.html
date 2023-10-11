@@ -6,6 +6,7 @@
     <title></title>
 </head>
 <body class="fondo">
-    <video id="ampliacion-mejorascauses" class="animate__animated animate__zoomInDown" [autoplay]="true" [muted]="false" [loop]="true" src="assets/proyeccion/ESC31.mp4" width=100%  height=100% ></video>
+    <video id="ampliacion-mejorascauses" class="animate__animated animate__zoomInDown" [autoplay]="true" [muted]="false" [loop]="true" src="assets/proyeccion/ESC31.mp4" width=100%  height=100% *ngIf="videoES"></video>
+    <video id="ampliacion-mejorascauses" class="animate__animated animate__zoomInDown" [autoplay]="true" [muted]="false" [loop]="true" src="assets/proyeccion/ESC31_ING.mp4" width=100%  height=100% *ngIf="videoEN"></video>
 </body>
 </html>

@@ -12,6 +12,7 @@ export class ConstruccionComponent implements OnInit {
 
   ngOnInit(): void {
     this.enviarProyeccion();
+    this.idioma();
   }
 
 
@@ -24,5 +25,7 @@ export class ConstruccionComponent implements OnInit {
     console.log("CLIK ENTRO")
   }
 
-
+  idioma(){
+    this.wsSocket.idiomaPost('es');
+  }
 }

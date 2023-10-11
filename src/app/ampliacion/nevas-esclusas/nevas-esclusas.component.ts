@@ -11,6 +11,9 @@ export class NevasEsclusasComponent implements OnInit {
 
   data:any;
   constructor(private wsSocket:SocketService, private router:Router) { }
+  
+  videoES:boolean=false;
+  videoEN:boolean=false;
 
   ngOnInit(): void {
 
@@ -21,6 +24,7 @@ export class NevasEsclusasComponent implements OnInit {
      });
 
      this.recibiendoPortal();
+     this.idioma();
 
   }
 
@@ -35,5 +39,28 @@ export class NevasEsclusasComponent implements OnInit {
     });
 
 }
+
+idioma(){
+
+  this.wsSocket.idiomaGet().subscribe((data)=>{
+    console.log('panel-esclusas: ',data);
+    if(data==='es'){
+    
+      this.videoES=true;
+      this.videoEN=false;
+
+    }else{
+
+      this.videoEN=true;
+      this.videoES=false;
+
+    }
+
+  });
+
+}
+
+
+
 
 }

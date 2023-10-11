@@ -15,7 +15,7 @@ export class AmpliacionComponent {
 
   ngOnInit() {
     this.enviarVideo();
-
+    this.idioma();
   }
 
   enviarVideo() {
@@ -30,6 +30,9 @@ export class AmpliacionComponent {
   subTema(){
     //ESC28.mp4
     this.wsSocket.envioPortal("sub-intro");
+  }
+  idioma(){
+    this.wsSocket.idiomaPost('es');
   }
 
 }

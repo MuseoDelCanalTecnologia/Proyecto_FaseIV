@@ -9,11 +9,13 @@ import { SocketService } from 'src/app/services/socket.service';
 })
 export class Pro2Component implements OnInit {
 
-
+  
   data:any;
 
   constructor(private wsSocket:SocketService, private router:Router) { }
-  
+  videoES:boolean=false;
+  videoEN:boolean=false;
+
   ngOnInit(): void {
 
     this.wsSocket.homeEscuchar().subscribe((data:any)=>{
@@ -21,8 +23,9 @@ export class Pro2Component implements OnInit {
       console.log(data);
       
      });
-
+   
      this.recibiendoPortal();
+     this.idioma();
   }
 
   recibiendoPortal(){
@@ -40,6 +43,28 @@ export class Pro2Component implements OnInit {
     });
 
    }
+   
+
+   idioma(){
+
+    this.wsSocket.idiomaGet().subscribe((data)=>{
+      console.log('panel Ampliacion:',data);
+      if(data==='es'){
+      
+        this.videoES=true;
+        this.videoEN=false;
+
+      }else{
+
+        this.videoEN=true;
+        this.videoES=false;
+
+      }
+
+    });
+
+  }
+
 
 
 

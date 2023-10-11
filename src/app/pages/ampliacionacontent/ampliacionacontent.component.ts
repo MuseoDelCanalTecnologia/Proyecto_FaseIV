@@ -15,8 +15,9 @@ export class AmpliacionacontentComponent  {
   constructor(public wsSocket: SocketService, private http: HttpClient) {}
  
 
-  ngOnInit() {
+  ngOnInit() :void{
   this.enviarPortal();
+  this.idioma();
   }
 
   enviarPortal() {
@@ -28,6 +29,10 @@ export class AmpliacionacontentComponent  {
   }
 
  
+  idioma(){
+    this.wsSocket.idiomaPost('es');
+  }
+
   
 
 

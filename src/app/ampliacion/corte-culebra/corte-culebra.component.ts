@@ -5,33 +5,51 @@ import { SocketService } from 'src/app/services/socket.service';
 @Component({
   selector: 'app-corte-culebra',
   templateUrl: './corte-culebra.component.html',
-  styleUrls: ['./corte-culebra.component.css']
+  styleUrls: ['./corte-culebra.component.css'],
 })
 export class CorteCulebraComponent implements OnInit {
-  data:any;
-  constructor(private wsSocket:SocketService, private router:Router) { }
-
+  data: any;
+  constructor(private wsSocket: SocketService, private router: Router) {}
+  videoES:boolean=false;
+  videoEN:boolean=false;
+  
   ngOnInit(): void {
-
-    this.wsSocket.homeEscuchar().subscribe((data:any)=>{
+    this.wsSocket.homeEscuchar().subscribe((data: any) => {
       this.router.navigateByUrl(data);
       console.log(data);
-      
-     });
+    });
 
-     this.recibiendoPortal();
+    this.recibiendoPortal();
+    this.idioma();
+  }
+
+  recibiendoPortal() {
+    this.wsSocket.escuchandoPortal().subscribe((data) => {
+      this.data = data;
+      this.router.navigateByUrl(this.data);
+    });
+  }
+
+  idioma(){
+
+    this.wsSocket.idiomaGet().subscribe((data)=>{
+      console.log('profundizacion: ',data);
+      if(data==='es'){
+      
+        this.videoES=true;
+        this.videoEN=false;
+
+      }else{
+
+        this.videoEN=true;
+        this.videoES=false;
+
+      }
+
+    });
 
   }
 
 
 
-  recibiendoPortal(){
-
-    this.wsSocket.escuchandoPortal().subscribe((data)=>{
-      
-    this.data=data;
-      this.router.navigateByUrl(this.data);
-    });
-
-}
 }
