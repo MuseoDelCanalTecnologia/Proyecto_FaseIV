@@ -15,7 +15,7 @@ export class HowardEngComponent implements OnInit {
     this.valor="glass-plus";
     this.enviarProyeccion();
    
-    
+    this.idioma(); 
   }
 
 
@@ -69,5 +69,7 @@ export class HowardEngComponent implements OnInit {
   
     }
 
-
+    idioma(){
+      this.wsSocket.idiomaPost('en');
+    }
 }

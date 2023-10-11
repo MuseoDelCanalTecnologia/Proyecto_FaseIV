@@ -16,6 +16,7 @@ export class ContenidoampliacionEngComponent implements OnInit {
 
   ngOnInit() {
   this.enviarPortal();
+  this.idioma();
   }
 
   enviarPortal() {
@@ -24,6 +25,11 @@ export class ContenidoampliacionEngComponent implements OnInit {
 
   enviarHome() {
     this.wsSocket.homeRoute('proyeccion');
+  }
+
+
+  idioma(){
+    this.wsSocket.idiomaPost('en');
   }
 
 }

@@ -14,6 +14,7 @@ export class SubcuencaEngComponent implements OnInit {
 
 
     this.enviarProyeccion();
+    this.idioma();
   }
 
 
@@ -28,6 +29,10 @@ export class SubcuencaEngComponent implements OnInit {
 
  cuenca(){
     this.wsSocket.envioPortal('cuenca');
+  }
+
+  idioma(){
+    this.wsSocket.idiomaPost('en');
   }
 
 }

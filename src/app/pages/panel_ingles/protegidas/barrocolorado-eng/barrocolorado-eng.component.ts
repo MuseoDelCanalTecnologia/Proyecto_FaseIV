@@ -14,6 +14,7 @@ export class BarrocoloradoEngComponent implements OnInit {
   ngOnInit(): void {
 
     this.enviarProyeccion();
+    this.idioma();
   }
 
 
@@ -29,5 +30,9 @@ export class BarrocoloradoEngComponent implements OnInit {
     this.wsSocket.envioPortal('rio-chagres');
   }
   
+
+  idioma(){
+    this.wsSocket.idiomaPost('en');
+  }
 
 }

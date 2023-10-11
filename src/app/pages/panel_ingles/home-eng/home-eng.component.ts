@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { SocketService } from 'src/app/services/socket.service';
 
 @Component({
   selector: 'app-home-eng',
@@ -8,9 +9,11 @@ import { Router } from '@angular/router';
 })
 export class HomeEngComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private socket:SocketService) { }
 
   ngOnInit(): void {
+
+    this.idioma();
   }revertida(){
     this.router.navigateByUrl('/revertidas');
   }
@@ -23,6 +26,10 @@ export class HomeEngComponent implements OnInit {
     this.router.navigateByUrl('/ampliacion');
   }
 
+
+  idioma(){
+    this.socket.idiomaPost('en');
+  }
 
 }
   

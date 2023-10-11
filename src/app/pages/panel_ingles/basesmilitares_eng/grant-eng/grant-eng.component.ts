@@ -17,7 +17,7 @@ export class GrantEngComponent implements OnInit {
     this.valor="glass-plus";
     this.enviarProyeccion();
    
-    
+    this.idioma();
   }
 
 
@@ -66,10 +66,13 @@ export class GrantEngComponent implements OnInit {
         this.wsSocket.envioPortal('rio-gatun');
   
       }
-  
-  
-  
+    
     }
+
+    idioma(){
+      this.wsSocket.idiomaPost('en');
+    }
+
 
 
 }

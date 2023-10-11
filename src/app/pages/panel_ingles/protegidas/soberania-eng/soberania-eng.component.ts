@@ -12,6 +12,7 @@ export class SoberaniaEngComponent implements OnInit {
   ngOnInit(): void {
 
     this.enviarProyeccion();
+    this.idioma();
   }
 
 
@@ -28,5 +29,8 @@ export class SoberaniaEngComponent implements OnInit {
     this.wsSocket.envioPortal('rio-chagres');
   }
   
+  idioma(){
+    this.wsSocket.idiomaPost('en');
+  }
 
 }

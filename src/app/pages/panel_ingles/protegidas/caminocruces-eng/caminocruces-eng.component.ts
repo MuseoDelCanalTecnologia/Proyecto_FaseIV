@@ -12,6 +12,7 @@ export class CaminocrucesEngComponent implements OnInit {
 
   ngOnInit(): void {
     this.enviarProyeccion();
+    this.idioma();
   }
 
   enviarProyeccion() {
@@ -24,6 +25,11 @@ export class CaminocrucesEngComponent implements OnInit {
 
  cuenca(){
     this.wsSocket.envioPortal('rio-chagres');
+  }
+
+
+  idioma(){
+    this.wsSocket.idiomaPost('en');
   }
 
 }

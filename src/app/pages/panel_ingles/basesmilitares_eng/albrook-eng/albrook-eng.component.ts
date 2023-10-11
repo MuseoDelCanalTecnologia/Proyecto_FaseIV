@@ -17,7 +17,7 @@ export class AlbrookEngComponent implements OnInit {
     this.valor="glass-plus";
     this.enviarProyeccion();
    
-    
+    this.idioma();
   }
 
 
@@ -69,6 +69,10 @@ export class AlbrookEngComponent implements OnInit {
   
   
   
+    }
+
+    idioma(){
+      this.wsSocket.idiomaPost('en');
     }
 
 

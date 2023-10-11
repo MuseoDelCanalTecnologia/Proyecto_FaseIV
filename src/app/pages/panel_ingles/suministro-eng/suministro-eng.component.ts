@@ -12,6 +12,7 @@ export class SuministroEngComponent implements OnInit {
 
   ngOnInit(): void {
     this.enviarProyeccion();
+    this.idioma();
   }
 
 
@@ -21,6 +22,11 @@ export class SuministroEngComponent implements OnInit {
 
   enviarHome() {
     this.wsSocket.homeRoute('proyeccion');
+  }
+
+
+  idioma(){
+    this.wsSocket.idiomaPost('en');
   }
 
 }

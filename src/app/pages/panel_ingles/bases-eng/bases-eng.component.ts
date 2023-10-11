@@ -33,7 +33,7 @@ export class BasesEngComponent implements OnInit {
   ngOnInit() {
 
     this.enviarProyeccion();
-   
+    this.idioma();
   }
 
   enviarProyeccion() {
@@ -48,5 +48,8 @@ export class BasesEngComponent implements OnInit {
     this.wsSocket.envioPortal('portal');
   }
 
+  idioma(){
+    this.wsSocket.idiomaPost('en');
+  }
 
 }

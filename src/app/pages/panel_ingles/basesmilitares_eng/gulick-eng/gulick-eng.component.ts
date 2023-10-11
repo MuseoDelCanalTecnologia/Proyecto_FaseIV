@@ -16,7 +16,7 @@ export class GulickEngComponent implements OnInit {
     this.valor="glass-plus";
     this.enviarProyeccion();
    
-    
+    this.idioma();
   }
 
 
@@ -70,5 +70,10 @@ export class GulickEngComponent implements OnInit {
   
     }
 
+
+
+    idioma(){
+      this.wsSocket.idiomaPost('en');
+    }
 
 }

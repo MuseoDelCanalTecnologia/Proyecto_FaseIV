@@ -20,7 +20,7 @@ export class LessepsEngComponent implements OnInit {
     this.valor="glass-plus";
     this.enviarProyeccion();
    
-    
+    this.idioma();
   }
 
 
@@ -69,5 +69,9 @@ export class LessepsEngComponent implements OnInit {
 
 
 
+  }
+
+  idioma(){
+    this.wsSocket.idiomaPost('en');
   }
 }

@@ -12,6 +12,7 @@ export class CauceEngComponent implements OnInit {
 
   ngOnInit(): void {
     this.enviarProyeccion();
+    this.idioma();
   }
 
   enviarProyeccion() {
@@ -24,4 +25,7 @@ export class CauceEngComponent implements OnInit {
    
   }
 
+  idioma(){
+    this.wsSocket.idiomaPost('en');
+  }
 }

@@ -15,7 +15,7 @@ export class DavisEngComponent implements OnInit {
   ngOnInit(): void {
     this.valor="glass-plus";
     this.enviarProyeccion();
-   
+    this.idioma();
     
   }
 
@@ -68,6 +68,11 @@ export class DavisEngComponent implements OnInit {
   
   
   
+    }
+
+
+    idioma(){
+      this.wsSocket.idiomaPost('en');
     }
 
 

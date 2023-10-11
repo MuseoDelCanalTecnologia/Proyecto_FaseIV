@@ -14,7 +14,7 @@ export class CoberturaEngComponent implements OnInit {
   ngOnInit(): void {
     this.valor="glass-plus";
     this.enviarProyeccion();
-   
+   this.idioma();
     
   }
 
@@ -62,5 +62,9 @@ export class CoberturaEngComponent implements OnInit {
 
   }
 
+
+  idioma(){
+    this.wsSocket.idiomaPost('en');
+  }
 
 }

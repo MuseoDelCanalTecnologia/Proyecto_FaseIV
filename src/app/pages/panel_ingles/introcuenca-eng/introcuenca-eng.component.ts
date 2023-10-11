@@ -14,7 +14,7 @@ export class IntrocuencaEngComponent implements OnInit {
 
   ngOnInit(): void {
   this.enviarVideo();
-   
+  this.idioma();
   }
 
 
@@ -24,6 +24,11 @@ export class IntrocuencaEngComponent implements OnInit {
 
   enviarHome() {
     this.wsSocket.homeRoute('proyeccion');
+  }
+
+
+  idioma(){
+    this.wsSocket.idiomaPost('en');
   }
 
 }

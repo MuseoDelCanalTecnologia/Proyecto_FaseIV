@@ -14,7 +14,7 @@ export class RodmanEngComponent implements OnInit {
     this.valor="glass-plus";
     this.enviarProyeccion();
    
-    
+    this.idioma();
   }
 
 
@@ -67,6 +67,8 @@ export class RodmanEngComponent implements OnInit {
   
   
     }
-
+    idioma(){
+      this.wsSocket.idiomaPost('en');
+    }
 
 }

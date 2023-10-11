@@ -13,7 +13,7 @@ export class IntroareasEngComponent implements OnInit {
 
   ngOnInit(): void {
   this.enviarVideo();
-   
+   this.idioma();
   }
 
 
@@ -25,4 +25,7 @@ export class IntroareasEngComponent implements OnInit {
     this.wsSocket.homeRoute('proyeccion');
   }
 
+  idioma(){
+    this.wsSocket.idiomaPost('en');
+  }
 }

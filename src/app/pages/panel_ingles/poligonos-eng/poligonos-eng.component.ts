@@ -15,7 +15,7 @@ export class PoligonosEngComponent implements OnInit {
   ngOnInit(): void {
    
     this.enviarProyeccion();
-    
+    this.idioma();
 
   }
 
@@ -36,18 +36,22 @@ export class PoligonosEngComponent implements OnInit {
 
   sherman(){
     this.wsSocket.envioPortal('p-sherman');
+    this.idioma();
   }
 
   pina(){
     this.wsSocket.envioPortal('pina');
+    this.idioma();
   }
 
   balboa(){
     this.wsSocket.envioPortal('balboa');
+    this.idioma();
   }
 
   emperador(){
     this.wsSocket.envioPortal('emperador');
+    this.idioma();
   }
 
   rioHato(){
@@ -55,10 +59,16 @@ export class PoligonosEngComponent implements OnInit {
   }
   sanJose(){
     this.wsSocket.envioPortal('san-jose');
+    this.idioma();
   }
 
   poligono(){
     this.wsSocket.envioPortal('balboa-oeste');
+    this.idioma();
+  }
+
+  idioma(){
+    this.wsSocket.idiomaPost('en');
   }
 
 }

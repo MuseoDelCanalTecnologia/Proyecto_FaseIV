@@ -15,7 +15,7 @@ export class RandolphEngComponent implements OnInit {
     this.valor="glass-plus";
     this.enviarProyeccion();
    
-    
+    this.idioma();
   }
 
 
@@ -64,6 +64,10 @@ export class RandolphEngComponent implements OnInit {
 
 
 
+  }
+
+  idioma(){
+    this.wsSocket.idiomaPost('en');
   }
 
 }

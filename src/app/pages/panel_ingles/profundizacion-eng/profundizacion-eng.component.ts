@@ -12,6 +12,7 @@ export class ProfundizacionEngComponent implements OnInit {
 
   ngOnInit(): void {
     this.enviarProyeccion();
+    this.idioma();
   }
 
   enviarProyeccion() {
@@ -22,6 +23,9 @@ export class ProfundizacionEngComponent implements OnInit {
   enviarHome() {
     this.wsSocket.homeRoute('proyeccion');
    
+  }
+  idioma(){
+    this.wsSocket.idiomaPost('en');
   }
 
 }
