@@ -12,7 +12,7 @@ export class KobbeComponent implements OnInit {
   constructor(private wsSocket:SocketService) { }
  valor:string = '';
   ngOnInit(): void {
-
+   this.valor='glass-plus'
     this.enviarProyeccion();
     this.idioma();
 
@@ -20,7 +20,7 @@ export class KobbeComponent implements OnInit {
 
 
   enviarProyeccion() {
-    this.wsSocket.envioPortal('ft-sherma');
+    this.wsSocket.envioPortal('ft-kobbe');
   }
 
   enviarHome() {
@@ -61,8 +61,8 @@ export class KobbeComponent implements OnInit {
   
       }else{
         this.valor="glass-plus"
-        this.wsSocket.envioPortal('rio-gatun');
-  
+        this.wsSocket.envioPortal('ft-kobbe');
+        this.idioma();
       }
   
   

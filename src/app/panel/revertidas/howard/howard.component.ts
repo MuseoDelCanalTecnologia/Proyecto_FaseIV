@@ -17,9 +17,8 @@ export class HowardComponent implements OnInit {
     this.idioma();
   }
 
-
   enviarProyeccion() {
-    this.wsSocket.envioPortal('ft-sherma');
+    this.wsSocket.envioPortal('base-howard');
   }
 
   enviarHome() {
@@ -54,15 +53,15 @@ export class HowardComponent implements OnInit {
     Mapa(){
   
      
-      if(this.valor=="glass-plus"){
-        this.valor="glass-minus"
-        this.wsSocket.envioPortal('sherman-visor');
+      // if(this.valor=="glass-plus"){
+      //   this.valor="glass-minus"
+      //   this.wsSocket.envioPortal('sherman-visor');
   
-      }else{
-        this.valor="glass-plus"
-        this.wsSocket.envioPortal('rio-gatun');
+      // }else{
+      //   this.valor="glass-plus"
+      //   this.wsSocket.envioPortal('rio-gatun');
   
-      }
+      // }
   
   
   

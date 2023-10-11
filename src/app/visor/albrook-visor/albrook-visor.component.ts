@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { SocketService } from 'src/app/services/socket.service';
 
 @Component({
@@ -8,10 +9,12 @@ import { SocketService } from 'src/app/services/socket.service';
 })
 export class AlbrookVisorComponent implements OnInit {
 
-  constructor( private socket:SocketService) { }
+  constructor( private socket:SocketService,private router:Router) { }
 
   ngOnInit(): void {
     this.imgTransport();
+    this.recibiendoPortal();
+    this.home();
   }
 
   imgTransport(){
@@ -25,6 +28,23 @@ export class AlbrookVisorComponent implements OnInit {
     });
     
   }
+
+  recibiendoPortal(){
+    this.socket.escuchandoPortal().subscribe((data:any)=>{
+    this.router.navigateByUrl(data);
+    });
+
+  }
+
+
+  home(){
+    
+    this.socket.homeEscuchar().subscribe((data:any)=>{
+    this.router.navigateByUrl(data);
+    console.log(data);
+   });
+}
+
 
 
 

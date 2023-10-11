@@ -20,7 +20,7 @@ export class RandolphComponent implements OnInit {
 
 
   enviarProyeccion() {
-    this.wsSocket.envioPortal('rio-gatun');
+    this.wsSocket.envioPortal('quarry-heights');
   }
 
   enviarHome() {

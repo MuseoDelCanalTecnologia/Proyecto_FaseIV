@@ -68,7 +68,8 @@ export class PanelShermanComponent implements OnInit {
   
       }else{
         this.valor="glass-plus"
-        this.wsSocket.envioPortal('rio-gatun');
+        this.wsSocket.envioPortal('ft-sherma');
+        this.idioma();
   
       }
   

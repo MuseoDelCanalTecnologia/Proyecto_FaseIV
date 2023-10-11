@@ -15,12 +15,12 @@ export class LessepsComponent implements OnInit {
     this.valor="glass-plus";
     this.enviarProyeccion();
     this.idioma();
-
+    
   }
 
 
   enviarProyeccion() {
-    this.wsSocket.envioPortal('rio-gatun');
+    this.wsSocket.envioPortal('estacion-farfam');
   }
 
   enviarHome() {
@@ -58,8 +58,8 @@ export class LessepsComponent implements OnInit {
 
     }else{
       this.valor="glass-plus"
-      this.wsSocket.envioPortal('rio-gatun');
-
+      this.wsSocket.envioPortal('estacion-farfam');
+      this.idioma();
     }
 
 
