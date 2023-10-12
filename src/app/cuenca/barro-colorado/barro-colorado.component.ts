@@ -44,7 +44,7 @@ export class BarroColoradoComponent implements OnInit {
   idioma(){
 
     this.wsSocket.idiomaGet().subscribe((data)=>{
-      console.log('panel barro colorado:',data);
+     
       if(data==='es'){
       
         this.videoES=true;

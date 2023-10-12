@@ -42,7 +42,7 @@ export class RioGatunComponent implements OnInit {
   idioma(){
 
     this.wsSocket.idiomaGet().subscribe((data)=>{
-      console.log('panel-cobertura:',data);
+    
       if(data==='es'){
       
         this.videoES=true;

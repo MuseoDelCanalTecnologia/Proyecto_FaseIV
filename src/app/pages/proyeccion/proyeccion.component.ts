@@ -52,7 +52,7 @@ export class ProyeccionComponent implements OnInit {
     this.wsSocket.idiomaGet().subscribe((data)=>{
      
      if(data==='es'){
-      console.log("idioma - home",data)
+      
       this.videoES=true;
       this.videoEN=false;
      }else{

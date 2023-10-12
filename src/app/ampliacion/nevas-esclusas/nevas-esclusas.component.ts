@@ -43,7 +43,7 @@ export class NevasEsclusasComponent implements OnInit {
 idioma(){
 
   this.wsSocket.idiomaGet().subscribe((data)=>{
-    console.log('panel-esclusas: ',data);
+   
     if(data==='es'){
     
       this.videoES=true;

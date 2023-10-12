@@ -33,7 +33,7 @@ export class CorteCulebraComponent implements OnInit {
   idioma(){
 
     this.wsSocket.idiomaGet().subscribe((data)=>{
-      console.log('profundizacion: ',data);
+     
       if(data==='es'){
       
         this.videoES=true;

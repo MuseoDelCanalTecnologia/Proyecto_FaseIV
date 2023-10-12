@@ -44,7 +44,7 @@ export class BaseAlbrookComponent implements OnInit {
 idioma(){
 
   this.wsSocket.idiomaGet().subscribe((data)=>{
-    console.log('panel-albrook:',data);
+   
     
     if(data==='es'){
     

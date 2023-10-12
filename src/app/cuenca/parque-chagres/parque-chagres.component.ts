@@ -45,7 +45,7 @@ export class ParqueChagresComponent implements OnInit {
   idioma(){
 
     this.wsSocket.idiomaGet().subscribe((data)=>{
-      console.log('panel parque chagres: ',data);
+    
       if(data==='es'){
       
         this.videoES=true;

@@ -46,7 +46,7 @@ export class PacificoAtlanticoComponent implements OnInit {
    idioma(){
 
     this.wsSocket.idiomaGet().subscribe((data)=>{
-      console.log('panel-suministro:',data);
+     
       if(data==='es'){
       
         this.videoES=true;

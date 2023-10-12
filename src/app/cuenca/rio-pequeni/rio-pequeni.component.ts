@@ -42,7 +42,7 @@ videoEN:boolean=false;
   idioma(){
 
     this.wsSocket.idiomaGet().subscribe((data)=>{
-      console.log('panel subcuenca-rios:',data);
+      
       if(data==='es'){
       
         this.videoES=true;

@@ -47,7 +47,7 @@ export class PortalSocketComponent implements OnInit {
     this.wsSocket.idiomaGet().subscribe((data)=>{
       
       if(data==='es'){
-        console.log("evertidas-panel:" ,data);
+        
         this.videoES=true;
         this.videoEN=false;
 

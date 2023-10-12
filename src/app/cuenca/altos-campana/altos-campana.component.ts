@@ -43,7 +43,7 @@ export class AltosCampanaComponent implements OnInit {
   idioma(){
 
     this.wsSocket.idiomaGet().subscribe((data)=>{
-      console.log('panel altos de campana:',data);
+    
       if(data==='es'){
       
         this.videoES=true;

@@ -48,7 +48,7 @@ export class OperacionLgatunComponent implements OnInit {
 idioma(){
 
   this.wsSocket.idiomaGet().subscribe((data)=>{
-    console.log('panel -mejoras navegacion:',data);
+    
     if(data==='es'){
     
       this.videoES=true;
