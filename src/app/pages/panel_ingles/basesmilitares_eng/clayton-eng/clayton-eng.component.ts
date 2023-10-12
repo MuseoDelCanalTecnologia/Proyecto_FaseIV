@@ -20,7 +20,7 @@ export class ClaytonEngComponent implements OnInit {
 
 
   enviarProyeccion() {
-    this.wsSocket.envioPortal('ft-sherma');
+    this.wsSocket.envioPortal('ft-clayton');
   }
 
   enviarHome() {
@@ -57,12 +57,12 @@ export class ClaytonEngComponent implements OnInit {
      
       if(this.valor=="glass-plus"){
         this.valor="glass-minus"
-        this.wsSocket.envioPortal('sherman-visor');
+        this.wsSocket.envioPortal('clayton-visor');
   
       }else{
         this.valor="glass-plus"
-        this.wsSocket.envioPortal('rio-gatun');
-  
+        this.wsSocket.envioPortal('ft-clayton');
+        this.idioma();
       }
   
   
@@ -72,5 +72,6 @@ export class ClaytonEngComponent implements OnInit {
       this.wsSocket.idiomaPost('en');
     }
 
+    
 
 }

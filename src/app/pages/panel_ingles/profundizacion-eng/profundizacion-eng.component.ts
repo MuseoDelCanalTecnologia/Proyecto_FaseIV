@@ -17,7 +17,7 @@ export class ProfundizacionEngComponent implements OnInit {
 
   enviarProyeccion() {
    
-   console.log(this.wsSocket.envioPortal('acceso-pacifico'));
+   console.log(this.wsSocket.envioPortal('corte-culebra'));
   }
 
   enviarHome() {

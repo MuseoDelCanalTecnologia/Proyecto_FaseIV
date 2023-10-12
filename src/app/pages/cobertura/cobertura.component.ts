@@ -55,7 +55,7 @@ export class CoberturaComponent implements OnInit {
     }else{
       this.valor="glass-plus"
       this.wsSocket.envioPortal('rio-gatun');
-
+      this.idioma();
     }
 
     

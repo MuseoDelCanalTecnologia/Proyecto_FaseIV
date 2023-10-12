@@ -18,7 +18,7 @@ export class IntroareasEngComponent implements OnInit {
 
 
   enviarVideo() {
-    this.wsSocket.enviarVideo('cuenca');
+    this.wsSocket.enviarVideo('rio-chagres');
   }
 
   enviarHome() {

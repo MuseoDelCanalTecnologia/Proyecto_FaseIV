@@ -15,20 +15,22 @@ export class HomeEngComponent implements OnInit {
 
     this.idioma();
   }revertida(){
-    this.router.navigateByUrl('/revertidas');
+    this.router.navigateByUrl('/revertidas_eng');
   }
 
   cuenca(){
-    this.router.navigateByUrl('/introcuenca');
+    this.router.navigateByUrl('/introcuenca_eng');
   }
 
   ampliacion(){
-    this.router.navigateByUrl('/ampliacion');
+    this.router.navigateByUrl('/ampliacion_eng');
   }
 
 
   idioma(){
-    this.socket.idiomaPost('en');
+    setTimeout(()=>{
+      this.socket.idiomaPost('en');
+    },1500)
   }
 
 }

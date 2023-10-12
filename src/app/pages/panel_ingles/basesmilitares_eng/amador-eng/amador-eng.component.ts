@@ -20,7 +20,7 @@ export class AmadorEngComponent implements OnInit {
 
 
   enviarProyeccion() {
-    this.wsSocket.envioPortal('ft-sherma');
+    this.wsSocket.envioPortal('ft-amador');
   }
 
   enviarHome() {
@@ -57,12 +57,12 @@ export class AmadorEngComponent implements OnInit {
      
       if(this.valor=="glass-plus"){
         this.valor="glass-minus"
-        this.wsSocket.envioPortal('sherman-visor');
+        this.wsSocket.envioPortal('amador-visor');
   
       }else{
         this.valor="glass-plus"
-        this.wsSocket.envioPortal('rio-gatun');
-  
+        this.wsSocket.envioPortal('ft-amador');
+        this.idioma();
       }
   
   

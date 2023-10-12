@@ -22,7 +22,7 @@ export class AlbrookEngComponent implements OnInit {
 
 
   enviarProyeccion() {
-    this.wsSocket.envioPortal('ft-sherma');
+    this.wsSocket.envioPortal('base-albrook');
   }
 
   enviarHome() {
@@ -59,11 +59,12 @@ export class AlbrookEngComponent implements OnInit {
      
       if(this.valor=="glass-plus"){
         this.valor="glass-minus"
-        this.wsSocket.envioPortal('sherman-visor');
+        this.wsSocket.envioPortal('albrook-visor');
   
       }else{
         this.valor="glass-plus"
-        this.wsSocket.envioPortal('rio-gatun');
+        this.wsSocket.envioPortal('base-albrook');
+        this.idioma();
   
       }
   

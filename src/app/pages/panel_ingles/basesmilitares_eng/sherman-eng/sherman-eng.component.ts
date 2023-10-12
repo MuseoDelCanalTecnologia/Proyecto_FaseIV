@@ -26,7 +26,7 @@ export class ShermanEngComponent implements OnInit {
 
 
   enviarProyeccion() {
-    this.wsSocket.envioPortal('rio-gatun');
+    this.wsSocket.envioPortal('ft-sherma');
   }
 
   enviarHome() {
@@ -64,8 +64,8 @@ export class ShermanEngComponent implements OnInit {
 
     }else{
       this.valor="glass-plus"
-      this.wsSocket.envioPortal('rio-gatun');
-
+      this.wsSocket.envioPortal('ft-sherma');
+      this.idioma();
     }
 
 
@@ -73,6 +73,15 @@ export class ShermanEngComponent implements OnInit {
   }
   idioma(){
     this.wsSocket.idiomaPost('en');
+  }
+
+  
+  nextImg(){
+    this.wsSocket.imgIn('next');
+  }
+  
+  prevImg(){
+    this.wsSocket.imgIn('prev');
   }
 
 }

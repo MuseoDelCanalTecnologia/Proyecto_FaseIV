@@ -25,7 +25,7 @@ export class CocosoloEngComponent implements OnInit {
 
 
   enviarProyeccion() {
-    this.wsSocket.envioPortal('ft-sherma');
+    this.wsSocket.envioPortal('coco');
   }
 
   enviarHome() {
@@ -63,12 +63,12 @@ export class CocosoloEngComponent implements OnInit {
      
       if(this.valor=="glass-plus"){
         this.valor="glass-minus"
-        this.wsSocket.envioPortal('sherman-visor');
+        this.wsSocket.envioPortal('cocosolo-visor');
   
       }else{
         this.valor="glass-plus"
-        this.wsSocket.envioPortal('rio-gatun');
-  
+        this.wsSocket.envioPortal('coco');
+        this.idioma();
       }
   
   

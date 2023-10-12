@@ -14,7 +14,7 @@
    <img src="assets/Imagenes/textos_iconos/AssetsFinales/home38.png" style="height: 150px;   position: absolute; top: 870px;
   right: 90px; z-index: 9;" alt="" routerLink="/home_eng" (click)="enviarHome()">
   
-  <img src="assets/Imagenes/textos_iconos/AssetsFinales/eng.png" style="height: 100px;   position: absolute; top: 900px;
+  <img src="assets/Imagenes/textos_iconos/AssetsFinales/esp.png" style="height: 100px;   position: absolute; top: 900px;
   right: 250px; z-index: 10;" alt="" routerLink="/panel-davies">
   
   
@@ -88,11 +88,11 @@
                     <img src="../../../../assets/Imagenes/parque1.jpg" class="d-block w-100 img-fluid" alt="...">
                   </div> -->
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <button (click)="prevImg();" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
                   <i class="fa-solid fa-circle-chevron-left fa-2xl" style="font-size: 70px;"></i>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <button (click)="nextImg();" class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
                   <i class="fa-solid fa-circle-chevron-right fa-2xl" style="font-size: 70px;"></i>
                   <span class="visually-hidden">Next</span>
                 </button>
