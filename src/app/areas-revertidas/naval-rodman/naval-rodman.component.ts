@@ -40,7 +40,7 @@ export class NavalRodmanComponent implements OnInit {
   idioma(){
 
     this.wsSocket.idiomaGet().subscribe((data)=>{
-      console.log('panel-rodman',data);
+    
       if(data==='es'){
       
         this.videoES=true;

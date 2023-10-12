@@ -38,7 +38,7 @@ export class QuarryHeightsComponent implements OnInit {
   idioma(){
 
     this.wsSocket.idiomaGet().subscribe((data)=>{
-      console.log("panel-randolph: ",data)
+     
       if(data==='es'){
       
         this.videoES=true;
