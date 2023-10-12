@@ -18,7 +18,7 @@ export class FtDavisComponent implements OnInit {
 
     this.wsSocket.homeEscuchar().subscribe((data:any)=>{
       this.router.navigateByUrl(data);
-      console.log(data);
+     
       
      });
 
@@ -44,7 +44,7 @@ export class FtDavisComponent implements OnInit {
   idioma(){
 
     this.wsSocket.idiomaGet().subscribe((data)=>{
-      console.log("panel-davies: ",data);
+     
       if(data==='es'){
       
         this.videoES=true;

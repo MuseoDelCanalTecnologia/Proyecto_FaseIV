@@ -17,7 +17,7 @@ export class BaseHowardComponent implements OnInit {
 
     this.wsSocket.homeEscuchar().subscribe((data:any)=>{
       this.router.navigateByUrl(data);
-      console.log(data);
+      
       
      });
 
@@ -39,7 +39,7 @@ export class BaseHowardComponent implements OnInit {
   idioma(){
 
     this.wsSocket.idiomaGet().subscribe((data)=>{
-      console.log('panel-howard:',data);
+      
       if(data==='es'){
       
         this.videoES=true;

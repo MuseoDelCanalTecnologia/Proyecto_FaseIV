@@ -18,7 +18,7 @@ export class FtKobbeComponent implements OnInit {
 
     this.wsSocket.homeEscuchar().subscribe((data:any)=>{
       this.router.navigateByUrl(data);
-      console.log(data);
+     
       
      });
 
@@ -41,7 +41,7 @@ export class FtKobbeComponent implements OnInit {
   idioma(){
 
     this.wsSocket.idiomaGet().subscribe((data)=>{
-      console.log('panel-kobbe: ',data);
+      
       if(data==='es'){
       
         this.videoES=true;

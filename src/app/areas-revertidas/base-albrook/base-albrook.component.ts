@@ -18,7 +18,7 @@ export class BaseAlbrookComponent implements OnInit {
 
     this.wsSocket.homeEscuchar().subscribe((data:any)=>{
       this.router.navigateByUrl(data);
-      console.log(data);
+    
       
      });
 
@@ -44,8 +44,7 @@ export class BaseAlbrookComponent implements OnInit {
 idioma(){
 
   this.wsSocket.idiomaGet().subscribe((data)=>{
-    console.log('panel-albrook:',data);
-    
+   
     if(data==='es'){
     
       this.videoES=true;

@@ -17,7 +17,7 @@ export class FtAmadorComponent implements OnInit {
   ngOnInit(): void {
     this.wsSocket.homeEscuchar().subscribe((data:any)=>{
       this.router.navigateByUrl(data);
-      console.log(data);
+     
       
      });
      this.recibiendoPortal();
@@ -41,7 +41,7 @@ export class FtAmadorComponent implements OnInit {
 
     this.wsSocket.idiomaGet().subscribe((data)=>{
 
-      console.log('panel-amador:',data);
+      
       if(data==='es'){
       
         this.videoES=true;

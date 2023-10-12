@@ -17,7 +17,7 @@ export class PinaComponent implements OnInit {
   ngOnInit(): void {
     this.wsSocket.homeEscuchar().subscribe((data:any)=>{
       this.router.navigateByUrl(data);
-      console.log(data);
+      
       
      });
 
