@@ -39,7 +39,7 @@ export class ParqueSoberaniaComponent implements OnInit {
   idioma(){
 
     this.wsSocket.idiomaGet().subscribe((data)=>{
-      console.log('panel parque soberania: ',data);
+     
       if(data==='es'){
       
         this.videoES=true;

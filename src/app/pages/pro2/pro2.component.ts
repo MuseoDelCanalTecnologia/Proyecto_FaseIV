@@ -48,7 +48,7 @@ export class Pro2Component implements OnInit {
    idioma(){
 
     this.wsSocket.idiomaGet().subscribe((data)=>{
-      console.log('panel Ampliacion:',data);
+      
       if(data==='es'){
       
         this.videoES=true;

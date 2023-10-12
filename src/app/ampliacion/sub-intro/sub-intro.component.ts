@@ -36,7 +36,7 @@ export class SubIntroComponent implements OnInit {
   idioma(){
 
     this.wsSocket.idiomaGet().subscribe((data)=>{
-      console.log('panel - Ampliacion content: ',data);
+    
       if(data==='es'){
       
         this.videoES=true;

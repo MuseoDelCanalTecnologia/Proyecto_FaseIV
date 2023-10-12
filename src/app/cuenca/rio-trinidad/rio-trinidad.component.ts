@@ -44,7 +44,7 @@ export class RioTrinidadComponent implements OnInit {
   idioma(){
 
     this.wsSocket.idiomaGet().subscribe((data)=>{
-      console.log('panel-lago gatun:',data);
+      
       if(data==='es'){
       
         this.videoES=true;

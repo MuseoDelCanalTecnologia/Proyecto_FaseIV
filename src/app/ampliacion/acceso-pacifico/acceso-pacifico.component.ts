@@ -31,7 +31,7 @@ export class AccesoPacificoComponent implements OnInit {
 
   idioma() {
     this.wsSocket.idiomaGet().subscribe((data) => {
-      console.log('panel - cause acceso al pacifico:',data);
+      
       if (data === 'es') {
         this.videoES = true;
         this.videoEN = false;

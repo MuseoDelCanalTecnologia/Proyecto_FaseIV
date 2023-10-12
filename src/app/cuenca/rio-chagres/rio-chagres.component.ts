@@ -46,7 +46,7 @@ export class RioChagresComponent implements OnInit {
   idioma(){
 
     this.wsSocket.idiomaGet().subscribe((data)=>{
-      console.log('intro areas: ',data);
+     
       if(data==='es'){
       
         this.videoES=true;

@@ -45,6 +45,10 @@ idioma(){
 
   this.wsSocket.idiomaGet().subscribe((data)=>{
    
+<<<<<<< HEAD
+=======
+    
+>>>>>>> a5b15e7bc6f910628852cc6d17ceec030691aee7
     if(data==='es'){
     
       this.videoES=true;

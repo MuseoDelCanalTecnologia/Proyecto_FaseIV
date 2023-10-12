@@ -43,7 +43,7 @@ export class CaminoCrucesComponent implements OnInit {
   idioma(){
 
     this.wsSocket.idiomaGet().subscribe((data)=>{
-      console.log('panel camino-cruces:',data);
+     
       if(data==='es'){
       
         this.videoES=true;
