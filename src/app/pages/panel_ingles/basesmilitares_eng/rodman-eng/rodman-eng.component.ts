@@ -57,7 +57,7 @@ export class RodmanEngComponent implements OnInit {
       if(this.valor=="glass-plus"){
         this.valor="glass-minus"
         this.wsSocket.envioPortal('rodman-visor');
-  
+        this.carusel();
       }else{
         this.valor="glass-plus"
         this.wsSocket.envioPortal('naval');
@@ -69,6 +69,13 @@ export class RodmanEngComponent implements OnInit {
     }
     idioma(){
       this.wsSocket.idiomaPost('en');
+    }
+
+    carusel(){
+
+
+      document.getElementById('btnCarusel')?.click();
+      
     }
 
 }

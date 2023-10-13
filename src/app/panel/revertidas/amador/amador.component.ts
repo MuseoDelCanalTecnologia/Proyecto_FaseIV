@@ -57,7 +57,7 @@ export class AmadorComponent implements OnInit {
       if(this.valor=="glass-plus"){
         this.valor="glass-minus"
         this.wsSocket.envioPortal('amador-visor');
-  
+        this.carusel();
       }else{
         this.valor="glass-plus"
         this.wsSocket.envioPortal('ft-amador');
@@ -70,6 +70,14 @@ export class AmadorComponent implements OnInit {
   idioma(){
     this.wsSocket.idiomaPost('es');
   }
+ 
+  carusel(){
 
+
+    document.getElementById('btnCarusel')?.click();
+    
+  }
+
+  
 
 }

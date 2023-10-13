@@ -60,7 +60,7 @@ export class AlbrookEngComponent implements OnInit {
       if(this.valor=="glass-plus"){
         this.valor="glass-minus"
         this.wsSocket.envioPortal('albrook-visor');
-  
+       this.carusel();
       }else{
         this.valor="glass-plus"
         this.wsSocket.envioPortal('base-albrook');
@@ -75,6 +75,15 @@ export class AlbrookEngComponent implements OnInit {
     idioma(){
       this.wsSocket.idiomaPost('en');
     }
+
+
+    carusel(){
+
+
+      document.getElementById('btnCarusel')?.click();
+      
+    }
+
 
 
 }

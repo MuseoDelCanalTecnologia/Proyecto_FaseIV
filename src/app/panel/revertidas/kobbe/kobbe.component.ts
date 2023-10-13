@@ -58,7 +58,7 @@ export class KobbeComponent implements OnInit {
       if(this.valor=="glass-plus"){
         this.valor="glass-minus"
         this.wsSocket.envioPortal('kobbe-visor');
-  
+        this.carusel();
       }else{
         this.valor="glass-plus"
         this.wsSocket.envioPortal('ft-kobbe');
@@ -71,6 +71,14 @@ export class KobbeComponent implements OnInit {
   idioma(){
     this.wsSocket.idiomaPost('es');
   }
+
+  carusel(){
+
+
+    document.getElementById('btnCarusel')?.click();
+    
+  }
+
 
 
 }

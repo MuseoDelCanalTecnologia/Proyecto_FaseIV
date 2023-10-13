@@ -60,7 +60,7 @@ export class GrantEngComponent implements OnInit {
       if(this.valor=="glass-plus"){
         this.valor="glass-minus"
         this.wsSocket.envioPortal('grant-visor');
-  
+        this.carusel();
       }else{
         this.valor="glass-plus"
         this.wsSocket.envioPortal('ft-grant');
@@ -73,6 +73,13 @@ export class GrantEngComponent implements OnInit {
       this.wsSocket.idiomaPost('en');
     }
 
+
+    carusel(){
+
+
+      document.getElementById('btnCarusel')?.click();
+      
+    }
 
 
 }

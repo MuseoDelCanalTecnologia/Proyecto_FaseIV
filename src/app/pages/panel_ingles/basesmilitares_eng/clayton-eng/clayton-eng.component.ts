@@ -58,7 +58,7 @@ export class ClaytonEngComponent implements OnInit {
       if(this.valor=="glass-plus"){
         this.valor="glass-minus"
         this.wsSocket.envioPortal('clayton-visor');
-  
+        this.carusel();
       }else{
         this.valor="glass-plus"
         this.wsSocket.envioPortal('ft-clayton');
@@ -72,6 +72,12 @@ export class ClaytonEngComponent implements OnInit {
       this.wsSocket.idiomaPost('en');
     }
 
-    
+    carusel(){
+
+
+      document.getElementById('btnCarusel')?.click();
+      
+    }
+
 
 }
