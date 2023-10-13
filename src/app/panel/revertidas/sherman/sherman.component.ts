@@ -65,7 +65,7 @@ export class PanelShermanComponent implements OnInit {
       if(this.valor=="glass-plus"){
         this.valor="glass-minus"
         this.wsSocket.envioPortal('sherman-visor');
-  
+        this.carusel();
       }else{
         this.valor="glass-plus"
         this.wsSocket.envioPortal('ft-sherma');
@@ -82,7 +82,13 @@ export class PanelShermanComponent implements OnInit {
   idioma(){
     this.wsSocket.idiomaPost('es');
   }
+  
+  carusel(){
 
+
+    document.getElementById('btnCarusel')?.click();
+    
+  }
 
  
 

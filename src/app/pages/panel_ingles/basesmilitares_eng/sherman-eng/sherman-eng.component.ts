@@ -61,7 +61,7 @@ export class ShermanEngComponent implements OnInit {
     if(this.valor=="glass-plus"){
       this.valor="glass-minus"
       this.wsSocket.envioPortal('sherman-visor');
-
+      this.carusel();
     }else{
       this.valor="glass-plus"
       this.wsSocket.envioPortal('ft-sherma');
@@ -82,6 +82,13 @@ export class ShermanEngComponent implements OnInit {
   
   prevImg(){
     this.wsSocket.imgIn('prev');
+  }
+
+  carusel(){
+
+
+    document.getElementById('btnCarusel')?.click();
+    
   }
 
 }
