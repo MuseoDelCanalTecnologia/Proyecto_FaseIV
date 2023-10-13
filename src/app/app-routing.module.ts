@@ -136,7 +136,8 @@ import { SuministroEngComponent } from './pages/panel_ingles/suministro-eng/sumi
 
 const routes: Routes = [
  
-  {path:'', component:HomeComponent,pathMatch:'full'},
+  //{path:'', component:HomeComponent,pathMatch:'full'},
+  {path:'', component:ProyeccionComponent,pathMatch:'full'},
   {path:'mapa', component:MapaComponent},
   {path:'proyeccion', component:ProyeccionComponent},
   {path:'interaccion', component:InteraccionComponent},
