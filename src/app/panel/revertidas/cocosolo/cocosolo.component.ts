@@ -8,7 +8,7 @@ import { SocketService } from 'src/app/services/socket.service';
   styleUrls: ['./cocosolo.component.css']
 })
 export class CocosoloComponent implements OnInit {
-
+ click:any;
   event:any
   constructor(private wsSocket:SocketService) { }
  valor:string = '';
@@ -16,7 +16,7 @@ export class CocosoloComponent implements OnInit {
     this.valor="glass-plus";
     this.enviarProyeccion();
     this.idioma();
-
+    
   }
 
 
@@ -36,10 +36,12 @@ export class CocosoloComponent implements OnInit {
 
   nextImg(){
     this.wsSocket.imgIn('next');
+ 
   }
   
   prevImg(){
     this.wsSocket.imgIn('prev');
+  
   }
 
   evento(){
@@ -61,7 +63,7 @@ export class CocosoloComponent implements OnInit {
       if(this.valor=="glass-plus"){
         this.valor="glass-minus"
         this.wsSocket.envioPortal('cocosolo-visor');
-  
+        this.carusel();
       }else{
         this.valor="glass-plus"
         this.wsSocket.envioPortal('coco');
@@ -75,6 +77,18 @@ export class CocosoloComponent implements OnInit {
   idioma(){
     this.wsSocket.idiomaPost('es');
   }
+  
+  
+
+ 
+   
+  carusel(){
+
+
+    document.getElementById('btnCarusel')?.click();
+    
+  }
+
 
 
 }

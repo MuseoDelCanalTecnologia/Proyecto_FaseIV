@@ -59,7 +59,7 @@ export class GulickEngComponent implements OnInit {
       if(this.valor=="glass-plus"){
         this.valor="glass-minus"
         this.wsSocket.envioPortal('gulick-visor');
-  
+        this.carusel();
       }else{
         this.valor="glass-plus"
         this.wsSocket.envioPortal('ft-gulick');
@@ -75,5 +75,13 @@ export class GulickEngComponent implements OnInit {
     idioma(){
       this.wsSocket.idiomaPost('en');
     }
+
+    carusel(){
+
+
+      document.getElementById('btnCarusel')?.click();
+      
+    }
+  
 
 }

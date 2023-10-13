@@ -292,6 +292,7 @@ import { SuministroEngComponent } from './pages/panel_ingles/suministro-eng/sumi
     SocketIoModule.forRoot(config),
     HttpClientJsonpModule,
     HttpClientModule,
+    
   ],
 
   providers: [],

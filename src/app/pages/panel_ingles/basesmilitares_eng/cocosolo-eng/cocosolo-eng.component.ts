@@ -64,7 +64,7 @@ export class CocosoloEngComponent implements OnInit {
       if(this.valor=="glass-plus"){
         this.valor="glass-minus"
         this.wsSocket.envioPortal('cocosolo-visor');
-  
+        this.carusel();
       }else{
         this.valor="glass-plus"
         this.wsSocket.envioPortal('coco');
@@ -77,6 +77,13 @@ export class CocosoloEngComponent implements OnInit {
 
     idioma(){
       this.wsSocket.idiomaPost('en');
+    }
+
+    carusel(){
+
+
+      document.getElementById('btnCarusel')?.click();
+      
     }
 
 

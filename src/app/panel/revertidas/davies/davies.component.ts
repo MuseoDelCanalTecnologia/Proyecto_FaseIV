@@ -64,7 +64,7 @@ export class DaviesComponent implements OnInit {
       if(this.valor=="glass-plus"){
         this.valor="glass-minus"
         this.wsSocket.envioPortal('davies-visor');
-  
+        this.carusel();
       }else{
         this.valor="glass-plus"
         this.wsSocket.envioPortal('ft-davis');
@@ -74,5 +74,14 @@ export class DaviesComponent implements OnInit {
   
   
     }
+
+    carusel(){
+
+
+      document.getElementById('btnCarusel')?.click();
+      
+    }
+
+
 
 }
