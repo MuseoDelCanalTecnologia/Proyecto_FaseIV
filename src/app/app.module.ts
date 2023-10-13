@@ -143,9 +143,9 @@ import { ConstruccionEngComponent } from './pages/panel_ingles/construccion-eng/
 import { SuministroEngComponent } from './pages/panel_ingles/suministro-eng/suministro-eng.component';
 
 //Entorno
-// const config: SocketIoConfig = { url: 'https://experience-staging.cuentanostuhistoria.org/', options: {} };
+ const config: SocketIoConfig = { url: 'https://experience-staging.cuentanostuhistoria.org/', options: {} };
 //Local
- const config: SocketIoConfig = { url: 'http://localhost:7000', options: {} };
+ //const config: SocketIoConfig = { url: 'http://localhost:7000', options: {} };
 @NgModule({
   declarations: [
     

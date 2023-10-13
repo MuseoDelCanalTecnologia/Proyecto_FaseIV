@@ -16,7 +16,7 @@ export class BalboaOesteComponent implements OnInit {
   ngOnInit(): void {
     this.wsSocket.homeEscuchar().subscribe((data:any)=>{
       this.router.navigateByUrl(data);
-      console.log(data);
+      
       
      });
 
@@ -38,7 +38,7 @@ export class BalboaOesteComponent implements OnInit {
   idioma(){
 
     this.wsSocket.idiomaGet().subscribe((data)=>{
-      console.log('panel-poligonos:',data);
+     
       if(data==='es'){
       
         this.videoES=true;

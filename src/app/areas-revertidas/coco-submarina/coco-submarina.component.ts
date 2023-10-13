@@ -17,7 +17,7 @@ export class CocoSubmarinaComponent implements OnInit {
   ngOnInit(): void {
     this.wsSocket.homeEscuchar().subscribe((data:any)=>{
       this.router.navigateByUrl(data);
-      console.log(data);
+     
       
      });
 
@@ -36,7 +36,7 @@ export class CocoSubmarinaComponent implements OnInit {
   idioma(){
 
     this.wsSocket.idiomaGet().subscribe((data)=>{
-      console.log('coco-solo panel:',data);
+     
       if(data==='es'){
       
         this.videoES=true;

@@ -17,7 +17,7 @@ export class NavalRodmanComponent implements OnInit {
 
     this.wsSocket.homeEscuchar().subscribe((data:any)=>{
       this.router.navigateByUrl(data);
-      console.log(data);
+    
       
      });
 

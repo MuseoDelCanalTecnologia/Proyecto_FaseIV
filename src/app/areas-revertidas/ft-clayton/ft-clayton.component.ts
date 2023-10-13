@@ -16,7 +16,7 @@ export class FtClaytonComponent implements OnInit {
   ngOnInit(): void {
     this.wsSocket.homeEscuchar().subscribe((data: any) => {
       this.router.navigateByUrl(data);
-      console.log(data);
+      
     });
 
     this.recibiendoPortal();
@@ -32,7 +32,7 @@ export class FtClaytonComponent implements OnInit {
 
   idioma() {
     this.wsSocket.idiomaGet().subscribe((data) => {
-      console.log('panel-clayton:',data);
+      
       if (data === 'es') {
         this.videoES = true;
         this.videoEN = false;

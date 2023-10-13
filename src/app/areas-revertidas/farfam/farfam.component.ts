@@ -18,7 +18,7 @@ export class FarfamComponent implements OnInit {
 
     this.wsSocket.homeEscuchar().subscribe((data:any)=>{
       this.router.navigateByUrl(data);
-      console.log(data);
+      
       
      });
 
@@ -50,7 +50,7 @@ export class FarfamComponent implements OnInit {
   idioma(){
 
     this.wsSocket.idiomaGet().subscribe((data)=>{
-      console.log('panel-lesseps: ',data);
+      
       if(data==='es'){
       
         this.videoES=true;

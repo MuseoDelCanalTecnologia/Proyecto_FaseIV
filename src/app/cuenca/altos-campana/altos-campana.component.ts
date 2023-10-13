@@ -18,7 +18,7 @@ export class AltosCampanaComponent implements OnInit {
 
     this.wsSocket.homeEscuchar().subscribe((data:any)=>{
       this.router.navigateByUrl(data);
-      console.log(data);
+      
       
      });
 
@@ -43,7 +43,7 @@ export class AltosCampanaComponent implements OnInit {
   idioma(){
 
     this.wsSocket.idiomaGet().subscribe((data)=>{
-    
+      
       if(data==='es'){
       
         this.videoES=true;

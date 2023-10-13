@@ -20,7 +20,7 @@ export class FtShermanComponent implements OnInit {
 
     this.wsSocket.homeEscuchar().subscribe((data:any)=>{
       this.router.navigateByUrl(data);
-      console.log(data);
+     
       
      });
      this.recibiendoPortal();
@@ -38,7 +38,7 @@ export class FtShermanComponent implements OnInit {
   idioma(){
 
     this.wsSocket.idiomaGet().subscribe((data)=>{
-      console.log('panel-sherman-bases:',data);
+     
       if(data==='es'){
       
         this.videoES=true;

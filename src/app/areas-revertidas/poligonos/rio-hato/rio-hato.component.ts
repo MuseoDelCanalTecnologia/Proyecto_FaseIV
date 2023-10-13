@@ -17,7 +17,7 @@ export class RioHatoComponent implements OnInit {
 
     this.wsSocket.homeEscuchar().subscribe((data:any)=>{
       this.router.navigateByUrl(data);
-      console.log(data);
+     
       
      });
 
@@ -44,7 +44,7 @@ export class RioHatoComponent implements OnInit {
   idioma(){
 
     this.wsSocket.idiomaGet().subscribe((data)=>{
-      console.log('poligono-rio-hato:', data);
+      
       if(data==='es'){
       
         this.videoES=true;
