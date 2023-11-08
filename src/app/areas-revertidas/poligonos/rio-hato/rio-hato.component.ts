@@ -17,8 +17,6 @@ export class RioHatoComponent implements OnInit {
 
     this.wsSocket.homeEscuchar().subscribe((data:any)=>{
       this.router.navigateByUrl(data);
-     
-      
      });
 
      this.recibiendoPortal();

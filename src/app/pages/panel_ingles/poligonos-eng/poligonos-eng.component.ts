@@ -56,6 +56,7 @@ export class PoligonosEngComponent implements OnInit {
 
   rioHato(){
     this.wsSocket.envioPortal('rio-hato');
+    this.idioma();
   }
   sanJose(){
     this.wsSocket.envioPortal('san-jose');
