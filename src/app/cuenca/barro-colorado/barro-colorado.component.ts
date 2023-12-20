@@ -19,7 +19,7 @@ export class BarroColoradoComponent implements OnInit {
 
     this.wsSocket.homeEscuchar().subscribe((data:any)=>{
       this.router.navigateByUrl(data);
-      console.log(data);
+console.log(data);
       
      });
 
@@ -44,7 +44,7 @@ export class BarroColoradoComponent implements OnInit {
   idioma(){
 
     this.wsSocket.idiomaGet().subscribe((data)=>{
-     
+      console.log('panel barro colorado:',data);
       if(data==='es'){
       
         this.videoES=true;

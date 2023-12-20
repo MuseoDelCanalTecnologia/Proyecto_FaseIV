@@ -21,7 +21,7 @@ export class ProyeccionComponent implements OnInit {
    this.idioma();
     
     this.wsSocket.escuharVideo().subscribe((data) => {
-      console.log(data);
+     
       if (data === '1') {
         this.router.navigateByUrl('pro1');
       } else if (data === '2') {

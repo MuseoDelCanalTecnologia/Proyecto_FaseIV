@@ -21,7 +21,7 @@ export class CuencaHidroComponent implements OnInit {
   ngOnInit() {
     this.wsSocket.homeEscuchar().subscribe((data: any) => {
       this.router.navigateByUrl(data);
-      console.log(data);
+    
     });
 
     this.recibiendoPortal();
@@ -42,7 +42,7 @@ export class CuencaHidroComponent implements OnInit {
   idioma(){
 
     this.wsSocket.idiomaGet().subscribe((data)=>{
-      console.log('introcuenca:',data);
+      
       if(data==='es'){
       
         this.videoES=true;

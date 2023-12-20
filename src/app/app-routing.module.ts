@@ -132,6 +132,10 @@ import { ProfundizacionEngComponent } from './pages/panel_ingles/profundizacion-
 import { NavegacionEngComponent } from './pages/panel_ingles/navegacion-eng/navegacion-eng.component';
 import { ConstruccionEngComponent } from './pages/panel_ingles/construccion-eng/construccion-eng.component';
 import { SuministroEngComponent } from './pages/panel_ingles/suministro-eng/suministro-eng.component';
+import { ConexionesComponent } from './pages/conexiones/conexiones.component';
+import { ConexionesEngComponent } from './pages/panel_ingles/conexiones-eng/conexiones-eng.component';
+import { RutasUsuariosComponent } from './pages/rutas-usuarios/rutas-usuarios.component';
+import { BuquesComponent } from './pages/buques/buques.component';
 
 
 const routes: Routes = [
@@ -283,6 +287,10 @@ const routes: Routes = [
   {path:'navegacion_eng',component:NavegacionEngComponent},
   {path:'construccion_eng',component:ConstruccionEngComponent},
   {path:'suministro_eng',component:SuministroEngComponent},
+  {path:'conexiones',component:ConexionesComponent},
+  {path:'conexiones_eng',component:ConexionesEngComponent},
+  {path:'rutas_usuarios',component:RutasUsuariosComponent},
+  {path:'buques',component:BuquesComponent},
 
 
 
