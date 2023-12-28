@@ -138,6 +138,9 @@ import { RutasUsuariosComponent } from './pages/rutas-usuarios/rutas-usuarios.co
 import { BuquesComponent } from './pages/buques/buques.component';
 import { BuquesEngComponent } from './pages/panel_ingles/buques-eng/buques-eng.component';
 import { RutasEngComponent } from './pages/panel_ingles/rutas-eng/rutas-eng.component';
+import { CanalConexionesComponent } from './ampliacion/canal-conexiones/canal-conexiones.component';
+import { CanalBuquesComponent } from './ampliacion/canal-buques/canal-buques.component';
+import { CanalRutasComponent } from './ampliacion/canal-rutas/canal-rutas.component';
 
 
 const routes: Routes = [
@@ -295,6 +298,10 @@ const routes: Routes = [
   {path:'buques',component:BuquesComponent},
   {path:'buques_eng',component:BuquesEngComponent},
   {path:'rutas_eng',component:RutasEngComponent},
+
+  {path:'canal-conexiones',component:CanalConexionesComponent},
+  {path:'canal-buques',component:CanalBuquesComponent},
+  {path:'canal-rutas',component:CanalRutasComponent},
 
 
 
