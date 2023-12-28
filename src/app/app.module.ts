@@ -147,6 +147,9 @@ import { RutasUsuariosComponent } from './pages/rutas-usuarios/rutas-usuarios.co
 import { BuquesComponent } from './pages/buques/buques.component';
 import { RutasEngComponent } from './pages/panel_ingles/rutas-eng/rutas-eng.component';
 import { BuquesEngComponent } from './pages/panel_ingles/buques-eng/buques-eng.component';
+import { CanalConexionesComponent } from './ampliacion/canal-conexiones/canal-conexiones.component';
+import { CanalRutasComponent } from './ampliacion/canal-rutas/canal-rutas.component';
+import { CanalBuquesComponent } from './ampliacion/canal-buques/canal-buques.component';
 
 //Entorno
 //const config: SocketIoConfig = { url: 'https://experience-staging.cuentanostuhistoria.org/', options: {} };
@@ -294,7 +297,10 @@ import { BuquesEngComponent } from './pages/panel_ingles/buques-eng/buques-eng.c
     RutasUsuariosComponent,
     BuquesComponent,
     RutasEngComponent,
-    BuquesEngComponent
+    BuquesEngComponent,
+    CanalConexionesComponent,
+    CanalRutasComponent,
+    CanalBuquesComponent
   
   ],
 
