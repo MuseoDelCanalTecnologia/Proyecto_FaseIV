@@ -18,7 +18,7 @@ export class ConexionesComponent {
     }
   
     enviarPortal() {
-      this.wsSocket.envioPortal('sub-intro');
+      this.wsSocket.envioPortal('canal-conexiones');
     }
   
     enviarHome() {

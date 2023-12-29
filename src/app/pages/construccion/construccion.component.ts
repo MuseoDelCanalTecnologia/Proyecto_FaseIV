@@ -22,10 +22,14 @@ export class ConstruccionComponent implements OnInit {
 
   enviarHome() {
     this.wsSocket.homeRoute('proyeccion');
-    console.log("CLIK ENTRO")
   }
 
   idioma(){
     this.wsSocket.idiomaPost('es');
+  }
+
+  esclusas(){
+
+    this.wsSocket.envioPortal('neo-panamax');
   }
 }

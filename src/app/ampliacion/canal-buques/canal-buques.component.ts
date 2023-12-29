@@ -7,7 +7,7 @@ import { SocketService } from 'src/app/services/socket.service';
   templateUrl: './canal-buques.component.html',
   styleUrls: ['./canal-buques.component.css']
 })
-export class CanalBuquesComponent {
+export class CanalBuquesComponent  implements OnInit {
   data: any;
   constructor(private wsSocket: SocketService, private router: Router) {}
   videoES: boolean = false;

@@ -19,7 +19,7 @@ export class ConexionesEngComponent {
     }
   
     enviarPortal() {
-      this.wsSocket.envioPortal('sub-intro');
+      this.wsSocket.envioPortal('canal-conexiones');
     }
   
     enviarHome() {
@@ -28,7 +28,7 @@ export class ConexionesEngComponent {
   
    
     idioma(){
-      this.wsSocket.idiomaPost('es');
+      this.wsSocket.idiomaPost('en');
     }
   
 

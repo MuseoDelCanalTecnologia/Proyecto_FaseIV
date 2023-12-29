@@ -16,7 +16,7 @@ export class BuquesEngComponent {
     }
   
     enviarPortal() {
-      this.wsSocket.envioPortal('sub-intro');
+      this.wsSocket.envioPortal('canal-buques');
     }
   
     enviarHome() {
@@ -25,7 +25,7 @@ export class BuquesEngComponent {
   
    
     idioma(){
-      this.wsSocket.idiomaPost('es');
+      this.wsSocket.idiomaPost('en');
     }
 
     

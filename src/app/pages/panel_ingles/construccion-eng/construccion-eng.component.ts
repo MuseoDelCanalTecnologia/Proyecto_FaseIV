@@ -22,7 +22,6 @@ export class ConstruccionEngComponent implements OnInit {
 
   enviarHome() {
     this.wsSocket.homeRoute('proyeccion');
-    console.log("CLIK ENTRO")
   }
 
 

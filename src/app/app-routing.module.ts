@@ -141,12 +141,13 @@ import { RutasEngComponent } from './pages/panel_ingles/rutas-eng/rutas-eng.comp
 import { CanalConexionesComponent } from './ampliacion/canal-conexiones/canal-conexiones.component';
 import { CanalBuquesComponent } from './ampliacion/canal-buques/canal-buques.component';
 import { CanalRutasComponent } from './ampliacion/canal-rutas/canal-rutas.component';
+import { NeopanamaxComponent } from './ampliacion/neopanamax/neopanamax.component';
 
 
 const routes: Routes = [
  
-  {path:'', component:HomeComponent,pathMatch:'full'},
- // {path:'', component:ProyeccionComponent,pathMatch:'full'},
+  //{path:'', component:HomeComponent,pathMatch:'full'},
+  {path:'', component:ProyeccionComponent,pathMatch:'full'},
   {path:'mapa', component:MapaComponent},
   {path:'proyeccion', component:ProyeccionComponent},
   {path:'interaccion', component:InteraccionComponent},
@@ -298,18 +299,10 @@ const routes: Routes = [
   {path:'buques',component:BuquesComponent},
   {path:'buques_eng',component:BuquesEngComponent},
   {path:'rutas_eng',component:RutasEngComponent},
-
   {path:'canal-conexiones',component:CanalConexionesComponent},
   {path:'canal-buques',component:CanalBuquesComponent},
   {path:'canal-rutas',component:CanalRutasComponent},
-
-
-
-  
- 
-
-
-
+  {path:'neo-panamax',component:NeopanamaxComponent},
 ];
 
 @NgModule({

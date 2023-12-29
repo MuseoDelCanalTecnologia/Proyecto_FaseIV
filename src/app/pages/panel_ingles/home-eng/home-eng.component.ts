@@ -30,7 +30,7 @@ export class HomeEngComponent implements OnInit {
   idioma(){
     setTimeout(()=>{
       this.socket.idiomaPost('en');
-    },1500)
+    },1000)
   }
 
 }

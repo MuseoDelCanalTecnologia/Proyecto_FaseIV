@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,OnInit} from '@angular/core';
 import { Router } from '@angular/router';
 import { SocketService } from 'src/app/services/socket.service';
 
@@ -7,7 +7,7 @@ import { SocketService } from 'src/app/services/socket.service';
   templateUrl: './canal-conexiones.component.html',
   styleUrls: ['./canal-conexiones.component.css']
 })
-export class CanalConexionesComponent {
+export class CanalConexionesComponent implements OnInit {
   data: any;
   constructor(private wsSocket: SocketService, private router: Router) {}
   videoES: boolean = false;

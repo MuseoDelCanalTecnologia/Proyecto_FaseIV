@@ -15,7 +15,7 @@ export class RutasEngComponent {
     }
   
     enviarPortal() {
-      this.wsSocket.envioPortal('sub-intro');
+      this.wsSocket.envioPortal('canal-rutas');
     }
   
     enviarHome() {
@@ -24,6 +24,6 @@ export class RutasEngComponent {
   
    
     idioma(){
-      this.wsSocket.idiomaPost('es');
+      this.wsSocket.idiomaPost('en');
     }
 }

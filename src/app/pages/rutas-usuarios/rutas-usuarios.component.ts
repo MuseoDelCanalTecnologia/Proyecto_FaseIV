@@ -15,7 +15,7 @@ export class RutasUsuariosComponent {
     }
   
     enviarPortal() {
-      this.wsSocket.envioPortal('sub-intro');
+      this.wsSocket.envioPortal('canal-rutas');
     }
   
     enviarHome() {
