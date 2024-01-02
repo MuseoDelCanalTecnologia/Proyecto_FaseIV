@@ -146,8 +146,8 @@ import { NeopanamaxComponent } from './ampliacion/neopanamax/neopanamax.componen
 
 const routes: Routes = [
  
-  //{path:'', component:HomeComponent,pathMatch:'full'},
-  {path:'', component:ProyeccionComponent,pathMatch:'full'},
+  {path:'', component:HomeComponent,pathMatch:'full'},
+  // {path:'', component:ProyeccionComponent,pathMatch:'full'},
   {path:'mapa', component:MapaComponent},
   {path:'proyeccion', component:ProyeccionComponent},
   {path:'interaccion', component:InteraccionComponent},
